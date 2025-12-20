@@ -1,4 +1,3 @@
-theme: jekyll-theme-architect
 title: Rano's Portfolio
 description: Aspiring Data Scientist
 
@@ -6,10 +5,6 @@ description: Aspiring Data Scientist
 show_downloads: false
 google_analytics:
 lang: en-US
-
-# Visuals for Social Media (SEO)
-plugins:
-  - jekyll-seo-tag
 
 # My Personal Data (Variables)
 email: dasranojoy9@gmail.com
