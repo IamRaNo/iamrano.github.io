@@ -175,27 +175,40 @@ title: Ranojoy Das | Data Analyst
 
 <br>
 
-<div style="text-align: center; margin-bottom: 30px;">
+<div id="live-apps" style="text-align: center; margin-bottom: 30px; padding-top: 40px;">
   <h2>🚀 Live Applications</h2>
+  <p style="color: #888; margin-top: -20px;">Deployed & running in real-time.</p>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 60px;">
   
-  <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'" onmouseout="this.style.borderColor='#333'">
+  <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
     <img src="https://img.icons8.com/color/48/airplane-take-off.png" width="40"><br>
     <strong style="color: #fff; display: block; margin-top: 10px;">Wander Mate</strong>
     <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
   </a>
 
-  <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'" onmouseout="this.style.borderColor='#333'">
+  <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
     <img src="https://img.icons8.com/color/48/cricket.png" width="40"><br>
     <strong style="color: #fff; display: block; margin-top: 10px;">Next Gen Cricket</strong>
     <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
   </a>
 
-  <a href="https://senti-analysis-ranoj.streamlit.app/" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'" onmouseout="this.style.borderColor='#333'">
+  <a href="https://senti-analysis-ranoj.streamlit.app/" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
     <img src="https://img.icons8.com/color/48/happy--v1.png" width="40"><br>
     <strong style="color: #fff; display: block; margin-top: 10px;">Sentiment AI</strong>
+    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
+  </a>
+
+  <a href="https://huggingface.co/spaces/thetshooter/movieRecommendation" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
+    <img src="https://img.icons8.com/color/48/movie-projector.png" width="40"><br>
+    <strong style="color: #fff; display: block; margin-top: 10px;">Movie Recs</strong>
+    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
+  </a>
+
+  <a href="https://lap-price-pred-ranoj.streamlit.app/" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
+    <img src="https://img.icons8.com/color/48/laptop.png" width="40"><br>
+    <strong style="color: #fff; display: block; margin-top: 10px;">Price Predictor</strong>
     <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
   </a>
 
@@ -205,43 +218,45 @@ title: Ranojoy Das | Data Analyst
   <h2>🛠 Technical Skills</h2>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 40px;">
-  <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 15px; text-align: center;">
-    <p style="color: #A0A0A0; font-size: 0.85em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Languages & Databases</p>
-    <div style="display: flex; justify-content: center; gap: 15px;">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="40" height="40">
-      <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-sql-computer-programming-flaticons-flat-flat-icons.png" alt="SQL" title="SQL" width="40" height="40">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="40" height="40">
+<div class="skills-flex">
+
+  <div class="skill-node node-lang">
+    <p style="color: #00ADB5;">LANGUAGES & DATABASES</p>
+    <div style="display: flex; gap: 20px;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" title="Python">
+      <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-sql-computer-programming-flaticons-flat-flat-icons.png" width="40" title="SQL">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" title="MySQL">
     </div>
   </div>
 
-  <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 15px; text-align: center;">
-    <p style="color: #A0A0A0; font-size: 0.85em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Analysis & Tools</p>
-    <div style="display: flex; justify-content: center; gap: 15px;">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" title="Pandas" width="40" height="40">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" title="NumPy" width="40" height="40">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg" alt="Excel" title="Excel" width="40" height="40">
+  <div class="skill-node node-tool">
+    <p style="color: #FF4B4B;">ANALYSIS & TOOLS</p>
+    <div style="display: flex; gap: 20px;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="40" title="Pandas">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="40" title="NumPy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg" width="40" title="Excel">
     </div>
   </div>
 
-  <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 15px; text-align: center;">
-    <p style="color: #A0A0A0; font-size: 0.85em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Visualizations</p>
-    <div style="display: flex; justify-content: center; gap: 15px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" title="Power BI" width="40" height="40">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" title="Matplotlib" width="40" height="40">
-      <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn" title="Seaborn" width="40" height="40">
+  <div class="skill-node node-viz">
+    <p style="color: #FFBD2E;">VISUALIZATIONS</p>
+    <div style="display: flex; gap: 20px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="40" title="Power BI">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" width="40" title="Matplotlib">
+      <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" width="40" title="Seaborn">
     </div>
   </div>
 
-  <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 15px; text-align: center;">
-    <p style="color: #A0A0A0; font-size: 0.85em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Cloud & Core Skills</p>
-    <div style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" title="AWS" width="50" height="50">
-      <span style="font-size: 0.75em; background: #333; color: white; padding: 4px 8px; border-radius: 4px;">EDA</span>
-      <span style="font-size: 0.75em; background: #333; color: white; padding: 4px 8px; border-radius: 4px;">ML</span>
-      <span style="font-size: 0.75em; background: #333; color: white; padding: 4px 8px; border-radius: 4px;">Stats</span>
+  <div class="skill-node node-cloud">
+    <p style="color: #27C93F;">CLOUD & CORE SKILLS</p>
+    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="45" title="AWS">
+      <span style="font-size: 0.7em; background: #333; padding: 4px 8px; border-radius: 4px;">EDA</span>
+      <span style="font-size: 0.7em; background: #333; padding: 4px 8px; border-radius: 4px;">ML</span>
+      <span style="font-size: 0.7em; background: #333; padding: 4px 8px; border-radius: 4px;">STATS</span>
     </div>
   </div>
+
 </div>
 
 <div id="certifications" style="text-align: center; margin-bottom: 20px; padding-top: 80px; margin-top: -60px;">
