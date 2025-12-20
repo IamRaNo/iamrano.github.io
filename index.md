@@ -12,32 +12,32 @@ Eager to learn, grow, and become a valuable asset to any team.
 
 ## 📂 Featured Projects
 
-### 1. Inside Olist: Review Score Impact Analysis
+### 📦 Inside Olist: Review Score Impact Analysis
 *Uncovering the hidden drivers of customer satisfaction in e-commerce.*
 
 - **The Problem:** Olist, a Brazilian e-commerce giant, faced fluctuating customer review scores. The goal was to identify exactly *what* drives a poor rating using their massive dataset.
 - **The Solution:** Conducted a deep exploratory data analysis (EDA) and statistical review of order statuses, freight performance, and review comments.
 - **Key Insight:** **Speed > Punctuality.** Data revealed that faster absolute delivery times correlate strongly with higher ratings, even if the order was technically "late" per the estimate. Customers value speed more than deadline accuracy.
 - **Tech Stack:** Python, Pandas, Feature Engineering, Statistics, Seaborn.
-- [View Project on GitHub](#)
+- [View Project on GitHub](https://github.com/IamRaNo/data-analytics-projects/tree/main/about_synthea_patient_readmission)
 
-### 2. Student Retention Intelligence (OULAD)
+### 🎓 Student Retention Intelligence (OULAD)
 *Predicting student dropout risk before it happens using interaction logs.*
 
 - **The Problem:** Online courses often suffer from high dropout rates. The challenge was to detect *at-risk* students early enough to intervene, rather than analyzing failure after the fact.
 - **The Solution:** Built a Machine Learning classifier using the Open University Learning Analytics Dataset. I analyzed clickstream data (VLE interactions) combined with demographic info to model student behavior.
 - **Key Insight:** **Engagement > Demographics.** The model revealed that a student's interaction with course material in the first 2 weeks is a stronger predictor of retention than their previous education or background.
 - **Tech Stack:** Python, Scikit-Learn, Random Forest, Pandas, Matplotlib.
-- [View Project on GitHub](#)
+- [View Project on GitHub](https://github.com/IamRaNo/data-analytics-projects/tree/main/beyond_oulad_student_dropout)
 
-### 3. Synthea Patient Health Analysis
+### 🏥 Synthea Patient Health Analysis
 *Simulating and predicting heart disease risks using synthetic medical records.*
 
 - **The Problem:** Real-world medical data is scarce due to privacy laws. The goal was to build a robust disease prediction model using high-fidelity synthetic patient history (Synthea) to identify key risk factors for heart disease.
 - **The Solution:** Performed extensive data cleaning on patient encounter logs and vital signs. Trained a classification model to predict the likelihood of cardiac events based on lifestyle metrics.
 - **Key Insight:** **Lifestyle Multipliers.** The analysis quantified how specific combinations (e.g., High BMI + Smoker) exponentially increased risk scores compared to individual factors alone, enabling more targeted risk stratification.
 - **Tech Stack:** Python, Scikit-Learn, Imbalanced-learn, Seaborn, Healthcare Analytics.
-- [View Project on GitHub](#)
+- [View Project on GitHub](https://github.com/IamRaNo/data-analytics-projects/tree/main/about_synthea_patient_readmission)
 
 ---
 ---
@@ -64,8 +64,8 @@ Eager to learn, grow, and become a valuable asset to any team.
 * **The Goal:** Automatically determine if a text review or comment is Positive, Negative, or Neutral.
 * **Technique:** Natural Language Processing (NLP) with NLTK & TextBlob.
 * **Outcome:** Automated feedback sorting for large datasets.
----
 
+---
 ---
 
 ## 🎯 Recommendation Systems
