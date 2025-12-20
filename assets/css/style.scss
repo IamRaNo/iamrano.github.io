@@ -1,36 +1,64 @@
-/* Styling for the Floating Side Profile */
-.site-footer {
-    text-align: center; /* Center everything in the sidebar */
+/* --- Architect Theme Custom Layout --- */
+
+/* The container that holds Side + Main */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap; /* Wraps nicely on mobile */
+  gap: 40px;
+  align-items: flex-start; /* Aligns top */
+  margin-top: 20px;
 }
 
-.profile-avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Makes the image round */
-    border: 3px solid #fff;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
+/* 1. The Left Profile Sidebar */
+.profile-sidebar {
+  flex: 1; /* Takes up 1 share of width */
+  min-width: 220px;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.side-bio {
-    font-size: 0.9rem;
-    color: #606c71;
-    margin-bottom: 15px;
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #f0f0f0;
+  margin-bottom: 15px;
 }
 
-.btn-small {
-    display: block; /* Stacks buttons on top of each other */
-    background-color: #159957; /* Green color */
-    color: white;
-    padding: 5px 10px;
-    margin: 5px auto;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 0.8rem;
-    width: 80%;
+.sidebar-btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  background-color: #f6f8fa; /* Light grey button */
+  color: #333;
+  border: 1px solid #d1d5da;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
-.btn-small:hover {
-    background-color: #1e6bb8; /* Blue on hover */
-    text-decoration: none;
+.sidebar-btn:hover {
+  background-color: #222; /* Architect Theme Black */
+  color: #fff;
+}
+
+/* 2. The Right Main Content */
+.main-content {
+  flex: 2; /* Takes up 2 shares (wider) */
+}
+
+/* 3. The Stylish Quote Box */
+.stylish-quote {
+  background-color: #fff0e5; /* Very light orange to match Architect */
+  border-left: 5px solid #ff5500; /* Architect Orange */
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  font-family: sans-serif;
+  color: #333;
 }
