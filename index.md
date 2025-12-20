@@ -10,32 +10,43 @@ Eager to learn, grow, and become a valuable asset to any team.
 
 ## 📂 Featured Projects
 
-### 📦 Inside Olist: Review Score Impact Analysis
-*Uncovering the hidden drivers of customer satisfaction in e-commerce.*
+## 📂 Featured Projects
 
-- **The Problem:** Olist, a Brazilian e-commerce giant, faced fluctuating customer review scores. The goal was to identify exactly *what* drives a poor rating using their massive dataset.
-- **The Solution:** Conducted a deep exploratory data analysis (EDA) and statistical review of order statuses, freight performance, and review comments.
-- **Key Insight:** **Speed > Punctuality.** Data revealed that faster absolute delivery times correlate strongly with higher ratings, even if the order was technically "late" per the estimate. Customers value speed more than deadline accuracy.
-- **Tech Stack:** Python, Pandas, Feature Engineering, Statistics, Seaborn.
-- [View Project on GitHub](https://github.com/IamRaNo/data-analytics-projects/tree/main/about_synthea_patient_readmission)
+<div class="project-card">
+  <h3>📦 Inside Olist: Review Score Impact Analysis</h3>
+  <p><em>Uncovering the hidden drivers of customer satisfaction in e-commerce.</em></p>
+  <ul>
+    <li><strong>The Problem:</strong> Olist, a Brazilian e-commerce giant, faced fluctuating customer review scores.</li>
+    <li><strong>The Solution:</strong> Conducted a deep exploratory data analysis (EDA) and statistical review.</li>
+    <li><strong>Key Insight:</strong> <strong>Speed > Punctuality.</strong> Faster delivery correlates strongly with higher ratings.</li>
+    <li><strong>Tech Stack:</strong> Python, Pandas, Feature Engineering, Statistics, Seaborn.</li>
+  </ul>
+  <a href="INSERT_LINK_HERE">View Project on GitHub</a>
+</div>
 
-### 🎓 Student Retention Intelligence (OULAD)
-*Predicting student dropout risk before it happens using interaction logs.*
+<div class="project-card">
+  <h3>🎓 Student Retention Intelligence (OULAD)</h3>
+  <p><em>Predicting student dropout risk before it happens using interaction logs.</em></p>
+  <ul>
+    <li><strong>The Problem:</strong> Online courses often suffer from high dropout rates.</li>
+    <li><strong>The Solution:</strong> Built a Machine Learning classifier using the Open University Learning Analytics Dataset.</li>
+    <li><strong>Key Insight:</strong> <strong>Engagement > Demographics.</strong> Early interaction is the strongest predictor.</li>
+    <li><strong>Tech Stack:</strong> Python, Scikit-Learn, Random Forest, Pandas.</li>
+  </ul>
+  <a href="INSERT_LINK_HERE">View Project on GitHub</a>
+</div>
 
-- **The Problem:** Online courses often suffer from high dropout rates. The challenge was to detect *at-risk* students early enough to intervene, rather than analyzing failure after the fact.
-- **The Solution:** Built a Machine Learning classifier using the Open University Learning Analytics Dataset. I analyzed clickstream data (VLE interactions) combined with demographic info to model student behavior.
-- **Key Insight:** **Engagement > Demographics.** The model revealed that a student's interaction with course material in the first 2 weeks is a stronger predictor of retention than their previous education or background.
-- **Tech Stack:** Python, Scikit-Learn, Random Forest, Pandas, Matplotlib.
-- [View Project on GitHub](https://github.com/IamRaNo/data-analytics-projects/tree/main/beyond_oulad_student_dropout)
-
-### 🏥 Synthea Patient Health Analysis
-*Simulating and predicting heart disease risks using synthetic medical records.*
-
-- **The Problem:** Real-world medical data is scarce due to privacy laws. The goal was to build a robust disease prediction model using high-fidelity synthetic patient history (Synthea) to identify key risk factors for heart disease.
-- **The Solution:** Performed extensive data cleaning on patient encounter logs and vital signs. Trained a classification model to predict the likelihood of cardiac events based on lifestyle metrics.
-- **Key Insight:** **Lifestyle Multipliers.** The analysis quantified how specific combinations (e.g., High BMI + Smoker) exponentially increased risk scores compared to individual factors alone, enabling more targeted risk stratification.
-- **Tech Stack:** Python, Scikit-Learn, Imbalanced-learn, Seaborn, Healthcare Analytics.
-- [View Project on GitHub](https://github.com/IamRaNo/data-analytics-projects/tree/main/about_synthea_patient_readmission)
+<div class="project-card">
+  <h3>🏥 Synthea Patient Health Analysis</h3>
+  <p><em>Simulating and predicting heart disease risks using synthetic medical records.</em></p>
+  <ul>
+    <li><strong>The Problem:</strong> Real-world medical data is scarce. Used synthetic data to model risks.</li>
+    <li><strong>The Solution:</strong> Trained a classification model to predict cardiac events based on lifestyle.</li>
+    <li><strong>Key Insight:</strong> <strong>Lifestyle Multipliers.</strong> Combined factors exponentially increase risk.</li>
+    <li><strong>Tech Stack:</strong> Python, Scikit-Learn, Healthcare Analytics.</li>
+  </ul>
+  <a href="INSERT_LINK_HERE">View Project on GitHub</a>
+</div>
 
 ---
 
@@ -64,23 +75,76 @@ Eager to learn, grow, and become a valuable asset to any team.
 
 ---
 
+## 🤖 Machine Learning Suite
+*Predictive models solving real-world classification and regression problems.*
+
+<div class="project-card">
+  <h3>👥 Customer Segmentation & Recommendation</h3>
+  <ul>
+    <li><strong>The Goal:</strong> Group customers based on purchasing behavior to deliver personalized product recommendations.</li>
+    <li><strong>Technique:</strong> K-Means Clustering & Collaborative Filtering.</li>
+    <li><strong>Outcome:</strong> Enabled targeted marketing strategies and improved cross-selling opportunities.</li>
+  </ul>
+</div>
+
+<div class="project-card">
+  <h3>💻 Laptop Price Predictor</h3>
+  <ul>
+    <li><strong>The Goal:</strong> Help users find value deals by estimating market price based on hardware specs (RAM, CPU, GPU).</li>
+    <li><strong>Technique:</strong> Regression Analysis & Web Scraping.</li>
+    <li><strong>Outcome:</strong> Accurate price estimation to spot overpriced or underpriced units.</li>
+  </ul>
+</div>
+
+<div class="project-card">
+  <h3>❤️ Heart Disease Risk System</h3>
+  <ul>
+    <li><strong>The Goal:</strong> An early detection system classifying patients as high or low risk using medical vitals.</li>
+    <li><strong>Technique:</strong> Classification Algorithms (Logistic Regression/Random Forest).
+    <li><strong>Outcome:</strong> Reduced false negatives to prioritize high-risk patients.</li>
+  </ul>
+</div>
+
+<div class="project-card">
+  <h3>😃 Text Sentiment Analyzer</h3>
+  <ul>
+    <li><strong>The Goal:</strong> Automatically determine if a text review or comment is Positive, Negative, or Neutral.</li>
+    <li><strong>Technique:</strong> Natural Language Processing (NLP) with NLTK & TextBlob.</li>
+    <li><strong>Outcome:</strong> Automated feedback sorting for large datasets.</li>
+  </ul>
+</div>
+
+---
+
 ## 🎯 Recommendation Systems
 *Personalized engines built to match users with the right content.*
 
-**🏏 Cricket Talent Prediction: Next Gen Cricketer**
-* **The Goal:** Identify player potential based on current statistics.
-* **Technique:** Statistical Analysis & Predictive Modeling.
-* **Outcome:** Built a scoring metric that highlights "hidden gem" players for auctions.
+<div class="project-card">
+  <h3>🏏 Cricket Talent Prediction: Next Gen Cricketer</h3>
+  <ul>
+    <li><strong>The Goal:</strong> Identify player potential based on current statistics.</li>
+    <li><strong>Technique:</strong> Statistical Analysis & Predictive Modeling.</li>
+    <li><strong>Outcome:</strong> Built a scoring metric that highlights "hidden gem" players for auctions.</li>
+  </ul>
+</div>
 
-**✈️ Travel Place Recommender: Wander Mate**
-* **The Goal:** Suggest destinations based on user preferences.
-* **Technique:** Content-based filtering using geolocation data.
-* **Outcome:** Personalized travel itineraries matching user interests.
+<div class="project-card">
+  <h3>✈️ Travel Place Recommender: Wander Mate</h3>
+  <ul>
+    <li><strong>The Goal:</strong> Suggest destinations based on user preferences.</li>
+    <li><strong>Technique:</strong> Content-based filtering using geolocation data.</li>
+    <li><strong>Outcome:</strong> Personalized travel itineraries matching user interests.</li>
+  </ul>
+</div>
 
-**🎬 Movie Recommendation System**
-* **The Goal:** The classic "What to watch next?" engine.
-* **Technique:** Collaborative filtering (Cosine Similarity).
-* **Outcome:** Accurate movie suggestions similar to user favorites.
+<div class="project-card">
+  <h3>🎬 Movie Recommendation System</h3>
+  <ul>
+    <li><strong>The Goal:</strong> The classic "What to watch next?" engine.</li>
+    <li><strong>Technique:</strong> Collaborative filtering (Cosine Similarity).</li>
+    <li><strong>Outcome:</strong> Accurate movie suggestions similar to user favorites.</li>
+  </ul>
+</div>
 
 ---
 
