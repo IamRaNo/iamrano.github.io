@@ -8,32 +8,24 @@ title: Ranojoy Das | Data Analyst
   <div class="hero-text">
     <h1 style="text-align: left; font-size: 3.5rem; margin-bottom: 10px;">
       Hi There, <br> I'm <span style="color: #00ADB5;">Ranojoy</span>
-    </h1>
-    
+    </h1>  
     <h3 style="text-align: left; margin-top: 0; color: #ccc;">
       I Am Into <span style="color: #FF4B4B;">Data Analytics</span>
-    </h3>
-    
+    </h3>    
     <p style="text-align: left; color: #888; max-width: 500px; margin-bottom: 30px;">
       Eager to learn, grow, and become a valuable asset to any team.
     </p>
-
-    <div style="display: flex; flex-direction: column; align-items: center; width: fit-content;">
-      
+    <div style="display: flex; flex-direction: column; align-items: center; width: fit-content;">      
       <a href="#featured-projects" class="btn-highlight" style="text-decoration: none; padding: 12px 25px; border-radius: 30px;">
         See Projects <i class="fas fa-arrow-down"></i>
       </a>
-
       <div class="hero-socials" style="margin-top: 20px;">
         <a href="https://linkedin.com/in/ranojoy"><img src="https://img.icons8.com/ios-filled/50/00ADB5/linkedin.png" width="35"></a>
         <a href="https://github.com/IamRaNo"><img src="https://img.icons8.com/ios-filled/50/00ADB5/github.png" width="35"></a>
         <a href="mailto:dasranojoy9@gmail.com"><img src="https://img.icons8.com/ios-filled/50/00ADB5/mail.png" width="35"></a>
       </div>
-
     </div>
-
   </div>
-
   <div class="hero-image">
     <img src="assets/new_image.png" alt="Profile" class="profile-pic">
   </div>
@@ -183,27 +175,78 @@ title: Ranojoy Das | Data Analyst
 
 <br>
 
-<div style="text-align: center; margin-bottom: 20px;">
+<div style="text-align: center; margin-bottom: 30px;">
   <h2>🚀 Live Applications</h2>
-  <p><em>Full-stack data applications currently running live on the web.</em></p>
+  <p style="color: #888; margin-top: -20px;">Deployed & running in real-time.</p>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 60px;">
-  <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Wander_Mate-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Wander Mate">
+<div class="browser-grid">
+
+  <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" class="browser-card">
+    <div class="browser-header">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+    </div>
+    <div class="browser-body">
+      <img src="https://img.icons8.com/color/48/airplane-take-off.png" alt="Travel" width="40">
+      <strong style="color: #fff; font-size: 0.9em;">Wander Mate</strong>
+      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
+    </div>
   </a>
-  <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Next_Gen_Cricketer-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Next Gen Cricketer">
+
+  <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" class="browser-card">
+    <div class="browser-header">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+    </div>
+    <div class="browser-body">
+      <img src="https://img.icons8.com/color/48/cricket.png" alt="Cricket" width="40">
+      <strong style="color: #fff; font-size: 0.9em;">Next Gen Cricket</strong>
+      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
+    </div>
   </a>
-  <a href="https://senti-analysis-ranoj.streamlit.app/" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Sentiment_Analysis-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Sentiment Analysis">
+
+  <a href="https://senti-analysis-ranoj.streamlit.app/" class="browser-card">
+    <div class="browser-header">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+    </div>
+    <div class="browser-body">
+      <img src="https://img.icons8.com/color/48/happy--v1.png" alt="Sentiment" width="40">
+      <strong style="color: #fff; font-size: 0.9em;">Sentiment AI</strong>
+      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
+    </div>
   </a>
-  <a href="https://huggingface.co/spaces/thetshooter/movieRecommendation" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Movie_Recommender-EA4335?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Movie Recommendation">
+
+  <a href="https://huggingface.co/spaces/thetshooter/movieRecommendation" class="browser-card">
+    <div class="browser-header">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+    </div>
+    <div class="browser-body">
+      <img src="https://img.icons8.com/color/48/movie-projector.png" alt="Movie" width="40">
+      <strong style="color: #fff; font-size: 0.9em;">Movie Recs</strong>
+      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
+    </div>
   </a>
-  <a href="https://lap-price-pred-ranoj.streamlit.app/" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Price_Predictor-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Laptop Price Prediction">
+
+  <a href="https://lap-price-pred-ranoj.streamlit.app/" class="browser-card">
+    <div class="browser-header">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+    </div>
+    <div class="browser-body">
+      <img src="https://img.icons8.com/color/48/laptop.png" alt="Laptop" width="40">
+      <strong style="color: #fff; font-size: 0.9em;">Price Predictor</strong>
+      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
+    </div>
   </a>
+
 </div>
 
 <div id="technical-skills" style="text-align: center; margin-bottom: 20px; padding-top: 80px; margin-top: -60px;">
@@ -268,8 +311,7 @@ title: Ranojoy Das | Data Analyst
       <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
       <p style="margin-bottom: 5px;"><strong>🏆 Career Forward Program</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">McKinsey & Company</span></p>
       <a href="https://drive.google.com/file/d/1qKkLvYBkfzKg5vMXXSrwFxKKLpwga5Ts/view?usp=sharing"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-    </div>
-    
+    </div>    
     <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
       <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">☁️ Cloud & Specialized</h3>
       <p style="margin-bottom: 5px;"><strong>🏆 AWS Fundamentals</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Amazon AWS</span></p>
@@ -295,7 +337,6 @@ title: Ranojoy Das | Data Analyst
       <p style="margin-bottom: 5px;"><strong>🏆 Data Fundamentals</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">IBM</span></p>
       <a href="https://drive.google.com/file/d/1ZL00QbqKd1TUw-oLA1B2WMIB34Rdokt4/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
     </div>
-
     <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
       <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">📜 Additional Certifications</h3>      
       <p style="margin-bottom: 5px;"><strong>🏆 Data Science</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Cisco / Cognitive Class</span></p>
