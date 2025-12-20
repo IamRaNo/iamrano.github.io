@@ -1,4 +1,4 @@
-/* --- DARK THEME VARIABLES --- */
+/* --- 1. VARIABLES & BASICS --- */
 :root {
     --bg-color: #121212;         /* Almost Black */
     --card-bg: #1E1E1E;          /* Dark Grey Cards */
@@ -9,7 +9,6 @@
     --border: #333333;
 }
 
-/* --- BASICS --- */
 body {
     margin: 0;
     padding: 0;
@@ -22,14 +21,14 @@ body {
 a { color: var(--accent); text-decoration: none; transition: 0.3s; }
 a:hover { color: var(--accent-hover); text-shadow: 0 0 10px rgba(0, 173, 181, 0.4); }
 
-/* --- LAYOUT --- */
+/* --- 2. LAYOUT --- */
 .container {
-    max-width: 900px; /* Optimal reading width */
+    max-width: 1200px; /* Wide layout for side-by-side view */
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* --- NAVBAR --- */
+/* --- 3. NAVBAR --- */
 .navbar {
     background-color: rgba(18, 18, 18, 0.95);
     border-bottom: 1px solid var(--border);
@@ -47,15 +46,14 @@ a:hover { color: var(--accent-hover); text-shadow: 0 0 10px rgba(0, 173, 181, 0.
 
 .btn-highlight {
     background-color: var(--accent);
-    color: #121212 !important; /* Dark text on bright button */
+    color: #121212 !important;
     padding: 8px 16px;
     border-radius: 4px;
     font-weight: 700 !important;
 }
 .btn-highlight:hover { background-color: var(--accent-hover); box-shadow: 0 0 15px var(--accent); }
 
-/* --- TYPOGRAPHY & HEADERS --- */
-/* --- TYPOGRAPHY & HEADERS --- */
+/* --- 4. TYPOGRAPHY --- */
 h1, h2, h3 { color: #fff; }
 
 h1 { 
@@ -63,11 +61,9 @@ h1 {
     background: linear-gradient(to right, #fff, var(--accent)); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    text-align: center; /* Centered Name */
 }
 
 h2 { 
-    /* This magic combo centers the header but keeps the underline short */
     display: table;
     margin: 40px auto 30px auto; 
     border-bottom: 2px solid var(--accent);
@@ -79,89 +75,35 @@ h3 {
     color: var(--accent); 
     margin-top: 0; 
     margin-bottom: 15px; 
-    /* We keep h3 left-aligned usually for Cards, but if you want them centered too: */
-    /* text-align: center; */ 
 }
 
-/* --- PROJECT & LIST STYLING --- */
-/* This makes your bullet points look professional */
 ul { padding-left: 20px; color: var(--text-muted); }
 li { margin-bottom: 8px; }
 strong { color: #fff; font-weight: 600; }
-
-/* --- BADGES & IMAGES --- */
 img { max-width: 100%; border-radius: 6px; }
 
-/* Adds a hover lift effect to your badges */
-a img[src*="shields.io"] {
-    transition: transform 0.2s;
-}
-a img[src*="shields.io"]:hover {
-    transform: translateY(-3px);
-}
-
-/* --- CERTIFICATES DROPDOWN --- */
-details {
-    background-color: var(--card-bg);
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    cursor: pointer;
-}
-summary { font-weight: bold; color: var(--accent); outline: none; }
-
-/* --- FOOTER SECTION --- */
-/* We target the div you added at the bottom */
-div[align="center"] {
-    margin-top: 80px;
-    padding: 40px 0;
-    background-color: var(--card-bg);
-    border-radius: 12px 12px 0 0;
-    border-top: 1px solid var(--border);
-}
-.site-footer { text-align: center; color: #555; font-size: 0.8rem; padding: 20px; }
-
-/* --- CARD STYLING --- */
-.project-card {
-    background-color: #1E1E1E;   /* Dark Grey Card Background */
-    border-radius: 16px;         /* Nice Rounded Corners */
-    padding: 25px;               /* Space inside the box */
-    margin-bottom: 25px;         /* Space between boxes */
-    border: 1px solid #333;      /* Subtle border */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-/* The cool hover effect */
-.project-card:hover {
-    transform: translateY(-5px); /* Lifts up slightly */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Drop shadow */
-    border-color: var(--accent); /* Teal border glows */
-}
-
-/* Fix header margins inside cards so they fit nicely */
-.project-card h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-/* --- HERO SECTION STYLES (Fixed Side-by-Side) --- */
+/* --- 5. HERO SECTION (Side-by-Side Fixed) --- */
 .hero-container {
     display: flex !important;
     flex-direction: row !important;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 30px 0 !important; /* Tight spacing */
-    min-height: auto !important;
-    max-width: 1100px;
-    margin: 0 auto;
+    padding: 20px 0 40px 0; /* Minimized vertical space */
+    min-height: auto;
     width: 100%;
 }
 
 .hero-text {
     flex: 1.2;
     padding-right: 40px;
-    text-align: left !important;
-    min-width: 500px;
+    text-align: left;
 }
+
+/* Force left alignment for Hero text only */
+.hero-text h1, .hero-text h3, .hero-text p {
+    text-align: left !important;
+}
+.hero-text h1 { margin-top: 0 !important; }
 
 .hero-image {
     flex: 0.8;
@@ -169,13 +111,6 @@ div[align="center"] {
     justify-content: flex-end;
 }
 
-/* Force text alignment */
-.hero-text h1, .hero-text h3, .hero-text p {
-    text-align: left !important;
-    margin-top: 0 !important;
-}
-
-/* Profile Picture */
 .profile-pic {
     width: 320px;
     height: 320px;
@@ -195,41 +130,12 @@ div[align="center"] {
     display: inline-block;
     transition: transform 0.2s;
 }
-.hero-socials a:hover {
-    transform: translateY(-5px);
-}
+.hero-socials a:hover { transform: translateY(-5px); }
 
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 768px) {
-    .hero-container {
-        flex-direction: column-reverse !important;
-        text-align: center !important;
-        padding: 30px 0;
-    }
-    .hero-text {
-        padding-right: 0;
-        margin-top: 30px;
-        text-align: center !important;
-        min-width: auto;
-    }
-    .hero-text h1, .hero-text h3, .hero-text p {
-        text-align: center !important;
-    }
-    .hero-image {
-        justify-content: center;
-    }
-    .profile-pic {
-        width: 250px;
-        height: 250px;
-    }
-} 
-/* ^^^ THIS BRACKET WAS LIKELY MISSING BEFORE ^^^ */
-
-
-/* --- FEATURED PROJECTS GRID (Flip Cards) --- */
+/* --- 6. FLIP CARDS (Featured Projects) --- */
 .featured-grid {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     margin-top: 30px;
     width: 100%;
@@ -250,9 +156,7 @@ div[align="center"] {
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
+.flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
 
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -263,6 +167,7 @@ div[align="center"] {
     border-radius: 16px;
     border: 1px solid #333;
     padding: 20px;
+    box-sizing: border-box; /* Important for padding */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,11 +175,7 @@ div[align="center"] {
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-.flip-card-front {
-    background-color: #1E1E1E;
-    color: #fff;
-    z-index: 2;
-}
+.flip-card-front { background-color: #1E1E1E; color: #fff; z-index: 2; }
 
 .flip-card-back {
     background-color: #151515;
@@ -287,8 +188,7 @@ div[align="center"] {
 .flip-card-back p { font-size: 0.9rem; }
 .flip-card-back ul { text-align: left; font-size: 0.85rem; padding-left: 15px; }
 
-
-/* --- ML SUITE: NEON GLASS CARDS --- */
+/* --- 7. NEON CARDS (ML Suite) --- */
 .ml-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -327,27 +227,12 @@ div[align="center"] {
     box-shadow: 0 0 20px rgba(0, 173, 181, 0.2);
     border-color: transparent;
 }
+.neon-card:hover::before { opacity: 1; }
 
-.neon-card:hover::before {
-    opacity: 1;
-}
+.neon-card h3 { margin-top: 0; font-size: 1.3rem; display: flex; align-items: center; gap: 10px; }
+.neon-card ul { margin-bottom: 0; padding-left: 15px; color: #bbb; font-size: 0.9rem; }
 
-.neon-card h3 {
-    margin-top: 0;
-    font-size: 1.3rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.neon-card ul {
-    margin-bottom: 0;
-    padding-left: 15px;
-    color: #bbb;
-    font-size: 0.9rem;
-}
-
-
-/* --- RECOMMENDATION POSTERS --- */
+/* --- 8. POSTER CARDS (Recommendations) --- */
 .poster-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -370,8 +255,33 @@ div[align="center"] {
     box-shadow: 0 15px 30px rgba(255, 75, 75, 0.15);
 }
 
-.poster-icon {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    display: inline-block;
+.poster-icon { font-size: 3rem; margin-bottom: 15px; display: inline-block; }
+
+/* --- 9. FOOTER --- */
+div[align="center"] {
+    margin-top: 80px;
+    padding: 40px 0;
+    background-color: var(--card-bg);
+    border-radius: 12px 12px 0 0;
+    border-top: 1px solid var(--border);
+}
+.site-footer { text-align: center; color: #555; font-size: 0.8rem; padding: 20px; }
+
+/* --- 10. MOBILE MEDIA QUERY (Must be last) --- */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+        padding: 30px 0;
+    }
+    .hero-text {
+        padding-right: 0;
+        margin-top: 30px;
+        text-align: center !important;
+    }
+    .hero-text h1, .hero-text h3, .hero-text p {
+        text-align: center !important;
+    }
+    .hero-image { justify-content: center; }
+    .profile-pic { width: 250px; height: 250px; }
 }
