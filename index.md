@@ -121,75 +121,71 @@ CS Grad - Data Analyst - ML Enthusiast
 
 <br>
 
-## 🚀 Live Applications
-*Full-stack data applications currently running live on the web.*
+<div style="text-align: center; margin-bottom: 20px;">
+  <h2>🚀 Live Applications</h2>
+  <p><em>Full-stack data applications currently running live on the web.</em></p>
+</div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 40px;">
-
+<div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 60px;">
   <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Wander_Mate-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Wander Mate">
   </a>
-
   <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Next_Gen_Cricketer-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Next Gen Cricketer">
   </a>
-
   <a href="https://senti-analysis-ranoj.streamlit.app/" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Sentiment_Analysis-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Sentiment Analysis">
   </a>
-
   <a href="https://huggingface.co/spaces/thetshooter/movieRecommendation" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Movie_Recommender-EA4335?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Movie Recommendation">
   </a>
-
   <a href="https://lap-price-pred-ranoj.streamlit.app/" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Price_Predictor-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Laptop Price Prediction">
   </a>
-
 </div>
 
-## 🛠 Technical Skills
 
-<div align="center">
+<div style="text-align: center; margin-bottom: 20px;">
+  <h2>🛠 Technical Skills</h2>
+</div>
 
-  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Languages</p>
-  <div style="margin-bottom: 30px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="55" height="55" style="margin: 0 15px;">
-    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-sql-computer-programming-flaticons-flat-flat-icons.png" alt="SQL" title="SQL" width="55" height="55" style="margin: 0 15px;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 40px;">
+
+  <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 15px; text-align: center;">
+    <p style="color: #A0A0A0; font-size: 0.85em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Languages & Databases</p>
+    <div style="display: flex; justify-content: center; gap: 15px;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="40" height="40">
+      <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-sql-computer-programming-flaticons-flat-flat-icons.png" alt="SQL" title="SQL" width="40" height="40">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="40" height="40">
+    </div>
   </div>
 
-  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Data Analysis Libraries</p>
-  <div style="margin-bottom: 30px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" title="Pandas" width="55" height="55" style="margin: 0 15px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" title="NumPy" width="55" height="55" style="margin: 0 15px;">
+  <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 15px; text-align: center;">
+    <p style="color: #A0A0A0; font-size: 0.85em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Analysis & Tools</p>
+    <div style="display: flex; justify-content: center; gap: 15px;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" title="Pandas" width="40" height="40">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" title="NumPy" width="40" height="40">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg" alt="Excel" title="Excel" width="40" height="40">
+    </div>
   </div>
 
-  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Visualizations</p>
-  <div style="margin-bottom: 30px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" title="Matplotlib" width="55" height="55" style="margin: 0 15px;">
-    <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn" title="Seaborn" width="55" height="55" style="margin: 0 15px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" title="Power BI" width="55" height="55" style="margin: 0 15px;">
+  <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 15px; text-align: center;">
+    <p style="color: #A0A0A0; font-size: 0.85em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Visualizations</p>
+    <div style="display: flex; justify-content: center; gap: 15px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" title="Power BI" width="40" height="40">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" title="Matplotlib" width="40" height="40">
+      <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn" title="Seaborn" width="40" height="40">
+    </div>
   </div>
 
-  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Databases & Tools</p>
-  <div style="margin-bottom: 30px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="55" height="55" style="margin: 0 15px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/excel/excel-original.svg" alt="Excel" title="Excel" width="55" height="55" style="margin: 0 15px;">
-  </div>
-
-  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Cloud</p>
-  <div style="margin-bottom: 30px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" title="AWS" width="70" height="70" style="margin: 0 15px; vertical-align: middle;">
-  </div>
-
-  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Core Skills & Concepts</p>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 800px; margin-bottom: 30px;">
-    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Exploratory Data Analysis</span>
-    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Data Cleaning</span>
-    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Statistical Analysis</span>
-    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Hypothesis Testing</span>
-    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Machine Learning</span>
-    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Big Data</span>
+  <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 15px; text-align: center;">
+    <p style="color: #A0A0A0; font-size: 0.85em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Cloud & Core Skills</p>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" title="AWS" width="50" height="50">
+      <span style="font-size: 0.75em; background: #333; color: white; padding: 4px 8px; border-radius: 4px;">EDA</span>
+      <span style="font-size: 0.75em; background: #333; color: white; padding: 4px 8px; border-radius: 4px;">ML</span>
+      <span style="font-size: 0.75em; background: #333; color: white; padding: 4px 8px; border-radius: 4px;">Stats</span>
+    </div>
   </div>
 
 </div>
