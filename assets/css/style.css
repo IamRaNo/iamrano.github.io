@@ -72,7 +72,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-h3 { color: var(--accent); margin-top: 40px; }
+h3 { color: var(--accent); margin-top: 10px; margin-bottom: 20px; }
 
 /* --- PROJECT & LIST STYLING --- */
 /* This makes your bullet points look professional */
