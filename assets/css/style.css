@@ -208,7 +208,10 @@ img { max-width: 100%; border-radius: 6px; }
     overflow: hidden;
     transition: all 0.3s ease;
     z-index: 1;
-    width: 320px;                   /* Added fixed width for consistency */
+    width: 320px;
+    flex: 1 1 450px; /* This allows cards to grow and fill the row */
+    max-width: 520px; /* Prevents them from getting too wide on huge monitors */
+    min-height: 250px;/* Added fixed width for consistency */
 }
 
 .neon-card::before {
