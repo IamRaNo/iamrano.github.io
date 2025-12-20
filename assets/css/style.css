@@ -297,3 +297,91 @@ div[align="center"] {
 .flip-card-back h3 { color: #00ADB5; margin-top: 0; font-size: 1.1rem; }
 .flip-card-back p { font-size: 0.9rem; }
 .flip-card-back ul { text-align: left; font-size: 0.85rem; padding-left: 15px; }
+/* --- ML SUITE: NEON GLASS CARDS --- */
+.ml-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.neon-card {
+    background: #191919; /* Slightly lighter than background */
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+/* The "Glow" Effect */
+.neon-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 12px;
+    padding: 2px; /* Width of the neon border */
+    background: linear-gradient(45deg, transparent, var(--accent), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.3; /* Dim by default */
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+/* Hover State */
+.neon-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 173, 181, 0.2); /* Teal Glow Shadow */
+    border-color: transparent; /* Hide grey border to show neon */
+}
+
+.neon-card:hover::before {
+    opacity: 1; /* Neon border becomes bright */
+}
+
+.neon-card h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.neon-card ul {
+    margin-bottom: 0;
+    padding-left: 15px;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+/* --- RECOMMENDATION POSTERS --- */
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.poster-card {
+    background: linear-gradient(180deg, #1E1E1E 0%, #111 100%);
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.poster-card:hover {
+    border-color: #FF4B4B; /* Red Glow for these */
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 75, 75, 0.15);
+}
+
+.poster-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: inline-block;
+}
