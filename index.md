@@ -12,18 +12,19 @@ title: Ranojoy Das | Data Analyst
     <h3 style="text-align: left; margin-top: 0; color: #ccc;">
       I Am Into <span style="color: #FF4B4B;">Data Analytics</span>
     </h3> 
-    <p style="text-align: left; color: #888; max-width: 500px; margin-bottom: 30px;">
+   <p style="text-align: left; color: #888; max-width: 500px; margin-bottom: 30px;">
       Eager to learn, grow, and become a valuable asset to any team.
     </p>
-    <a href="#featured-projects" class="btn-highlight" style="text-decoration: none; padding: 12px 25px; border-radius: 30px;">
-      See Projects <i class="fas fa-arrow-down"></i>
-    </a>
-    <div class="hero-socials" style="margin-top: 30px;">
-      <a href="https://linkedin.com/in/ranojoy"><img src="https://img.icons8.com/ios-filled/50/00ADB5/linkedin.png" width="35"></a>
-      <a href="https://github.com/IamRaNo"><img src="https://img.icons8.com/ios-filled/50/00ADB5/github.png" width="35"></a>
-      <a href="mailto:dasranojoy9@gmail.com"><img src="https://img.icons8.com/ios-filled/50/00ADB5/mail.png" width="35"></a>
+    <div style="display: flex; flex-direction: column; align-items: center; width: fit-content;">
+      <a href="#featured-projects" class="btn-highlight" style="text-decoration: none; padding: 12px 25px; border-radius: 30px;">
+        See Projects <i class="fas fa-arrow-down"></i>
+      </a>
+      <div class="hero-socials" style="margin-top: 20px;">
+        <a href="https://linkedin.com/in/ranojoy"><img src="https://img.icons8.com/ios-filled/50/00ADB5/linkedin.png" width="35"></a>
+        <a href="https://github.com/IamRaNo"><img src="https://img.icons8.com/ios-filled/50/00ADB5/github.png" width="35"></a>
+        <a href="mailto:dasranojoy9@gmail.com"><img src="https://img.icons8.com/ios-filled/50/00ADB5/mail.png" width="35"></a>
+      </div>
     </div>
-  </div>
 
   <div class="hero-image">
     <img src="assets/new_image.png" alt="Profile" class="profile-pic">
