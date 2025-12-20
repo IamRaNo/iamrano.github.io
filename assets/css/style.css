@@ -111,3 +111,26 @@ div[align="center"] {
     border-top: 1px solid var(--border);
 }
 .site-footer { text-align: center; color: #555; font-size: 0.8rem; padding: 20px; }
+
+/* --- CARD STYLING --- */
+.project-card {
+    background-color: #1E1E1E;   /* Dark Grey Card Background */
+    border-radius: 16px;         /* Nice Rounded Corners */
+    padding: 25px;               /* Space inside the box */
+    margin-bottom: 25px;         /* Space between boxes */
+    border: 1px solid #333;      /* Subtle border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* The cool hover effect */
+.project-card:hover {
+    transform: translateY(-5px); /* Lifts up slightly */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Drop shadow */
+    border-color: var(--accent); /* Teal border glows */
+}
+
+/* Fix header margins inside cards so they fit nicely */
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
