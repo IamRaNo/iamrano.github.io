@@ -228,22 +228,24 @@ div[align="center"] {
         height: 250px;
     }
 }
-/* --- FEATURED PROJECTS GRID (3-Column Flip Tiles) --- */
+
+/* --- FEATURED PROJECTS GRID (Repaired) --- */
 .featured-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 Columns that stack on mobile */
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
     gap: 25px;
     margin-top: 30px;
+    width: 100%;
 }
 
 /* The Container for the card */
 .flip-card {
     background-color: transparent;
-    height: 400px; /* Fixed height for tiles */
-    perspective: 1000px; /* Gives the 3D effect */
+    height: 400px; /* Essential for 3D effect */
+    perspective: 1000px;
 }
 
-/* The Inner Container (holds Front and Back) */
+/* The Inner Container */
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -251,65 +253,47 @@ div[align="center"] {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    cursor: pointer;
 }
 
-/* The Flip Action (Hover to Flip) */
+/* Hover Action */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
 /* Common Styles for Front and Back */
 .flip-card-front, .flip-card-back {
-    position: absolute;
+    position: absolute; /* This makes them sit on top of each other */
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Hides the back when flipped */
     backface-visibility: hidden;
     border-radius: 16px;
     border: 1px solid #333;
     padding: 20px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-/* FRONT: Dark Grey with Title */
+/* Front Side */
 .flip-card-front {
     background-color: #1E1E1E;
     color: #fff;
+    z-index: 2;
 }
 
-/* BACK: Teal Gradient with Text */
+/* Back Side */
 .flip-card-back {
-    background-color: #151515; /* Darker back for readability */
+    background-color: #151515;
     color: #E0E0E0;
-    transform: rotateY(180deg);
-    overflow-y: auto; /* Adds scrollbar if text is too long */
-    text-align: left;
-    align-items: flex-start; /* Align text to top-left */
-    border: 1px solid var(--accent); /* Teal border on back */
+    transform: rotateY(180deg); /* Starts flipped */
+    z-index: 1;
+    border: 1px solid #00ADB5;
 }
 
-/* Text Tweaks for the Back Card */
-.flip-card-back h3 {
-    margin-top: 0;
-    font-size: 1.1rem;
-    color: var(--accent);
-}
-.flip-card-back p, .flip-card-back ul {
-    font-size: 0.85rem; /* Smaller text to fit */
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-.flip-card-back ul {
-    padding-left: 15px;
-}
-.flip-card-back a {
-    margin-top: auto; /* Push button to bottom */
-    align-self: center;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
+/* Text Tweaks */
+.flip-card-back h3 { color: #00ADB5; margin-top: 0; font-size: 1.1rem; }
+.flip-card-back p { font-size: 0.9rem; }
+.flip-card-back ul { text-align: left; font-size: 0.85rem; padding-left: 15px; }
