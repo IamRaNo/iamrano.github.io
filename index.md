@@ -1,14 +1,15 @@
 ---
 layout: default
-title: ranos_portfolio
+title: Ranojoy Das | Data Analyst
 ---
 
 # Hello, I'm Ranojoy Das.
+
 ### CS Grad - Data Analyst - ML Enthusiast
 
 Eager to learn, grow, and become a valuable asset to any team.
 
-## 📂 Featured Projects
+---
 
 ## 📂 Featured Projects
 
@@ -16,37 +17,39 @@ Eager to learn, grow, and become a valuable asset to any team.
   <h3>📦 Inside Olist: Review Score Impact Analysis</h3>
   <p><em>Uncovering the hidden drivers of customer satisfaction in e-commerce.</em></p>
   <ul>
-    <li><strong>The Problem:</strong> Olist, a Brazilian e-commerce giant, faced fluctuating customer review scores.</li>
-    <li><strong>The Solution:</strong> Conducted a deep exploratory data analysis (EDA) and statistical review.</li>
-    <li><strong>Key Insight:</strong> <strong>Speed > Punctuality.</strong> Faster delivery correlates strongly with higher ratings.</li>
+    <li><strong>The Problem:</strong> Olist, a Brazilian e-commerce giant, faced fluctuating customer review scores. The goal was to identify exactly <em>what</em> drives a poor rating using their massive dataset.</li>
+    <li><strong>The Solution:</strong> Conducted a deep exploratory data analysis (EDA) and statistical review of order statuses, freight performance, and review comments.</li>
+    <li><strong>Key Insight:</strong> <strong>Speed > Punctuality.</strong> Data revealed that faster absolute delivery times correlate strongly with higher ratings, even if the order was technically "late" per the estimate. Customers value speed more than deadline accuracy.</li>
     <li><strong>Tech Stack:</strong> Python, Pandas, Feature Engineering, Statistics, Seaborn.</li>
   </ul>
-  <a href="INSERT_LINK_HERE">View Project on GitHub</a>
+  <a href="#">View Project on GitHub</a>
 </div>
 
 <div class="project-card">
   <h3>🎓 Student Retention Intelligence (OULAD)</h3>
   <p><em>Predicting student dropout risk before it happens using interaction logs.</em></p>
   <ul>
-    <li><strong>The Problem:</strong> Online courses often suffer from high dropout rates.</li>
-    <li><strong>The Solution:</strong> Built a Machine Learning classifier using the Open University Learning Analytics Dataset.</li>
-    <li><strong>Key Insight:</strong> <strong>Engagement > Demographics.</strong> Early interaction is the strongest predictor.</li>
-    <li><strong>Tech Stack:</strong> Python, Scikit-Learn, Random Forest, Pandas.</li>
+    <li><strong>The Problem:</strong> Online courses often suffer from high dropout rates. The challenge was to detect <em>at-risk</em> students early enough to intervene, rather than analyzing failure after the fact.</li>
+    <li><strong>The Solution:</strong> Built a Machine Learning classifier using the Open University Learning Analytics Dataset. I analyzed clickstream data (VLE interactions) combined with demographic info to model student behavior.</li>
+    <li><strong>Key Insight:</strong> <strong>Engagement > Demographics.</strong> The model revealed that a student's interaction with course material in the first 2 weeks is a stronger predictor of retention than their previous education or background.</li>
+    <li><strong>Tech Stack:</strong> Python, Scikit-Learn, Random Forest, Pandas, Matplotlib.</li>
   </ul>
-  <a href="INSERT_LINK_HERE">View Project on GitHub</a>
+  <a href="#">View Project on GitHub</a>
 </div>
 
 <div class="project-card">
   <h3>🏥 Synthea Patient Health Analysis</h3>
   <p><em>Simulating and predicting heart disease risks using synthetic medical records.</em></p>
   <ul>
-    <li><strong>The Problem:</strong> Real-world medical data is scarce. Used synthetic data to model risks.</li>
-    <li><strong>The Solution:</strong> Trained a classification model to predict cardiac events based on lifestyle.</li>
-    <li><strong>Key Insight:</strong> <strong>Lifestyle Multipliers.</strong> Combined factors exponentially increase risk.</li>
-    <li><strong>Tech Stack:</strong> Python, Scikit-Learn, Healthcare Analytics.</li>
+    <li><strong>The Problem:</strong> Real-world medical data is scarce due to privacy laws. The goal was to build a robust disease prediction model using high-fidelity synthetic patient history (Synthea) to identify key risk factors for heart disease.</li>
+    <li><strong>The Solution:</strong> Performed extensive data cleaning on patient encounter logs and vital signs. Trained a classification model to predict the likelihood of cardiac events based on lifestyle metrics.</li>
+    <li><strong>Key Insight:</strong> <strong>Lifestyle Multipliers.</strong> The analysis quantified how specific combinations (e.g., High BMI + Smoker) exponentially increased risk scores compared to individual factors alone, enabling more targeted risk stratification.</li>
+    <li><strong>Tech Stack:</strong> Python, Scikit-Learn, Imbalanced-learn, Seaborn, Healthcare Analytics.</li>
   </ul>
-  <a href="INSERT_LINK_HERE">View Project on GitHub</a>
+  <a href="#">View Project on GitHub</a>
 </div>
+
+<br>
 
 ## 🤖 Machine Learning Suite
 *Predictive models solving real-world classification and regression problems.*
@@ -73,7 +76,7 @@ Eager to learn, grow, and become a valuable asset to any team.
   <h3>❤️ Heart Disease Risk System</h3>
   <ul>
     <li><strong>The Goal:</strong> An early detection system classifying patients as high or low risk using medical vitals.</li>
-    <li><strong>Technique:</strong> Classification Algorithms (Logistic Regression/Random Forest).
+    <li><strong>Technique:</strong> Classification Algorithms (Logistic Regression/Random Forest).</li>
     <li><strong>Outcome:</strong> Reduced false negatives to prioritize high-risk patients.</li>
   </ul>
 </div>
@@ -86,6 +89,8 @@ Eager to learn, grow, and become a valuable asset to any team.
     <li><strong>Outcome:</strong> Automated feedback sorting for large datasets.</li>
   </ul>
 </div>
+
+<br>
 
 ## 🎯 Recommendation Systems
 *Personalized engines built to match users with the right content.*
@@ -117,13 +122,14 @@ Eager to learn, grow, and become a valuable asset to any team.
   </ul>
 </div>
 
+<br>
 
 ## 🚀 Live Applications
 *Full-stack data applications currently running live on the web.*
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px;">
 
-<a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" style="text-decoration: none;">
+  <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/LIVE_APP-Wander_Mate-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Wander Mate">
   </a>
 
@@ -144,9 +150,6 @@ Eager to learn, grow, and become a valuable asset to any team.
   </a>
 
 </div>
-
-<br>
----
 
 ---
 
@@ -261,8 +264,6 @@ Eager to learn, grow, and become a valuable asset to any team.
 </details>
 
 ---
-<br>
-<hr>
 
 <div align="center">
 
@@ -282,6 +283,8 @@ Eager to learn, grow, and become a valuable asset to any team.
     <img src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" alt="Blog">
   </a>
 
+  <br><br>
+
   <a href="https://leetcode.com/u/iamrano/">
     <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode">
   </a>
@@ -292,6 +295,8 @@ Eager to learn, grow, and become a valuable asset to any team.
     <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle">
   </a>
 
+  <br><br>
+
   <a href="https://www.facebook.com/rano.joy.333/">
     <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
   </a>
@@ -299,6 +304,6 @@ Eager to learn, grow, and become a valuable asset to any team.
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
   </a>
 
-  <p style="font-size: 0.8em; color: #666;">© 2025 Ranojoy Das. Built with GitHub Pages.</p>
+  <p style="font-size: 0.8em; color: #666; margin-top: 20px;">© 2025 Ranojoy Das. Built with GitHub Pages.</p>
 
 </div>
