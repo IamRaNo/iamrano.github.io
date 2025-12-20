@@ -124,61 +124,75 @@ CS Grad - Data Analyst - ML Enthusiast
 ## 🚀 Live Applications
 *Full-stack data applications currently running live on the web.*
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px;">
+<div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 40px;">
 
   <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/LIVE_APP-Wander_Mate-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Wander Mate">
+    <img src="https://img.shields.io/badge/Wander_Mate-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Wander Mate">
   </a>
 
   <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/LIVE_APP-Next_Gen_Cricketer-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Next Gen Cricketer">
+    <img src="https://img.shields.io/badge/Next_Gen_Cricketer-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Next Gen Cricketer">
   </a>
 
   <a href="https://senti-analysis-ranoj.streamlit.app/" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/LIVE_APP-Sentiment_Analysis-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Sentiment Analysis">
+    <img src="https://img.shields.io/badge/Sentiment_Analysis-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Sentiment Analysis">
   </a>
 
   <a href="https://huggingface.co/spaces/thetshooter/movieRecommendation" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/LIVE_APP-Movie_Recommender-EA4335?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Movie Recommendation">
+    <img src="https://img.shields.io/badge/Movie_Recommender-EA4335?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Movie Recommendation">
   </a>
 
   <a href="https://lap-price-pred-ranoj.streamlit.app/" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/LIVE_APP-Laptop_Price_Predictor-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Laptop Price Prediction">
+    <img src="https://img.shields.io/badge/Price_Predictor-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Laptop Price Prediction">
   </a>
 
 </div>
 
----
-
 ## 🛠 Technical Skills
 
-**Languages & Concepts**
-<br>
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Statistics](https://img.shields.io/badge/Statistics-Math-blueviolet?style=for-the-badge)
+<div align="center">
 
-**Data Analysis & ML**
-<br>
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Languages</p>
+  <div style="margin-bottom: 30px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="55" height="55" style="margin: 0 15px;">
+    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-sql-computer-programming-flaticons-flat-flat-icons.png" alt="SQL" title="SQL" width="55" height="55" style="margin: 0 15px;">
+  </div>
 
-**Visualization**
-<br>
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-4c4c4c?style=for-the-badge&logo=python&logoColor=white)
+  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Data Analysis Libraries</p>
+  <div style="margin-bottom: 30px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" title="Pandas" width="55" height="55" style="margin: 0 15px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" title="NumPy" width="55" height="55" style="margin: 0 15px;">
+  </div>
 
-**Tools**
-<br>
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Visualizations</p>
+  <div style="margin-bottom: 30px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" title="Matplotlib" width="55" height="55" style="margin: 0 15px;">
+    <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn" title="Seaborn" width="55" height="55" style="margin: 0 15px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" title="Power BI" width="55" height="55" style="margin: 0 15px;">
+  </div>
 
----
+  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Databases & Tools</p>
+  <div style="margin-bottom: 30px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="55" height="55" style="margin: 0 15px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/excel/excel-original.svg" alt="Excel" title="Excel" width="55" height="55" style="margin: 0 15px;">
+  </div>
 
+  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Cloud</p>
+  <div style="margin-bottom: 30px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" title="AWS" width="70" height="70" style="margin: 0 15px; vertical-align: middle;">
+  </div>
+
+  <p style="margin-bottom: 10px; color: #A0A0A0; font-size: 0.9em;">Core Skills & Concepts</p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 800px; margin-bottom: 30px;">
+    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Exploratory Data Analysis</span>
+    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Data Cleaning</span>
+    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Statistical Analysis</span>
+    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Hypothesis Testing</span>
+    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Machine Learning</span>
+    <span style="background-color: #333; padding: 8px 16px; border-radius: 20px; color: #fff; border: 1px solid #444; font-size: 0.9em;">Big Data</span>
+  </div>
+
+</div>
 ## 📜 Certifications & Experience
 
 ### 💼 Industry Experience & Job Simulations
