@@ -82,15 +82,14 @@ li { margin-bottom: 8px; }
 strong { color: #fff; font-weight: 600; }
 img { max-width: 100%; border-radius: 6px; }
 
-/* --- 5. HERO SECTION (Side-by-Side Fixed) --- */
-/* --- 5. HERO SECTION (Restored 80% Height) --- */
+/* --- 5. HERO SECTION (Full Screen Height) --- */
 .hero-container {
     display: flex !important;
     flex-direction: row !important;
-    align-items: center;            /* Vertically centers the content */
+    align-items: center;            
     justify-content: space-between;
-    padding: 0;                     /* Remove padding to let it center perfectly */
-    min-height: 80vh !important;    /* <--- THIS makes it take up 80% of the screen */
+    padding: 0;                     
+    min-height: 95vh !important;    /* <--- CHANGED TO 95vh (Almost full screen) */
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
