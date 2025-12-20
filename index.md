@@ -35,42 +35,68 @@ title: Ranojoy Das | Data Analyst
 <div id="featured-projects" style="padding-top: 20px;"></div>
 <div style="text-align: center;">
   <h2>📂 Featured Projects</h2>
+  <p style="color: #888; margin-top: -20px; font-size: 0.9em;">(Hover over the tiles to see details)</p>
 </div>
 
-<div class="project-card">
-  <h3>📦 Inside Olist: Review Score Impact Analysis</h3>
-  <p><em>Uncovering the hidden drivers of customer satisfaction in e-commerce.</em></p>
-  <ul>
-    <li><strong>The Problem:</strong> Olist, a Brazilian e-commerce giant, faced fluctuating customer review scores. The goal was to identify exactly <em>what</em> drives a poor rating using their massive dataset.</li>
-    <li><strong>The Solution:</strong> Conducted a deep exploratory data analysis (EDA) and statistical review of order statuses, freight performance, and review comments.</li>
-    <li><strong>Key Insight:</strong> <strong>Speed > Punctuality.</strong> Data revealed that faster absolute delivery times correlate strongly with higher ratings, even if the order was technically "late" per the estimate. Customers value speed more than deadline accuracy.</li>
-    <li><strong>Tech Stack:</strong> Python, Pandas, Feature Engineering, Statistics, Seaborn.</li>
-  </ul>
-  <a href="#">View Project on GitHub</a>
-</div>
+<div class="featured-grid">
 
-<div class="project-card">
-  <h3>🎓 Student Retention Intelligence (OULAD)</h3>
-  <p><em>Predicting student dropout risk before it happens using interaction logs.</em></p>
-  <ul>
-    <li><strong>The Problem:</strong> Online courses often suffer from high dropout rates. The challenge was to detect <em>at-risk</em> students early enough to intervene, rather than analyzing failure after the fact.</li>
-    <li><strong>The Solution:</strong> Built a Machine Learning classifier using the Open University Learning Analytics Dataset. I analyzed clickstream data (VLE interactions) combined with demographic info to model student behavior.</li>
-    <li><strong>Key Insight:</strong> <strong>Engagement > Demographics.</strong> The model revealed that a student's interaction with course material in the first 2 weeks is a stronger predictor of retention than their previous education or background.</li>
-    <li><strong>Tech Stack:</strong> Python, Scikit-Learn, Random Forest, Pandas, Matplotlib.</li>
-  </ul>
-  <a href="#">View Project on GitHub</a>
-</div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">📦 Inside Olist</h3>
+        <p style="color: #A0A0A0;">Review Score Impact Analysis</p>
+        <span style="color: #00ADB5; margin-top: 20px; font-size: 2rem;">↻</span>
+      </div>
+      <div class="flip-card-back">
+        <h3>📦 Inside Olist</h3>
+        <p><em>Uncovering drivers of customer satisfaction.</em></p>
+        <ul>
+          <li><strong>Insight:</strong> Speed > Punctuality. Fast delivery beats deadline accuracy.</li>
+          <li><strong>Tech:</strong> Python, Pandas, Seaborn, Statistics.</li>
+        </ul>
+        <a href="#" class="btn-highlight" style="padding: 5px 15px;">View GitHub</a>
+      </div>
+    </div>
+  </div>
 
-<div class="project-card">
-  <h3>🏥 Synthea Patient Health Analysis</h3>
-  <p><em>Simulating and predicting heart disease risks using synthetic medical records.</em></p>
-  <ul>
-    <li><strong>The Problem:</strong> Real-world medical data is scarce due to privacy laws. The goal was to build a robust disease prediction model using high-fidelity synthetic patient history (Synthea) to identify key risk factors for heart disease.</li>
-    <li><strong>The Solution:</strong> Performed extensive data cleaning on patient encounter logs and vital signs. Trained a classification model to predict the likelihood of cardiac events based on lifestyle metrics.</li>
-    <li><strong>Key Insight:</strong> <strong>Lifestyle Multipliers.</strong> The analysis quantified how specific combinations (e.g., High BMI + Smoker) exponentially increased risk scores compared to individual factors alone, enabling more targeted risk stratification.</li>
-    <li><strong>Tech Stack:</strong> Python, Scikit-Learn, Imbalanced-learn, Seaborn, Healthcare Analytics.</li>
-  </ul>
-  <a href="#">View Project on GitHub</a>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🎓 Student Retention</h3>
+        <p style="color: #A0A0A0;">Predicting Dropout Risks</p>
+        <span style="color: #00ADB5; margin-top: 20px; font-size: 2rem;">↻</span>
+      </div>
+      <div class="flip-card-back">
+        <h3>🎓 OULAD Intelligence</h3>
+        <p><em>Predicting dropouts using interaction logs.</em></p>
+        <ul>
+          <li><strong>Insight:</strong> Engagement in first 2 weeks is the strongest predictor.</li>
+          <li><strong>Tech:</strong> Random Forest, Scikit-Learn, Python.</li>
+        </ul>
+        <a href="#" class="btn-highlight" style="padding: 5px 15px;">View GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🏥 Synthea Health</h3>
+        <p style="color: #A0A0A0;">Heart Disease Prediction</p>
+        <span style="color: #00ADB5; margin-top: 20px; font-size: 2rem;">↻</span>
+      </div>
+      <div class="flip-card-back">
+        <h3>🏥 Patient Analysis</h3>
+        <p><em>Modeling risk with synthetic medical records.</em></p>
+        <ul>
+          <li><strong>Insight:</strong> Lifestyle combinations (BMI + Smoking) multiply risk exponentially.</li>
+          <li><strong>Tech:</strong> Healthcare Analytics, Scikit-Learn.</li>
+        </ul>
+        <a href="#" class="btn-highlight" style="padding: 5px 15px;">View GitHub</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <br>
