@@ -7,7 +7,7 @@ title: Ranojoy Das | Data Analyst
 
   <div class="hero-text">
     <h1 style="text-align: left; font-size: 3.5rem; margin-bottom: 10px;">
-      Hi There, <br> I'm <span style="color: #00ADB5;">Ranojoy Das</span>
+      Hi There, <br> I'm <span style="color: #00ADB5;">Ranojoy</span>
     </h1>
     <h3 style="text-align: left; margin-top: 0; color: #ccc;">
       I Am Into <span style="color: #FF4B4B;">Data Analytics</span>
@@ -16,13 +16,12 @@ title: Ranojoy Das | Data Analyst
       Eager to learn, grow, and become a valuable asset to any team.
     </p>
     <a href="#featured-projects" class="btn-highlight" style="text-decoration: none; padding: 12px 25px; border-radius: 30px;">
-      About Me <i class="fas fa-arrow-down"></i>
+      See Projects <i class="fas fa-arrow-down"></i>
     </a>
     <div class="hero-socials" style="margin-top: 30px;">
       <a href="https://linkedin.com/in/ranojoy"><img src="https://img.icons8.com/ios-filled/50/00ADB5/linkedin.png" width="35"></a>
       <a href="https://github.com/IamRaNo"><img src="https://img.icons8.com/ios-filled/50/00ADB5/github.png" width="35"></a>
       <a href="mailto:dasranojoy9@gmail.com"><img src="https://img.icons8.com/ios-filled/50/00ADB5/mail.png" width="35"></a>
-      <a href="https://x.com/i_am_rano_3"><img src="https://img.icons8.com/ios-filled/50/00ADB5/twitter.png" width="35"></a>
     </div>
   </div>
 
@@ -33,7 +32,10 @@ title: Ranojoy Das | Data Analyst
 </div>
 <hr style="border: 0; border-top: 1px solid #333; margin: 60px 0;">
 
-## 📂 Featured Projects
+<div id="featured-projects" style="padding-top: 20px;"></div>
+<div style="text-align: center;">
+  <h2>📂 Featured Projects</h2>
+</div>
 
 <div class="project-card">
   <h3>📦 Inside Olist: Review Score Impact Analysis</h3>
@@ -170,7 +172,7 @@ title: Ranojoy Das | Data Analyst
 </div>
 
 
-<div style="text-align: center; margin-bottom: 20px;">
+<div id="technical-skills" style="text-align: center; margin-bottom: 20px; padding-top: 80px; margin-top: -60px;">
   <h2>🛠 Technical Skills</h2>
 </div>
 
@@ -215,7 +217,7 @@ title: Ranojoy Das | Data Analyst
 
 </div>
 
-<div style="text-align: center; margin-bottom: 20px;">
+<div id="certifications" style="text-align: center; margin-bottom: 20px; padding-top: 80px; margin-top: -60px;">
   <h2>📜 Certifications & Experience</h2>
 </div>
 
@@ -279,8 +281,8 @@ title: Ranojoy Das | Data Analyst
 
 <div align="center">
 
+<div id="contact" align="center">
   <h3>📬 Let's Connect</h3>
-  <p>Ready to work on data challenges. Feel free to reach out!</p>
 
   <a href="mailto:dasranojoy9@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
