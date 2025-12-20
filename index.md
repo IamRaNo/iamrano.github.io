@@ -4,11 +4,9 @@ title: ranos_portfolio
 ---
 
 # Hello, I'm Ranojoy Das.
-
 ### CS Grad - Data Analyst - ML Enthusiast
 
 Eager to learn, grow, and become a valuable asset to any team.
----
 
 ## 📂 Featured Projects
 
