@@ -177,74 +177,26 @@ title: Ranojoy Das | Data Analyst
 
 <div style="text-align: center; margin-bottom: 30px;">
   <h2>🚀 Live Applications</h2>
-  <p style="color: #888; margin-top: -20px;">Deployed & running in real-time.</p>
 </div>
 
-<div class="browser-grid">
-
-  <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" class="browser-card">
-    <div class="browser-header">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot dot-green"></span>
-    </div>
-    <div class="browser-body">
-      <img src="https://img.icons8.com/color/48/airplane-take-off.png" alt="Travel" width="40">
-      <strong style="color: #fff; font-size: 0.9em;">Wander Mate</strong>
-      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
-    </div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  
+  <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'" onmouseout="this.style.borderColor='#333'">
+    <img src="https://img.icons8.com/color/48/airplane-take-off.png" width="40"><br>
+    <strong style="color: #fff; display: block; margin-top: 10px;">Wander Mate</strong>
+    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
   </a>
 
-  <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" class="browser-card">
-    <div class="browser-header">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot dot-green"></span>
-    </div>
-    <div class="browser-body">
-      <img src="https://img.icons8.com/color/48/cricket.png" alt="Cricket" width="40">
-      <strong style="color: #fff; font-size: 0.9em;">Next Gen Cricket</strong>
-      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
-    </div>
+  <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'" onmouseout="this.style.borderColor='#333'">
+    <img src="https://img.icons8.com/color/48/cricket.png" width="40"><br>
+    <strong style="color: #fff; display: block; margin-top: 10px;">Next Gen Cricket</strong>
+    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
   </a>
 
-  <a href="https://senti-analysis-ranoj.streamlit.app/" class="browser-card">
-    <div class="browser-header">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot dot-green"></span>
-    </div>
-    <div class="browser-body">
-      <img src="https://img.icons8.com/color/48/happy--v1.png" alt="Sentiment" width="40">
-      <strong style="color: #fff; font-size: 0.9em;">Sentiment AI</strong>
-      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
-    </div>
-  </a>
-
-  <a href="https://huggingface.co/spaces/thetshooter/movieRecommendation" class="browser-card">
-    <div class="browser-header">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot dot-green"></span>
-    </div>
-    <div class="browser-body">
-      <img src="https://img.icons8.com/color/48/movie-projector.png" alt="Movie" width="40">
-      <strong style="color: #fff; font-size: 0.9em;">Movie Recs</strong>
-      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
-    </div>
-  </a>
-
-  <a href="https://lap-price-pred-ranoj.streamlit.app/" class="browser-card">
-    <div class="browser-header">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot dot-green"></span>
-    </div>
-    <div class="browser-body">
-      <img src="https://img.icons8.com/color/48/laptop.png" alt="Laptop" width="40">
-      <strong style="color: #fff; font-size: 0.9em;">Price Predictor</strong>
-      <div class="status-live"><span class="pulsing-dot"></span> Live</div>
-    </div>
+  <a href="https://senti-analysis-ranoj.streamlit.app/" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'" onmouseout="this.style.borderColor='#333'">
+    <img src="https://img.icons8.com/color/48/happy--v1.png" width="40"><br>
+    <strong style="color: #fff; display: block; margin-top: 10px;">Sentiment AI</strong>
+    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
   </a>
 
 </div>
