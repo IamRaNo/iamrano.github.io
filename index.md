@@ -40,7 +40,6 @@ Eager to learn, grow, and become a valuable asset to any team.
 - [View Project on GitHub](https://github.com/IamRaNo/data-analytics-projects/tree/main/about_synthea_patient_readmission)
 
 ---
----
 
 ## 🤖 Machine Learning Suite
 *Predictive models solving real-world classification and regression problems.*
@@ -66,7 +65,6 @@ Eager to learn, grow, and become a valuable asset to any team.
 * **Outcome:** Automated feedback  for english text.
 
 ---
----
 
 ## 🎯 Recommendation Systems
 *Personalized engines built to match users with the right content.*
@@ -85,8 +83,6 @@ Eager to learn, grow, and become a valuable asset to any team.
 * **The Goal:** The classic "What to watch next?" engine.
 * **Technique:** Collaborative filtering (Cosine Similarity).
 * **Outcome:** Accurate movie suggestions similar to user favorites.
-
----
 
 ---
 
@@ -120,16 +116,157 @@ Eager to learn, grow, and become a valuable asset to any team.
 <br>
 ---
 
+---
+
 ## 🛠 Technical Skills
 
-| Area | Tools |
-| :--- | :--- |
-| **Languages** | Python, SQL |
-| **Analysis** | Pandas, NumPy, Matplotlib, Seaborn |
-| **Tools** | VS Code, Excel, Jupyter Notebooks |
+**Languages & Concepts**
+<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Statistics](https://img.shields.io/badge/Statistics-Math-blueviolet?style=for-the-badge)
+
+**Data Analysis & ML**
+<br>
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+**Visualization**
+<br>
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4c4c4c?style=for-the-badge&logo=python&logoColor=white)
+
+**Tools**
+<br>
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
-## 📬 Contact Me
-Ready to work on data challenges.
-[Email Me](mailto:your-email@example.com) | [LinkedIn](https://linkedin.com/in/yourprofile)
+## 📜 Certifications & Experience
+
+### 💼 Industry Experience & Job Simulations
+*Practical work experience and corporate simulations.*
+
+**🏆 Data Science Job Simulation**
+*Issued by: BCG X*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1hGFDw9U9BHqcV1z-EQsWf9dhmo8vLSAb/view?usp=sharing)
+
+**🏆 Data Analytics Job Simulation**
+*Issued by: Deloitte*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1y2JJW_CqWR0AQRvwhpDZ2eRgHomEFrfO/view?usp=sharing)
+
+**🏆 Virtual Data Analysis Internship**
+*Issued by: Elevvo Tech*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1JE0xgjJzQPkXuqjK6ze9dDZbWvR7LmMX/view?usp=sharing)
+
+**🏆 Career Forward Program**
+*Issued by: McKinsey & Company*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1qKkLvYBkfzKg5vMXXSrwFxKKLpwga5Ts/view?usp=sharing)
+
+---
+
+### ☁️ Cloud & Specialized Data Skills
+*Advanced certifications in Cloud, BI, and Machine Learning.*
+
+**🏆 AWS Fundamentals**
+*Issued by: Amazon AWS*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1lxE7CrcZ3UzadX6PxSNrfnL0Gkfq639x/view?usp=drive_link)
+
+**🏆 Power BI Basics**
+*Issued by: Microsoft*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1xd2rfsQvbLbU3QPEOR4RjvlDIrPHRp-R/view?usp=drive_link)
+
+**🏆 Machine Learning**
+*Issued by: Besant Technologies*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1MRmwalrS-rHfq1C5yVtqO3kUREiIcmU1/view?usp=sharing)
+
+**🏆 Data Science**
+*Issued by: Cisco*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1EuT95dfMqztDTRtWgs9iLVcx2ptkVWec/view?usp=sharing)
+
+---
+
+### 💻 Core Technical Skills
+*Verified skills in Programming, DSA, and Data Fundamentals.*
+
+**🏆 Python Basics**
+*Issued by: HackerRank*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1bnl5GB-4p7FyC5pvHUFEc6NM9Y_kwhel/view?usp=drive_link)
+
+**🏆 Data Structure and Algorithm**
+*Issued by: Simplilearn*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1oQioWbyEmlPhSQyew6WBp2ubAm-dr3RL/view?usp=drive_link)
+
+**🏆 Data Fundamentals**
+*Issued by: IBM*
+<br>
+[![View Certificate](https://img.shields.io/badge/View_Certificate-4285F4?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1ZL00QbqKd1TUw-oLA1B2WMIB34Rdokt4/view?usp=drive_link)
+
+<details>
+<summary style="cursor: pointer; color: #159957;"><b>View Additional Certificates (Click to Expand)</b></summary>
+<br>
+
+**🏆 Data Analysis** - *Microsoft* | [View](https://drive.google.com/file/d/1h2yCpM3IIhcDTyC5GYXlYhcNu0ACWfxX/view?usp=drive_link)<br>
+**🏆 Data Science** - *Cognitive Class (IBM)* | [View](https://drive.google.com/file/d/1oQEL-MlQkklGKNvQYAOdpkd8eKm53rhR/view?usp=drive_link)<br>
+**🏆 Python Developer Associate** - *Certify Core* | [View](https://drive.google.com/file/d/16OgZezkUBGgPZgOzJco350bMo3nA5_m2/view?usp=drive_link)<br>
+**🏆 Python For Data Science** - *Cognitive Class* | [View](https://drive.google.com/file/d/1ArVELbLyF2drydtvv2oxLZzjSAitvvMg/view?usp=drive_link)
+
+</details>
+
+---
+<br>
+<hr>
+
+<div align="center">
+
+  <h3>📬 Let's Connect</h3>
+  <p>Ready to work on data challenges. Feel free to reach out!</p>
+
+  <a href="mailto:dasranojoy9@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://linkedin.com/in/ranojoy">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://x.com/i_am_rano_3">
+    <img src="https://img.shields.io/badge/X_(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter">
+  </a>
+  <a href="https://thetshooter.blogspot.com/">
+    <img src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" alt="Blog">
+  </a>
+
+  <a href="https://leetcode.com/u/iamrano/">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode">
+  </a>
+  <a href="https://www.hackerrank.com/profile/dasranojoy9">
+    <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank">
+  </a>
+  <a href="https://www.kaggle.com/myselfranoranojoy">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle">
+  </a>
+
+  <a href="https://www.facebook.com/rano.joy.333/">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
+  </a>
+  <a href="https://www.instagram.com/forgotten_humanbeing/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+
+  <p style="font-size: 0.8em; color: #666;">© 2025 Ranojoy Das. Built with GitHub Pages.</p>
+
+</div>
