@@ -4,10 +4,11 @@ title: Rano's Portfolio
 ---
 
 # Hello, I'm Ranojoy Das
-- an aspiring Data Analyst.
-
-I turn raw data into actionable insights using **Python** and **SQL**. Currently preparing for the Map Analyst Qualification.
-
+<div style="background-color: #f6f8fa; border-left: 5px solid #159957; padding: 20px; border-radius: 0 8px 8px 0; font-family: sans-serif;">
+  <strong>CS Grad. Data Analyst. ML Enthusiast.</strong>
+  <br><br>
+  I bridge the gap between raw data and real-world solutions, eager to learn, grow, and become a valuable asset to any team.
+</div>
 ---
 
 ## 📂 Featured Projects
