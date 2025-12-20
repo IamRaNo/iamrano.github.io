@@ -48,33 +48,6 @@ Eager to learn, grow, and become a valuable asset to any team.
   <a href="INSERT_LINK_HERE">View Project on GitHub</a>
 </div>
 
----
-
-## 🤖 Machine Learning Suite
-*Predictive models solving real-world classification and regression problems.*
-
-**👥 Customer Segmentation & Recommendation**
-* **The Goal:** Group customers based on purchasing behavior to deliver personalized product recommendations.
-* **Technique:** K-Means Clustering & Collaborative Filtering.
-* **Outcome:** Enabled targeted marketing strategies and improved cross-selling opportunities.
-
-**💻 Laptop Price Predictor**
-* **The Goal:** Help users find value deals by estimating market price based on hardware specs (RAM, CPU, GPU).
-* **Technique:** Regression Analysis & Web Scraping.
-* **Outcome:** Accurate price estimation to spot overpriced or underpriced units.
-
-**❤️ Heart Disease Risk System**
-* **The Goal:** An early detection system classifying patients as high or low risk using medical vitals.
-* **Technique:** Classification Algorithms (Logistic Regression/Random Forest).
-* **Outcome:** Reduced false negatives to prioritize high-risk patients.
-
-**😃 Text Sentiment Analyzer**
-* **The Goal:** Automatically determine if a text review or comment is Positive, Negative, or Neutral.
-* **Technique:** Natural Language Processing (NLP) with NLTK & TextBlob.
-* **Outcome:** Automated feedback  for english text.
-
----
-
 ## 🤖 Machine Learning Suite
 *Predictive models solving real-world classification and regression problems.*
 
@@ -114,8 +87,6 @@ Eager to learn, grow, and become a valuable asset to any team.
   </ul>
 </div>
 
----
-
 ## 🎯 Recommendation Systems
 *Personalized engines built to match users with the right content.*
 
@@ -146,7 +117,6 @@ Eager to learn, grow, and become a valuable asset to any team.
   </ul>
 </div>
 
----
 
 ## 🚀 Live Applications
 *Full-stack data applications currently running live on the web.*
