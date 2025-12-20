@@ -406,3 +406,12 @@ div[align="center"] {
     letter-spacing: 1px;
     margin-bottom: 15px !important;
 }
+.neon-card {
+    /* ... keep your other settings ... */
+    width: 320px !important;
+}
+
+.poster-card {
+    /* ... keep your other settings ... */
+    width: 280px !important;
+}
