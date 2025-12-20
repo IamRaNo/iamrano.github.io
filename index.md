@@ -3,10 +3,15 @@ layout: default
 title: Ranojoy Das | Data Analyst
 ---
 
-# Hello, I'm Ranojoy Das.
-CS Grad - Data Analyst - ML Enthusiast
+<div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
+  <h1 style="margin-top: 0;">Hello, I'm Ranojoy Das.</h1>
+  <h3 style="margin-top: 10px; color: #00ADB5;">CS Grad - Data Analyst - ML Enthusiast</h3>
+  <p style="font-size: 1.1em; max-width: 600px; margin: 15px auto; color: #cccccc;">
+    Eager to learn, grow, and become a valuable asset to any team.
+  </p>
+</div>
 
-### Eager to learn, grow, and become a valuable asset to any team.
+<hr style="border: 0; border-top: 1px solid #333; margin-bottom: 40px;">
 
 ## 📂 Featured Projects
 
