@@ -280,7 +280,6 @@ title: Ranojoy Das | Data Analyst
 </div>
 
 <div align="center">
-
 <div id="contact" align="center">
   <h3>📬 Let's Connect</h3>
 
