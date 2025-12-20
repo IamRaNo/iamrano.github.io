@@ -1,5 +1,23 @@
-theme: jekyll-theme-architect
-title: My Data Portfolio
-description: Data Analyst & Python Developer
+theme: jekyll-theme-cayman
+title: Rano's Portfolio
+description: Aspiring Data Scientist
+
+# Settings
 show_downloads: false
 google_analytics:
+lang: en-US
+
+# Visuals for Social Media (SEO)
+plugins:
+  - jekyll-seo-tag
+
+# My Personal Data (Variables)
+email: dasranojoy9@gmail.com
+linkedin: https://linkedin.com/in/ranojoy
+facebook: https://www.facebook.com/rano.joy.333/
+instagram: https://www.instagram.com/forgotten_humanbeing/
+leetcode: https://leetcode.com/u/iamrano/
+hackerrank: https://www.hackerrank.com/profile/dasranojoy9
+kaggle: https://www.kaggle.com/myselfranoranojoy
+blogger: https://thetshooter.blogspot.com/
+twitter: https://x.com/i_am_rano_3
