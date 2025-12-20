@@ -145,45 +145,46 @@ div[align="center"] {
 }
 /* --- HERO SECTION STYLES (Fixed Side-by-Side) --- */
 .hero-container {
-    display: flex !important;           /* FORCE horizontal layout */
-    flex-direction: row !important;     /* FORCE row direction */
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0;
-    min-height: 80vh;
-    max-width: 1100px;                  /* Keeps it contained */
-    margin: 0 auto;                     /* Centers the container */
+    padding: 10px 0 30px 0 !important; /* Tight spacing */
+    min-height: auto !important;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .hero-text {
-    flex: 1;                            /* Takes up 50% space */
+    flex: 1.2;
     padding-right: 40px;
-    text-align: left !important;        /* Force text to left */
+    text-align: left !important;
+    min-width: 500px;
 }
 
 .hero-image {
-    flex: 1;                            /* Takes up 50% space */
+    flex: 0.8;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
 }
 
-/* Force specific text alignment for Hero only */
+/* Force text alignment */
 .hero-text h1, .hero-text h3, .hero-text p {
     text-align: left !important;
+    margin-top: 0 !important;
 }
 
-/* The Round Profile Picture */
+/* Profile Picture */
 .profile-pic {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid var(--card-bg);
     box-shadow: 0 0 30px rgba(0, 173, 181, 0.3);
     transition: transform 0.3s ease;
 }
-
 .profile-pic:hover {
     transform: scale(1.05);
     box-shadow: 0 0 50px rgba(0, 173, 181, 0.6);
@@ -194,42 +195,38 @@ div[align="center"] {
     display: inline-block;
     transition: transform 0.2s;
 }
-
 .hero-socials a:hover {
     transform: translateY(-5px);
 }
 
-/* --- MOBILE RESPONSIVENESS --- */
-/* On phones (under 768px), stack them vertically */
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
     .hero-container {
-        flex-direction: column-reverse !important; /* Image goes to top */
+        flex-direction: column-reverse !important;
         text-align: center !important;
         padding: 30px 0;
-        min-height: auto;
     }
-    
     .hero-text {
         padding-right: 0;
         margin-top: 30px;
         text-align: center !important;
+        min-width: auto;
     }
-    
     .hero-text h1, .hero-text h3, .hero-text p {
         text-align: center !important;
     }
-    
     .hero-image {
-        margin-bottom: 20px;
+        justify-content: center;
     }
-
     .profile-pic {
         width: 250px;
         height: 250px;
     }
-}
+} 
+/* ^^^ THIS BRACKET WAS LIKELY MISSING BEFORE ^^^ */
 
-/* --- FEATURED PROJECTS GRID (Repaired) --- */
+
+/* --- FEATURED PROJECTS GRID (Flip Cards) --- */
 .featured-grid {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
@@ -238,14 +235,12 @@ div[align="center"] {
     width: 100%;
 }
 
-/* The Container for the card */
 .flip-card {
     background-color: transparent;
-    height: 400px; /* Essential for 3D effect */
+    height: 400px;
     perspective: 1000px;
 }
 
-/* The Inner Container */
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -255,17 +250,15 @@ div[align="center"] {
     transform-style: preserve-3d;
 }
 
-/* Hover Action */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Common Styles for Front and Back */
 .flip-card-front, .flip-card-back {
-    position: absolute; /* This makes them sit on top of each other */
+    position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Hides the back when flipped */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 16px;
     border: 1px solid #333;
@@ -277,26 +270,24 @@ div[align="center"] {
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-/* Front Side */
 .flip-card-front {
     background-color: #1E1E1E;
     color: #fff;
     z-index: 2;
 }
 
-/* Back Side */
 .flip-card-back {
     background-color: #151515;
     color: #E0E0E0;
-    transform: rotateY(180deg); /* Starts flipped */
+    transform: rotateY(180deg);
     z-index: 1;
     border: 1px solid #00ADB5;
 }
-
-/* Text Tweaks */
 .flip-card-back h3 { color: #00ADB5; margin-top: 0; font-size: 1.1rem; }
 .flip-card-back p { font-size: 0.9rem; }
 .flip-card-back ul { text-align: left; font-size: 0.85rem; padding-left: 15px; }
+
+
 /* --- ML SUITE: NEON GLASS CARDS --- */
 .ml-grid {
     display: grid;
@@ -306,7 +297,7 @@ div[align="center"] {
 }
 
 .neon-card {
-    background: #191919; /* Slightly lighter than background */
+    background: #191919;
     border: 1px solid #333;
     border-radius: 12px;
     padding: 25px;
@@ -316,31 +307,29 @@ div[align="center"] {
     z-index: 1;
 }
 
-/* The "Glow" Effect */
 .neon-card::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     border-radius: 12px;
-    padding: 2px; /* Width of the neon border */
+    padding: 2px;
     background: linear-gradient(45deg, transparent, var(--accent), transparent);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    opacity: 0.3; /* Dim by default */
+    opacity: 0.3;
     transition: opacity 0.3s ease;
     z-index: -1;
 }
 
-/* Hover State */
 .neon-card:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 0 20px rgba(0, 173, 181, 0.2); /* Teal Glow Shadow */
-    border-color: transparent; /* Hide grey border to show neon */
+    box-shadow: 0 0 20px rgba(0, 173, 181, 0.2);
+    border-color: transparent;
 }
 
 .neon-card:hover::before {
-    opacity: 1; /* Neon border becomes bright */
+    opacity: 1;
 }
 
 .neon-card h3 {
@@ -350,13 +339,14 @@ div[align="center"] {
     align-items: center;
     gap: 10px;
 }
-
 .neon-card ul {
     margin-bottom: 0;
     padding-left: 15px;
     color: #bbb;
     font-size: 0.9rem;
 }
+
+
 /* --- RECOMMENDATION POSTERS --- */
 .poster-grid {
     display: grid;
@@ -375,7 +365,7 @@ div[align="center"] {
 }
 
 .poster-card:hover {
-    border-color: #FF4B4B; /* Red Glow for these */
+    border-color: #FF4B4B;
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(255, 75, 75, 0.15);
 }
