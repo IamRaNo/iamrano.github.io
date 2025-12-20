@@ -63,7 +63,7 @@ Eager to learn, grow, and become a valuable asset to any team.
 **😃 Text Sentiment Analyzer**
 * **The Goal:** Automatically determine if a text review or comment is Positive, Negative, or Neutral.
 * **Technique:** Natural Language Processing (NLP) with NLTK & TextBlob.
-* **Outcome:** Automated feedback sorting for large datasets.
+* **Outcome:** Automated feedback  for english text.
 
 ---
 ---
