@@ -26,7 +26,7 @@ title: Ranojoy Das | Data Analyst
   </div>
 
   <div class="hero-image">
-    <img src="assets/new image.png" alt="Profile" class="profile-pic">
+    <img src="assets/new_image.png" alt="Profile" class="profile-pic">
   </div>
 
 </div>
