@@ -9,28 +9,37 @@ title: Ranojoy Das | Data Analyst
     <h1 style="text-align: left; font-size: 3.5rem; margin-bottom: 10px;">
       Hi There, <br> I'm <span style="color: #00ADB5;">Ranojoy</span>
     </h1>
+    
     <h3 style="text-align: left; margin-top: 0; color: #ccc;">
       I Am Into <span style="color: #FF4B4B;">Data Analytics</span>
-    </h3> 
-   <p style="text-align: left; color: #888; max-width: 500px; margin-bottom: 30px;">
+    </h3>
+    
+    <p style="text-align: left; color: #888; max-width: 500px; margin-bottom: 30px;">
       Eager to learn, grow, and become a valuable asset to any team.
     </p>
+
     <div style="display: flex; flex-direction: column; align-items: center; width: fit-content;">
+      
       <a href="#featured-projects" class="btn-highlight" style="text-decoration: none; padding: 12px 25px; border-radius: 30px;">
         See Projects <i class="fas fa-arrow-down"></i>
       </a>
+
       <div class="hero-socials" style="margin-top: 20px;">
         <a href="https://linkedin.com/in/ranojoy"><img src="https://img.icons8.com/ios-filled/50/00ADB5/linkedin.png" width="35"></a>
         <a href="https://github.com/IamRaNo"><img src="https://img.icons8.com/ios-filled/50/00ADB5/github.png" width="35"></a>
         <a href="mailto:dasranojoy9@gmail.com"><img src="https://img.icons8.com/ios-filled/50/00ADB5/mail.png" width="35"></a>
       </div>
+
     </div>
+
+  </div>
 
   <div class="hero-image">
     <img src="assets/new_image.png" alt="Profile" class="profile-pic">
   </div>
 
 </div>
+
 <hr style="border: 0; border-top: 1px solid #333; margin: 60px 0;">
 
 <div id="featured-projects" style="padding-top: 20px;"></div>
@@ -109,7 +118,6 @@ title: Ranojoy Das | Data Analyst
 </div>
 
 <div class="ml-grid">
-
   <div class="neon-card">
     <h3>👥 Customer Segmentation</h3>
     <ul>
@@ -145,7 +153,6 @@ title: Ranojoy Das | Data Analyst
       <li><strong>Outcome:</strong> Automated feedback sorting for reviews.</li>
     </ul>
   </div>
-
 </div>
 <br>
 
@@ -155,7 +162,6 @@ title: Ranojoy Das | Data Analyst
 </div>
 
 <div class="poster-grid">
-
   <div class="poster-card">
     <span class="poster-icon">🏏</span>
     <h3>Next Gen Cricketer</h3>
@@ -173,7 +179,6 @@ title: Ranojoy Das | Data Analyst
     <h3>Movie Recommender</h3>
     <p style="font-size: 0.9em; color: #aaa;">Collaborative filtering for personalized watching.</p>
   </div>
-
 </div>
 
 <br>
@@ -201,13 +206,11 @@ title: Ranojoy Das | Data Analyst
   </a>
 </div>
 
-
 <div id="technical-skills" style="text-align: center; margin-bottom: 20px; padding-top: 80px; margin-top: -60px;">
   <h2>🛠 Technical Skills</h2>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 40px;">
-
   <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 15px; text-align: center;">
     <p style="color: #A0A0A0; font-size: 0.85em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Languages & Databases</p>
     <div style="display: flex; justify-content: center; gap: 15px;">
@@ -244,7 +247,6 @@ title: Ranojoy Das | Data Analyst
       <span style="font-size: 0.75em; background: #333; color: white; padding: 4px 8px; border-radius: 4px;">Stats</span>
     </div>
   </div>
-
 </div>
 
 <div id="certifications" style="text-align: center; margin-bottom: 20px; padding-top: 80px; margin-top: -60px;">
@@ -252,7 +254,6 @@ title: Ranojoy Das | Data Analyst
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; text-align: left;">
-
   <div style="display: flex; flex-direction: column; gap: 20px;">
     <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
       <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">💼 Industry Experience</h3>
@@ -268,6 +269,7 @@ title: Ranojoy Das | Data Analyst
       <p style="margin-bottom: 5px;"><strong>🏆 Career Forward Program</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">McKinsey & Company</span></p>
       <a href="https://drive.google.com/file/d/1qKkLvYBkfzKg5vMXXSrwFxKKLpwga5Ts/view?usp=sharing"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
     </div>
+    
     <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
       <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">☁️ Cloud & Specialized</h3>
       <p style="margin-bottom: 5px;"><strong>🏆 AWS Fundamentals</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Amazon AWS</span></p>
@@ -280,6 +282,7 @@ title: Ranojoy Das | Data Analyst
       <a href="https://drive.google.com/file/d/1MRmwalrS-rHfq1C5yVtqO3kUREiIcmU1/view?usp=sharing"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
     </div>
   </div>
+
   <div style="display: flex; flex-direction: column; gap: 20px;">
     <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
       <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">💻 Core Technical Skills</h3>    
@@ -292,6 +295,7 @@ title: Ranojoy Das | Data Analyst
       <p style="margin-bottom: 5px;"><strong>🏆 Data Fundamentals</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">IBM</span></p>
       <a href="https://drive.google.com/file/d/1ZL00QbqKd1TUw-oLA1B2WMIB34Rdokt4/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
     </div>
+
     <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
       <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">📜 Additional Certifications</h3>      
       <p style="margin-bottom: 5px;"><strong>🏆 Data Science</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Cisco / Cognitive Class</span></p>
@@ -309,9 +313,9 @@ title: Ranojoy Das | Data Analyst
   </div>
 </div>
 
-<div align="center">
 <div id="contact" align="center">
   <h3>📬 Let's Connect</h3>
+  <p>Ready to work on data challenges. Feel free to reach out!</p>
 
   <a href="mailto:dasranojoy9@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
@@ -348,5 +352,4 @@ title: Ranojoy Das | Data Analyst
   </a>
 
   <p style="font-size: 0.8em; color: #666; margin-top: 20px;">© 2025 Ranojoy Das. Built with GitHub Pages.</p>
-
 </div>
