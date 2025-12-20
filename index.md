@@ -109,7 +109,7 @@ title: Ranojoy Das | Data Analyst
   <p style="color: #888; margin-top: -20px;">Predictive models & classification systems</p>
 </div>
 
-<div class="ml-grid">
+<div class="ml-grid" style="display: flex !important; flex-wrap: wrap; justify-content: center; gap: 20px;">
   <div class="neon-card">
     <h3>👥 Customer Segmentation</h3>
     <ul>
@@ -153,7 +153,7 @@ title: Ranojoy Das | Data Analyst
   <h2>🎯 Recommendation Engines</h2>
 </div>
 
-<div class="poster-grid">
+<div class="poster-grid" style="display: flex !important; flex-wrap: wrap; justify-content: center; gap: 20px;">
   <div class="poster-card">
     <span class="poster-icon">🏏</span>
     <h3>Next Gen Cricketer</h3>
