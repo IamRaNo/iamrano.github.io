@@ -55,24 +55,33 @@ a:hover { color: var(--accent-hover); text-shadow: 0 0 10px rgba(0, 173, 181, 0.
 .btn-highlight:hover { background-color: var(--accent-hover); box-shadow: 0 0 15px var(--accent); }
 
 /* --- TYPOGRAPHY & HEADERS --- */
-h1, h2, h3 { color: #fff; margin-top: 2em; margin-bottom: 0.5em; }
+/* --- TYPOGRAPHY & HEADERS --- */
+h1, h2, h3 { color: #fff; }
 
 h1 { 
     font-size: 3rem; 
     background: linear-gradient(to right, #fff, var(--accent)); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    margin-top: 1em;
+    text-align: center; /* Centered Name */
 }
 
 h2 { 
-    border-bottom: 2px solid var(--accent); 
-    display: inline-block; 
-    padding-bottom: 5px;
-    margin-bottom: 30px;
+    /* This magic combo centers the header but keeps the underline short */
+    display: table;
+    margin: 40px auto 30px auto; 
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
+    text-align: center;
 }
 
-h3 { color: var(--accent); margin-top: 10px; margin-bottom: 20px; }
+h3 { 
+    color: var(--accent); 
+    margin-top: 0; 
+    margin-bottom: 15px; 
+    /* We keep h3 left-aligned usually for Cards, but if you want them centered too: */
+    /* text-align: center; */ 
+}
 
 /* --- PROJECT & LIST STYLING --- */
 /* This makes your bullet points look professional */
