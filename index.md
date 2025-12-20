@@ -1,11 +1,11 @@
 ---
 layout: default
-title: My Data Portfolio
+title: ranos_portfolio
 ---
 
 # Hello, I'm Ranojoy Das.
 
-***CS Grad. Data Analyst. ML Enthusiast.***
+**CS Grad. Data Analyst. ML Enthusiast.**
 
 I bridge the gap between raw data and real-world solutions, eager to learn, grow, and become a valuable asset to any team.
 ---
@@ -39,10 +39,9 @@ I bridge the gap between raw data and real-world solutions, eager to learn, grow
 
 | Area | Tools |
 | :--- | :--- |
-| **Languages** | Python, SQL, JavaScript, HTML/CSS |
+| **Languages** | Python, SQL |
 | **Analysis** | Pandas, NumPy, Matplotlib, Seaborn |
 | **Tools** | VS Code, Excel, Jupyter Notebooks |
-| **Creative** | Photo Editing, UI Design |
 
 ---
 
