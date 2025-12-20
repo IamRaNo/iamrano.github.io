@@ -3,15 +3,35 @@ layout: default
 title: Ranojoy Das | Data Analyst
 ---
 
-<div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
-  <h1 style="margin-top: 0;">Hello, I'm Ranojoy Das.</h1>
-  <h3 style="margin-top: 10px; color: #00ADB5;">CS Grad - Data Analyst - ML Enthusiast</h3>
-  <p style="font-size: 1.1em; max-width: 600px; margin: 15px auto; color: #cccccc;">
-    Eager to learn, grow, and become a valuable asset to any team.
-  </p>
-</div>
+<div class="hero-container">
 
-<hr style="border: 0; border-top: 1px solid #333; margin-bottom: 40px;">
+  <div class="hero-text">
+    <h1 style="text-align: left; font-size: 3.5rem; margin-bottom: 10px;">
+      Hi There, <br> I'm <span style="color: #00ADB5;">Ranojoy Das</span>
+    </h1>
+    <h3 style="text-align: left; margin-top: 0; color: #ccc;">
+      I Am Into <span style="color: #FF4B4B;">Data Analytics</span>
+    </h3> 
+    <p style="text-align: left; color: #888; max-width: 500px; margin-bottom: 30px;">
+      Eager to learn, grow, and become a valuable asset to any team.
+    </p>
+    <a href="#featured-projects" class="btn-highlight" style="text-decoration: none; padding: 12px 25px; border-radius: 30px;">
+      About Me <i class="fas fa-arrow-down"></i>
+    </a>
+    <div class="hero-socials" style="margin-top: 30px;">
+      <a href="https://linkedin.com/in/ranojoy"><img src="https://img.icons8.com/ios-filled/50/00ADB5/linkedin.png" width="35"></a>
+      <a href="https://github.com/IamRaNo"><img src="https://img.icons8.com/ios-filled/50/00ADB5/github.png" width="35"></a>
+      <a href="mailto:dasranojoy9@gmail.com"><img src="https://img.icons8.com/ios-filled/50/00ADB5/mail.png" width="35"></a>
+      <a href="https://x.com/i_am_rano_3"><img src="https://img.icons8.com/ios-filled/50/00ADB5/twitter.png" width="35"></a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="assets/new image.png" alt="Profile" class="profile-pic">
+  </div>
+
+</div>
+<hr style="border: 0; border-top: 1px solid #333; margin: 60px 0;">
 
 ## 📂 Featured Projects
 
