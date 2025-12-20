@@ -1,34 +1,13 @@
 ---
 layout: default
+title: My Data Portfolio
 ---
 
-<div class="portfolio-container">
+# Hello, I'm Ranojoy Das.
 
-  <div class="profile-sidebar">
-    <img src="https://github.com/iamrano.png" class="profile-img" alt="Profile">
-    <h3>Ranojoy Das</h3>
-    <p style="font-size:0.9em; color:#666;">CS Graduate<br>Data Analyst</p>
-    <hr>
-    <a href="https://linkedin.com/in/YOUR-LINKEDIN" class="sidebar-btn">LinkedIn</a>
-    <a href="mailto:YOUR-EMAIL@gmail.com" class="sidebar-btn">Email Me</a>
-  </div>
+***CS Grad. Data Analyst. ML Enthusiast.***
 
-  <div class="main-content">
-    
-    <div class="stylish-quote">
-      <strong>CS Grad. Data Analyst. ML Enthusiast.</strong>
-      <br><br>
-      I bridge the gap between raw data and real-world solutions, eager to learn, grow, and become a valuable asset to any team.
-    </div>
-
-    <br>
-
-    ## 🚀 About Me
-    I specialize in **Python** and **SQL**. Currently preparing for the Map Analyst Qualification.
-    
-  </div>
-
-</div>
+I bridge the gap between raw data and real-world solutions, eager to learn, grow, and become a valuable asset to any team.
 ---
 
 ## 📂 Featured Projects
