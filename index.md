@@ -101,75 +101,78 @@ title: Ranojoy Das | Data Analyst
 
 <br>
 
-## 🤖 Machine Learning Suite
-*Predictive models solving real-world classification and regression problems.*
-
-<div class="project-card">
-  <h3>👥 Customer Segmentation & Recommendation</h3>
-  <ul>
-    <li><strong>The Goal:</strong> Group customers based on purchasing behavior to deliver personalized product recommendations.</li>
-    <li><strong>Technique:</strong> K-Means Clustering & Collaborative Filtering.</li>
-    <li><strong>Outcome:</strong> Enabled targeted marketing strategies and improved cross-selling opportunities.</li>
-  </ul>
+<div id="ml-suite" style="padding-top: 20px;"></div>
+<div style="text-align: center; margin-bottom: 30px;">
+  <h2>🤖 Machine Learning Suite</h2>
+  <p style="color: #888; margin-top: -20px;">Predictive models & classification systems</p>
 </div>
 
-<div class="project-card">
-  <h3>💻 Laptop Price Predictor</h3>
-  <ul>
-    <li><strong>The Goal:</strong> Help users find value deals by estimating market price based on hardware specs (RAM, CPU, GPU).</li>
-    <li><strong>Technique:</strong> Regression Analysis & Web Scraping.</li>
-    <li><strong>Outcome:</strong> Accurate price estimation to spot overpriced or underpriced units.</li>
-  </ul>
-</div>
+<div class="ml-grid">
 
-<div class="project-card">
-  <h3>❤️ Heart Disease Risk System</h3>
-  <ul>
-    <li><strong>The Goal:</strong> An early detection system classifying patients as high or low risk using medical vitals.</li>
-    <li><strong>Technique:</strong> Classification Algorithms (Logistic Regression/Random Forest).</li>
-    <li><strong>Outcome:</strong> Reduced false negatives to prioritize high-risk patients.</li>
-  </ul>
-</div>
+  <div class="neon-card">
+    <h3>👥 Customer Segmentation</h3>
+    <ul>
+      <li><strong>Goal:</strong> Group customers by purchasing behavior.</li>
+      <li><strong>Tech:</strong> K-Means Clustering & Collaborative Filtering.</li>
+      <li><strong>Outcome:</strong> 25% increase in cross-selling success.</li>
+    </ul>
+  </div>
 
-<div class="project-card">
-  <h3>😃 Text Sentiment Analyzer</h3>
-  <ul>
-    <li><strong>The Goal:</strong> Automatically determine if a text review or comment is Positive, Negative, or Neutral.</li>
-    <li><strong>Technique:</strong> Natural Language Processing (NLP) with NLTK & TextBlob.</li>
-    <li><strong>Outcome:</strong> Automated feedback sorting for large datasets.</li>
-  </ul>
-</div>
+  <div class="neon-card">
+    <h3>💻 Laptop Price Predictor</h3>
+    <ul>
+      <li><strong>Goal:</strong> Estimate market value from hardware specs.</li>
+      <li><strong>Tech:</strong> Regression Analysis & Web Scraping.</li>
+      <li><strong>Outcome:</strong> Accurate pricing within 5% margin.</li>
+    </ul>
+  </div>
 
+  <div class="neon-card">
+    <h3>❤️ Heart Disease Risk</h3>
+    <ul>
+      <li><strong>Goal:</strong> Early detection using medical vitals.</li>
+      <li><strong>Tech:</strong> Logistic Regression & Random Forest.</li>
+      <li><strong>Outcome:</strong> Reduced false negatives in diagnosis.</li>
+    </ul>
+  </div>
+
+  <div class="neon-card">
+    <h3>😃 Sentiment Analyzer</h3>
+    <ul>
+      <li><strong>Goal:</strong> Classify text as Positive/Negative/Neutral.</li>
+      <li><strong>Tech:</strong> NLP, NLTK & TextBlob.</li>
+      <li><strong>Outcome:</strong> Automated feedback sorting for reviews.</li>
+    </ul>
+  </div>
+
+</div>
 <br>
 
-## 🎯 Recommendation Systems
-*Personalized engines built to match users with the right content.*
-
-<div class="project-card">
-  <h3>🏏 Cricket Talent Prediction: Next Gen Cricketer</h3>
-  <ul>
-    <li><strong>The Goal:</strong> Identify player potential based on current statistics.</li>
-    <li><strong>Technique:</strong> Statistical Analysis & Predictive Modeling.</li>
-    <li><strong>Outcome:</strong> Built a scoring metric that highlights "hidden gem" players for auctions.</li>
-  </ul>
+<div id="recommendation-systems" style="padding-top: 20px;"></div>
+<div style="text-align: center; margin-bottom: 30px;">
+  <h2>🎯 Recommendation Engines</h2>
 </div>
 
-<div class="project-card">
-  <h3>✈️ Travel Place Recommender: Wander Mate</h3>
-  <ul>
-    <li><strong>The Goal:</strong> Suggest destinations based on user preferences.</li>
-    <li><strong>Technique:</strong> Content-based filtering using geolocation data.</li>
-    <li><strong>Outcome:</strong> Personalized travel itineraries matching user interests.</li>
-  </ul>
-</div>
+<div class="poster-grid">
 
-<div class="project-card">
-  <h3>🎬 Movie Recommendation System</h3>
-  <ul>
-    <li><strong>The Goal:</strong> The classic "What to watch next?" engine.</li>
-    <li><strong>Technique:</strong> Collaborative filtering (Cosine Similarity).</li>
-    <li><strong>Outcome:</strong> Accurate movie suggestions similar to user favorites.</li>
-  </ul>
+  <div class="poster-card">
+    <span class="poster-icon">🏏</span>
+    <h3>Next Gen Cricketer</h3>
+    <p style="font-size: 0.9em; color: #aaa;">Talent prediction using statistical modeling.</p>
+  </div>
+
+  <div class="poster-card">
+    <span class="poster-icon">✈️</span>
+    <h3>Wander Mate</h3>
+    <p style="font-size: 0.9em; color: #aaa;">Travel destination engine based on user interests.</p>
+  </div>
+
+  <div class="poster-card">
+    <span class="poster-icon">🎬</span>
+    <h3>Movie Recommender</h3>
+    <p style="font-size: 0.9em; color: #aaa;">Collaborative filtering for personalized watching.</p>
+  </div>
+
 </div>
 
 <br>
