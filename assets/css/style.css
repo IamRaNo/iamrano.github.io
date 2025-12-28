@@ -488,3 +488,32 @@ div[align="center"] {
     background: var(--accent);
     color: #121212 !important;
 }
+/* --- UNIVERSAL CARD SIZING FIX --- */
+
+/* 1. Fix Machine Learning Cards */
+.neon-card {
+    flex: 0 0 340px !important;    /* Stop growing, lock to 340px */
+    width: 340px !important;       /* Force width */
+    max-width: 340px !important;   /* Prevent expanding */
+}
+
+/* 2. Fix Recommendation Posters */
+.poster-card {
+    flex: 0 0 300px !important;    /* Stop growing, lock to 300px */
+    width: 300px !important;
+    max-width: 300px !important;
+}
+
+/* 3. Fix Skill Nodes */
+.skill-node {
+    flex: 0 0 320px !important;    /* Stop growing, lock to 320px */
+    width: 320px !important;
+    max-width: 320px !important;
+}
+
+/* 4. Fix Certification Cards (Double check) */
+.cert-card {
+    flex: 0 0 320px !important;
+    width: 320px !important;
+    max-width: 320px !important;
+}
