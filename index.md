@@ -6,11 +6,10 @@ title: Ranojoy Das | Data Analyst
 <div class="hero-section">
   <div class="hero-content">
     <h1>Hi, I'm <span class="text-highlight">Ranojoy</span></h1>
-    <h3>I Turn Data Into <span class="text-accent">Decisions</span></h3>
-    <p>Aspiring Data Analyst specializing in ML, Predictive Modeling, and Visualization. Eager to solve real-world problems.</p>
-    
+    <h3>I am Into <span class="text-accent">Data Analytics</span></h3>
+    <p>Aspiring Data Analyst specializing in ML, Predictive Modeling, and Visualization. Eager to solve real-world problems.</p>    
     <div class="hero-actions">
-      <a href="#projects" class="btn-primary">View Work <i class="fas fa-arrow-down"></i></a>
+      <a href="#projects" class="btn-primary">View Projects<i class="fas fa-arrow-down"></i></a>
       <div class="social-icons">
         <a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>
         <a href="{{ site.github_handle }}"><i class="fab fa-github"></i></a>
@@ -27,7 +26,7 @@ title: Ranojoy Das | Data Analyst
 
 <div id="projects" class="section-header">
   <h2>📂 Featured Projects</h2>
-  <p>Hover cards to reveal case study details</p>
+  <p>Hover on cards to reveal case study details</p>
 </div>
 
 <div class="grid-wrapper col-3">
@@ -41,12 +40,12 @@ title: Ranojoy Das | Data Analyst
         <span style="color: var(--accent); font-size: 1.5rem; margin-top: 20px;">↻</span>
       </div>
       <div class="flip-back">
-        <h3>Results</h3>
-        <p>Found that delivery speed impacts score 3x more than punctuality.</p>
+        <h3>Description</h3>
+        <p>Analyzed 100k+ orders using MySQL and Python to identify poor rating drivers</p>
         <div class="tags">
-          <span>Python</span><span>Seaborn</span>
+          <span>Python</span><span>Seaborn</span><span>Stats</span>
         </div>
-        <a href="{{ site.github_handle }}" class="btn-small">View GitHub</a>
+        <a href="https://github.com/IamRaNo/data-analytics-projects/tree/main/inside_olist_review_analysis" class="btn-small">View GitHub</a>
       </div>
     </div>
   </div>
@@ -55,17 +54,17 @@ title: Ranojoy Das | Data Analyst
     <div class="flip-inner">
       <div class="flip-front">
         <div class="icon-box">🎓</div>
-        <h3>Student Retention</h3>
-        <p>Predicting Dropout Risks</p>
+        <h3>Beyond OULAD</h3>
+        <p>Student Dropout Reason Analysis</p>
         <span style="color: var(--accent); font-size: 1.5rem; margin-top: 20px;">↻</span>
       </div>
       <div class="flip-back">
-        <h3>Results</h3>
-        <p>Identified 'Day 14 Interaction' as the key retention indicator.</p>
+        <h3>Description</h3>
+        <p> Analyzed 30k+ student interactions using MySQL and Python to identify dropout causes</p>
         <div class="tags">
-          <span>Random Forest</span><span>Scikit</span>
+          <span>Python</span><span>MySQL</span><span>Stats</span>
         </div>
-        <a href="{{ site.github_handle }}" class="btn-small">View GitHub</a>
+        <a href="https://github.com/IamRaNo/data-analytics-projects/tree/main/beyond_oulad_student_dropout" class="btn-small">View GitHub</a>
       </div>
     </div>
   </div>
@@ -74,17 +73,17 @@ title: Ranojoy Das | Data Analyst
     <div class="flip-inner">
       <div class="flip-front">
         <div class="icon-box">🏥</div>
-        <h3>Synthea Health</h3>
-        <p>Heart Disease Prediction</p>
+        <h3>About Synthea</h3>
+        <p>Why Patients Readmit More</p>
         <span style="color: var(--accent); font-size: 1.5rem; margin-top: 20px;">↻</span>
       </div>
       <div class="flip-back">
-        <h3>Results</h3>
-        <p>Modeled combined risk factors for early detection strategies.</p>
+        <h3>Description</h3>
+        <p>Combined 60k+ patient records across multiple tables to find readmission patterns</p>
         <div class="tags">
-          <span>Healthcare Analytics</span>
+          <span>Python</span><span>MySQL</span><span>Stats</span>
         </div>
-        <a href="{{ site.github_handle }}" class="btn-small">View GitHub</a>
+        <a href="https://github.com/IamRaNo/data-analytics-projects/tree/main/about_synthea_patient_readmission" class="btn-small">View GitHub</a>
       </div>
     </div>
   </div>
@@ -92,8 +91,8 @@ title: Ranojoy Das | Data Analyst
 </div>
 
 <div class="section-header">
-  <h2>🤖 Machine Learning Suite</h2>
-  <p>Predictive Intelligence Systems</p>
+  <h2>🤖 Machine Learning Projects</h2>
+  <p>Predictive Intelligence Models</p>
 </div>
 
 <div class="grid-wrapper col-2">
@@ -101,12 +100,11 @@ title: Ranojoy Das | Data Analyst
   <div class="tech-card">
     <div class="tech-header">
       <i class="fas fa-users"></i>
-      <h3>Customer Segmentation</h3>
+      <h3>Customer Segmentation and Recommendation</h3>
     </div>
     <div class="tech-body">
-      <p><strong>Goal:</strong> Group customers by purchasing behavior.</p>
-      <p><strong>Tech:</strong> K-Means & Collaborative Filtering.</p>
-      <p><strong>Impact:</strong> 25% boost in cross-selling.</p>
+      <p><strong>Goal:</strong> Group customers by purchasing behavior and demographics.</p>
+      <p><strong>Tech:</strong> K-Means Clustering</p>
     </div>
   </div>
 
@@ -117,20 +115,18 @@ title: Ranojoy Das | Data Analyst
     </div>
     <div class="tech-body">
       <p><strong>Goal:</strong> Estimate market value from specs.</p>
-      <p><strong>Tech:</strong> Regression & Web Scraping.</p>
-      <p><strong>Impact:</strong> 95% pricing accuracy.</p>
+      <p><strong>Tech:</strong> Regression</p>
     </div>
   </div>
 
   <div class="tech-card">
     <div class="tech-header">
       <i class="fas fa-heartbeat"></i>
-      <h3>Heart Disease Risk</h3>
+      <h3>Heart Disease Prediction</h3>
     </div>
     <div class="tech-body">
       <p><strong>Goal:</strong> Early detection using vitals.</p>
-      <p><strong>Tech:</strong> Logistic Regression.</p>
-      <p><strong>Impact:</strong> Reduced false negatives.</p>
+      <p><strong>Tech:</strong> Random Forest</p>
     </div>
   </div>
 
@@ -141,8 +137,7 @@ title: Ranojoy Das | Data Analyst
     </div>
     <div class="tech-body">
       <p><strong>Goal:</strong> Classify text emotions.</p>
-      <p><strong>Tech:</strong> NLP & TextBlob.</p>
-      <p><strong>Impact:</strong> Automated feedback sorting.</p>
+      <p><strong>Tech:</strong> NLP & Bag of Words</p>
     </div>
   </div>
 
@@ -156,20 +151,20 @@ title: Ranojoy Das | Data Analyst
   
   <div class="ticket-card">
     <span class="ticket-icon">🏏</span>
-    <h3>Next Gen Cricket</h3>
-    <p style="font-size: 0.9em; color: #888;">Talent prediction using statistical modeling.</p>
+    <h3>Next Gen Cricketer</h3>
+    <p style="font-size: 0.9em; color: #888;">Talent prediction using statistical modeling</p>
   </div>
 
   <div class="ticket-card">
     <span class="ticket-icon">✈️</span>
     <h3>Wander Mate</h3>
-    <p style="font-size: 0.9em; color: #888;">Travel destination engine based on user interests.</p>
+    <p style="font-size: 0.9em; color: #888;">Travel destination engine based on user interests</p>
   </div>
 
   <div class="ticket-card">
     <span class="ticket-icon">🎬</span>
-    <h3>Movie Recs</h3>
-    <p style="font-size: 0.9em; color: #888;">Collaborative filtering for personalized watching.</p>
+    <h3>Movie Recommendation</h3>
+    <p style="font-size: 0.9em; color: #888;">Suggest movies based on user interest</p>
   </div>
 
 </div>
@@ -191,7 +186,7 @@ title: Ranojoy Das | Data Analyst
   <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" class="app-card">
     <img src="https://img.icons8.com/color/48/cricket.png" width="30">
     <div class="app-info">
-      <span class="app-name">Next Gen Cricket</span>
+      <span class="app-name">Next Gen Cricketer</span>
       <span class="app-status">● Live</span>
     </div>
   </a>
@@ -199,7 +194,7 @@ title: Ranojoy Das | Data Analyst
   <a href="https://senti-analysis-ranoj.streamlit.app/" class="app-card">
     <img src="https://img.icons8.com/color/48/happy--v1.png" width="30">
     <div class="app-info">
-      <span class="app-name">Sentiment AI</span>
+      <span class="app-name">Sentiment Analysis</span>
       <span class="app-status">● Live</span>
     </div>
   </a>
@@ -443,7 +438,6 @@ title: Ranojoy Das | Data Analyst
 <div class="footer">
   <h3>Let's Connect</h3>
   <div class="footer-links" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 800px; margin: 30px auto;">
-    
     <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
     <a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i> LinkedIn</a>
     <a href="{{ site.github_handle }}"><i class="fab fa-github"></i> GitHub</a>
@@ -451,11 +445,10 @@ title: Ranojoy Das | Data Analyst
     <a href="{{ site.facebook }}"><i class="fab fa-facebook"></i> Facebook</a>
     <a href="{{ site.instagram }}"><i class="fab fa-instagram"></i> Instagram</a>
     <a href="{{ site.blogger }}"><i class="fas fa-rss"></i> Blog</a>
-
     <a href="{{ site.leetcode }}"><i class="fas fa-code"></i> LeetCode</a>
     <a href="{{ site.hackerrank }}"><i class="fab fa-hackerrank"></i> HackerRank</a>
     <a href="{{ site.kaggle }}"><i class="fab fa-kaggle"></i> Kaggle</a>
 
   </div>
-  <p>© 2025 Ranojoy Das. Data Driven.</p>
+  <p>© 2025 Ranojoy Das.</p>
 </div>
