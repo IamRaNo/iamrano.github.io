@@ -3,404 +3,306 @@ layout: default
 title: Ranojoy Das | Data Analyst
 ---
 
-<div class="hero-container">
-
-  <div class="hero-text">
-    <h1 style="text-align: left; font-size: 3.5rem; margin-bottom: 10px;">
-      Hi There, <br> I'm <span style="color: #00ADB5;">Ranojoy</span>
-    </h1>  
-    <h3 style="text-align: left; margin-top: 0; color: #ccc;">
-      I Am Into <span style="color: #FF4B4B;">Data Analytics</span>
-    </h3>    
-    <p style="text-align: left; color: #888; max-width: 500px; margin-bottom: 30px;">
-      Eager to learn, grow, and become a valuable asset to any team.
-    </p>
-    <div style="display: flex; flex-direction: column; align-items: center; width: fit-content;">      
-      <a href="#featured-projects" class="btn-highlight" style="text-decoration: none; padding: 12px 25px; border-radius: 30px;">
-        See Projects <i class="fas fa-arrow-down"></i>
-      </a>
-      <div class="hero-socials" style="margin-top: 20px;">
-        <a href="https://linkedin.com/in/ranojoy"><img src="https://img.icons8.com/ios-filled/50/00ADB5/linkedin.png" width="35"></a>
-        <a href="https://github.com/IamRaNo"><img src="https://img.icons8.com/ios-filled/50/00ADB5/github.png" width="35"></a>
-        <a href="mailto:dasranojoy9@gmail.com"><img src="https://img.icons8.com/ios-filled/50/00ADB5/mail.png" width="35"></a>
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Hi, I'm <span class="text-highlight">Ranojoy</span></h1>
+    <h3>I Turn Data Into <span class="text-accent">Decisions</span></h3>
+    <p>Aspiring Data Analyst specializing in ML, Predictive Modeling, and Visualization. Eager to solve real-world problems.</p>
+    
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Work <i class="fas fa-arrow-down"></i></a>
+      <div class="social-icons">
+        <a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>
+        <a href="{{ site.github }}"><i class="fab fa-github"></i></a>
+        <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </div>
-  <div class="hero-image">
-    <img src="assets/new_image.png" alt="Profile" class="profile-pic">
+  <div class="hero-visual">
+    <img src="assets/new_image.png" alt="Ranojoy Das" class="profile-glow">
   </div>
-
 </div>
 
-<hr style="border: 0; border-top: 1px solid #333; margin: 60px 0;">
+<div class="section-divider"></div>
 
-<div id="featured-projects" style="padding-top: 20px;"></div>
-<div style="text-align: center;">
+<div id="projects" class="section-header">
   <h2>📂 Featured Projects</h2>
-  <p style="color: #888; margin-top: -20px; font-size: 0.9em;">(Hover over the tiles to see details)</p>
+  <p>Hover cards to reveal case study details</p>
 </div>
 
-<div class="featured-grid">
-
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">📦 Inside Olist</h3>
-        <p style="color: #A0A0A0;">Review Score Impact Analysis</p>
-        <span style="color: #00ADB5; margin-top: 20px; font-size: 2rem;">↻</span>
+<div class="grid-wrapper col-3">
+  
+  <div class="project-flip">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <div class="icon-box">📦</div>
+        <h3>Inside Olist</h3>
+        <p>Review Score Impact Analysis</p>
+        <span style="color: var(--accent); font-size: 1.5rem; margin-top: 20px;">↻</span>
       </div>
-      <div class="flip-card-back">
-        <h3>📦 Inside Olist</h3>
-        <p><em>Uncovering drivers of customer satisfaction.</em></p>
-        <ul>
-          <li><strong>Insight:</strong> Speed > Punctuality. Fast delivery beats deadline accuracy.</li>
-          <li><strong>Tech:</strong> Python, Pandas, Seaborn, Statistics.</li>
-        </ul>
-        <a href="#" class="btn-highlight" style="padding: 5px 15px;">View GitHub</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🎓 Student Retention</h3>
-        <p style="color: #A0A0A0;">Predicting Dropout Risks</p>
-        <span style="color: #00ADB5; margin-top: 20px; font-size: 2rem;">↻</span>
-      </div>
-      <div class="flip-card-back">
-        <h3>🎓 OULAD Intelligence</h3>
-        <p><em>Predicting dropouts using interaction logs.</em></p>
-        <ul>
-          <li><strong>Insight:</strong> Engagement in first 2 weeks is the strongest predictor.</li>
-          <li><strong>Tech:</strong> Random Forest, Scikit-Learn, Python.</li>
-        </ul>
-        <a href="#" class="btn-highlight" style="padding: 5px 15px;">View GitHub</a>
+      <div class="flip-back">
+        <h3>Results</h3>
+        <p>Found that delivery speed impacts score 3x more than punctuality.</p>
+        <div class="tags">
+          <span>Python</span><span>Seaborn</span>
+        </div>
+        <a href="{{ site.github }}" class="btn-small">View GitHub</a>
       </div>
     </div>
   </div>
 
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🏥 Synthea Health</h3>
-        <p style="color: #A0A0A0;">Heart Disease Prediction</p>
-        <span style="color: #00ADB5; margin-top: 20px; font-size: 2rem;">↻</span>
+  <div class="project-flip">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <div class="icon-box">🎓</div>
+        <h3>Student Retention</h3>
+        <p>Predicting Dropout Risks</p>
+        <span style="color: var(--accent); font-size: 1.5rem; margin-top: 20px;">↻</span>
       </div>
-      <div class="flip-card-back">
-        <h3>🏥 Patient Analysis</h3>
-        <p><em>Modeling risk with synthetic medical records.</em></p>
-        <ul>
-          <li><strong>Insight:</strong> Lifestyle combinations (BMI + Smoking) multiply risk exponentially.</li>
-          <li><strong>Tech:</strong> Healthcare Analytics, Scikit-Learn.</li>
-        </ul>
-        <a href="#" class="btn-highlight" style="padding: 5px 15px;">View GitHub</a>
+      <div class="flip-back">
+        <h3>Results</h3>
+        <p>Identified 'Day 14 Interaction' as the key retention indicator.</p>
+        <div class="tags">
+          <span>Random Forest</span><span>Scikit</span>
+        </div>
+        <a href="{{ site.github }}" class="btn-small">View GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-flip">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <div class="icon-box">🏥</div>
+        <h3>Synthea Health</h3>
+        <p>Heart Disease Prediction</p>
+        <span style="color: var(--accent); font-size: 1.5rem; margin-top: 20px;">↻</span>
+      </div>
+      <div class="flip-back">
+        <h3>Results</h3>
+        <p>Modeled combined risk factors for early detection strategies.</p>
+        <div class="tags">
+          <span>Healthcare Analytics</span>
+        </div>
+        <a href="{{ site.github }}" class="btn-small">View GitHub</a>
       </div>
     </div>
   </div>
 
 </div>
 
-<br>
-
-<div id="ml-suite" style="padding-top: 20px;"></div>
-<div style="text-align: center; margin-bottom: 30px;">
+<div class="section-header">
   <h2>🤖 Machine Learning Suite</h2>
-  <p style="color: #888; margin-top: -20px;">Predictive models & classification systems</p>
+  <p>Predictive Intelligence Systems</p>
 </div>
 
-<div class="ml-grid">
-  <div class="neon-card">
-    <h3>👥 Customer Segmentation</h3>
-    <ul>
-      <li><strong>Goal:</strong> Group customers by purchasing behavior.</li>
-      <li><strong>Tech:</strong> K-Means Clustering & Collaborative Filtering.</li>
-      <li><strong>Outcome:</strong> 25% increase in cross-selling success.</li>
-    </ul>
+<div class="grid-wrapper col-2">
+  
+  <div class="tech-card">
+    <div class="tech-header">
+      <i class="fas fa-users"></i>
+      <h3>Customer Segmentation</h3>
+    </div>
+    <div class="tech-body">
+      <p><strong>Goal:</strong> Group customers by purchasing behavior.</p>
+      <p><strong>Tech:</strong> K-Means & Collaborative Filtering.</p>
+      <p><strong>Impact:</strong> 25% boost in cross-selling.</p>
+    </div>
   </div>
 
-  <div class="neon-card">
-    <h3>💻 Laptop Price Predictor</h3>
-    <ul>
-      <li><strong>Goal:</strong> Estimate market value from hardware specs.</li>
-      <li><strong>Tech:</strong> Regression Analysis & Web Scraping.</li>
-      <li><strong>Outcome:</strong> Accurate pricing within 5% margin.</li>
-    </ul>
+  <div class="tech-card">
+    <div class="tech-header">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Laptop Price Predictor</h3>
+    </div>
+    <div class="tech-body">
+      <p><strong>Goal:</strong> Estimate market value from specs.</p>
+      <p><strong>Tech:</strong> Regression & Web Scraping.</p>
+      <p><strong>Impact:</strong> 95% pricing accuracy.</p>
+    </div>
   </div>
 
-  <div class="neon-card">
-    <h3>❤️ Heart Disease Risk</h3>
-    <ul>
-      <li><strong>Goal:</strong> Early detection using medical vitals.</li>
-      <li><strong>Tech:</strong> Logistic Regression & Random Forest.</li>
-      <li><strong>Outcome:</strong> Reduced false negatives in diagnosis.</li>
-    </ul>
+  <div class="tech-card">
+    <div class="tech-header">
+      <i class="fas fa-heartbeat"></i>
+      <h3>Heart Disease Risk</h3>
+    </div>
+    <div class="tech-body">
+      <p><strong>Goal:</strong> Early detection using vitals.</p>
+      <p><strong>Tech:</strong> Logistic Regression.</p>
+      <p><strong>Impact:</strong> Reduced false negatives.</p>
+    </div>
   </div>
 
-  <div class="neon-card">
-    <h3>😃 Sentiment Analyzer</h3>
-    <ul>
-      <li><strong>Goal:</strong> Classify text as Positive/Negative/Neutral.</li>
-      <li><strong>Tech:</strong> NLP, NLTK & TextBlob.</li>
-      <li><strong>Outcome:</strong> Automated feedback sorting for reviews.</li>
-    </ul>
+  <div class="tech-card">
+    <div class="tech-header">
+      <i class="fas fa-smile"></i>
+      <h3>Sentiment Analyzer</h3>
+    </div>
+    <div class="tech-body">
+      <p><strong>Goal:</strong> Classify text emotions.</p>
+      <p><strong>Tech:</strong> NLP & TextBlob.</p>
+      <p><strong>Impact:</strong> Automated feedback sorting.</p>
+    </div>
   </div>
+
 </div>
-<br>
 
-<div id="recommendation-systems" style="padding-top: 20px;"></div>
-<div style="text-align: center; margin-bottom: 30px;">
+<div class="section-header">
   <h2>🎯 Recommendation Engines</h2>
 </div>
 
-<div class="poster-grid">
-  <div class="poster-card">
-    <span class="poster-icon">🏏</span>
-    <h3>Next Gen Cricketer</h3>
-    <p style="font-size: 0.9em; color: #aaa;">Talent prediction using statistical modeling.</p>
-  </div>
-
-  <div class="poster-card">
-    <span class="poster-icon">✈️</span>
-    <h3>Wander Mate</h3>
-    <p style="font-size: 0.9em; color: #aaa;">Travel destination engine based on user interests.</p>
-  </div>
-
-  <div class="poster-card">
-    <span class="poster-icon">🎬</span>
-    <h3>Movie Recommender</h3>
-    <p style="font-size: 0.9em; color: #aaa;">Collaborative filtering for personalized watching.</p>
-  </div>
-</div>
-
-<br>
-
-<div id="live-apps" style="text-align: center; margin-bottom: 30px; padding-top: 40px;">
-  <h2>🚀 Live Applications</h2>
-  <p style="color: #888; margin-top: -20px;">Deployed & running in real-time.</p>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 60px;">
+<div class="grid-wrapper col-3">
   
-  <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
-    <img src="https://img.icons8.com/color/48/airplane-take-off.png" width="40"><br>
-    <strong style="color: #fff; display: block; margin-top: 10px;">Wander Mate</strong>
-    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
+  <div class="ticket-card">
+    <span class="ticket-icon">🏏</span>
+    <h3>Next Gen Cricket</h3>
+    <p style="font-size: 0.9em; color: #888;">Talent prediction using statistical modeling.</p>
+  </div>
+
+  <div class="ticket-card">
+    <span class="ticket-icon">✈️</span>
+    <h3>Wander Mate</h3>
+    <p style="font-size: 0.9em; color: #888;">Travel destination engine based on user interests.</p>
+  </div>
+
+  <div class="ticket-card">
+    <span class="ticket-icon">🎬</span>
+    <h3>Movie Recs</h3>
+    <p style="font-size: 0.9em; color: #888;">Collaborative filtering for personalized watching.</p>
+  </div>
+
+</div>
+
+<div class="section-header">
+  <h2>🚀 Live Deployments</h2>
+</div>
+
+<div class="live-wrapper">
+  
+  <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" class="app-card">
+    <img src="https://img.icons8.com/color/48/airplane-take-off.png" width="30">
+    <div class="app-info">
+      <span class="app-name">Wander Mate</span>
+      <span class="app-status">● Live</span>
+    </div>
   </a>
 
-  <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
-    <img src="https://img.icons8.com/color/48/cricket.png" width="40"><br>
-    <strong style="color: #fff; display: block; margin-top: 10px;">Next Gen Cricket</strong>
-    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
+  <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" class="app-card">
+    <img src="https://img.icons8.com/color/48/cricket.png" width="30">
+    <div class="app-info">
+      <span class="app-name">Next Gen Cricket</span>
+      <span class="app-status">● Live</span>
+    </div>
   </a>
 
-  <a href="https://senti-analysis-ranoj.streamlit.app/" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
-    <img src="https://img.icons8.com/color/48/happy--v1.png" width="40"><br>
-    <strong style="color: #fff; display: block; margin-top: 10px;">Sentiment AI</strong>
-    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
+  <a href="https://senti-analysis-ranoj.streamlit.app/" class="app-card">
+    <img src="https://img.icons8.com/color/48/happy--v1.png" width="30">
+    <div class="app-info">
+      <span class="app-name">Sentiment AI</span>
+      <span class="app-status">● Live</span>
+    </div>
   </a>
 
-  <a href="https://huggingface.co/spaces/thetshooter/movieRecommendation" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
-    <img src="https://img.icons8.com/color/48/movie-projector.png" width="40"><br>
-    <strong style="color: #fff; display: block; margin-top: 10px;">Movie Recs</strong>
-    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
-  </a>
-
-  <a href="https://lap-price-pred-ranoj.streamlit.app/" style="text-decoration: none; background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px; width: 180px; text-align: center; transition: 0.3s;" onmouseover="this.style.borderColor='#00ADB5'; this.style.transform='translateY(-5px)'" onmouseout="this.style.borderColor='#333'; this.style.transform='translateY(0)'">
-    <img src="https://img.icons8.com/color/48/laptop.png" width="40"><br>
-    <strong style="color: #fff; display: block; margin-top: 10px;">Price Predictor</strong>
-    <span style="color: #27C93F; font-size: 0.8em;">● Live</span>
+  <a href="https://lap-price-pred-ranoj.streamlit.app/" class="app-card">
+    <img src="https://img.icons8.com/color/48/laptop.png" width="30">
+    <div class="app-info">
+      <span class="app-name">Price Predictor</span>
+      <span class="app-status">● Live</span>
+    </div>
   </a>
 
 </div>
 
-<div id="technical-skills" style="text-align: center; margin-bottom: 20px; padding-top: 80px; margin-top: -60px;">
-  <h2>🛠 Technical Skills</h2>
+<div class="section-header">
+  <h2>🛠 Technical Arsenal</h2>
 </div>
 
-<div class="skills-flex">
-
-  <div class="skill-node node-lang">
-    <p style="color: #00ADB5;">LANGUAGES & DATABASES</p>
-    <div style="display: flex; gap: 20px;">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" title="Python">
-      <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-sql-computer-programming-flaticons-flat-flat-icons.png" width="40" title="SQL">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" title="MySQL">
+<div class="skills-wrapper">
+  
+  <div class="skill-node node-teal">
+    <span class="node-label">LANGUAGES</span>
+    <div class="node-icons">
+      <i class="fab fa-python fa-2x"></i>
+      <i class="fas fa-database fa-2x"></i>
     </div>
   </div>
 
-  <div class="skill-node node-tool">
-    <p style="color: #FF4B4B;">ANALYSIS & TOOLS</p>
-    <div style="display: flex; gap: 20px;">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="40" title="Pandas">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="40" title="NumPy">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg" width="40" title="Excel">
+  <div class="skill-node node-red">
+    <span class="node-label">ANALYSIS</span>
+    <div class="node-icons">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="30">
     </div>
   </div>
 
-  <div class="skill-node node-viz">
-    <p style="color: #FFBD2E;">VISUALIZATIONS</p>
-    <div style="display: flex; gap: 20px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="40" title="Power BI">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" width="40" title="Matplotlib">
-      <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" width="40" title="Seaborn">
+  <div class="skill-node node-yellow">
+    <span class="node-label">VISUALIZATION</span>
+    <div class="node-icons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="30">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" width="30">
     </div>
   </div>
 
-  <div class="skill-node node-cloud">
-    <p style="color: #27C93F;">CLOUD & CORE SKILLS</p>
-    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="45" title="AWS">
-      <span style="font-size: 0.7em; background: #333; padding: 4px 8px; border-radius: 4px;">EDA</span>
-      <span style="font-size: 0.7em; background: #333; padding: 4px 8px; border-radius: 4px;">ML</span>
-      <span style="font-size: 0.7em; background: #333; padding: 4px 8px; border-radius: 4px;">STATS</span>
+  <div class="skill-node node-green">
+    <span class="node-label">CLOUD</span>
+    <div class="node-icons">
+      <i class="fab fa-aws fa-2x"></i>
     </div>
   </div>
 
 </div>
 
-<div id="certifications" style="text-align: center; margin-bottom: 20px; padding-top: 80px; margin-top: -60px;">
-  <h2>📜 Certifications & Achievements</h2>
+<div class="section-header">
+  <h2>📜 Certifications</h2>
 </div>
 
-<div class="cert-grid">
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">💼</span>
-    <h4>Data Science Simulation</h4>
-    <span class="issuer">BCG X</span>
-    <a href="https://drive.google.com/file/d/1hGFDw9U9BHqcV1z-EQsWf9dhmo8vLSAb/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+<div class="cert-wrapper">
+  
+  <div class="cert-strip">
+    <div class="cert-icon">🏆</div>
+    <div class="cert-info">
+      <h4>Data Science Simulation</h4>
+      <span>BCG X</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1hGFDw9U9BHqcV1z-EQsWf9dhmo8vLSAb/view?usp=sharing" class="cert-link">View</a>
   </div>
 
-  <div class="cert-card">
-    <span style="font-size: 2rem;">📊</span>
-    <h4>Data Analytics Simulation</h4>
-    <span class="issuer">Deloitte</span>
-    <a href="https://drive.google.com/file/d/1y2JJW_CqWR0AQRvwhpDZ2eRgHomEFrfO/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  <div class="cert-strip">
+    <div class="cert-icon">📊</div>
+    <div class="cert-info">
+      <h4>Data Analytics Job Sim</h4>
+      <span>Deloitte</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1y2JJW_CqWR0AQRvwhpDZ2eRgHomEFrfO/view?usp=sharing" class="cert-link">View</a>
   </div>
 
-  <div class="cert-card">
-    <span style="font-size: 2rem;">🚀</span>
-    <h4>Data Analysis Internship</h4>
-    <span class="issuer">Elevvo Tech</span>
-    <a href="https://drive.google.com/file/d/1JE0xgjJzQPkXuqjK6ze9dDZbWvR7LmMX/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  <div class="cert-strip">
+    <div class="cert-icon">☁️</div>
+    <div class="cert-info">
+      <h4>AWS Fundamentals</h4>
+      <span>Amazon AWS</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1lxE7CrcZ3UzadX6PxSNrfnL0Gkfq639x/view?usp=drive_link" class="cert-link">View</a>
   </div>
 
-  <div class="cert-card">
-    <span style="font-size: 2rem;">📈</span>
-    <h4>Career Forward Program</h4>
-    <span class="issuer">McKinsey & Company</span>
-    <a href="https://drive.google.com/file/d/1qKkLvYBkfzKg5vMXXSrwFxKKLpwga5Ts/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">☁️</span>
-    <h4>AWS Fundamentals</h4>
-    <span class="issuer">Amazon AWS</span>
-    <a href="https://drive.google.com/file/d/1lxE7CrcZ3UzadX6PxSNrfnL0Gkfq639x/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">💡</span>
-    <h4>Power BI Basics</h4>
-    <span class="issuer">Microsoft</span>
-    <a href="https://drive.google.com/file/d/1xd2rfsQvbLbU3QPEOR4RjvlDIrPHRp-R/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">🤖</span>
-    <h4>Machine Learning</h4>
-    <span class="issuer">Besant Technologies</span>
-    <a href="https://drive.google.com/file/d/1MRmwalrS-rHfq1C5yVtqO3kUREiIcmU1/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">🐍</span>
-    <h4>Python Basics</h4>
-    <span class="issuer">HackerRank</span>
-    <a href="https://drive.google.com/file/d/1bnl5GB-4p7FyC5pvHUFEc6NM9Y_kwhel/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">🧬</span>
-    <h4>Data Structure & Algo</h4>
-    <span class="issuer">Simplilearn</span>
-    <a href="https://drive.google.com/file/d/1oQioWbyEmlPhSQyew6WBp2ubAm-dr3RL/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">🔍</span>
-    <h4>Data Fundamentals</h4>
-    <span class="issuer">IBM</span>
-    <a href="https://drive.google.com/file/d/1ZL00QbqKd1TUw-oLA1B2WMIB34Rdokt4/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">🧪</span>
-    <h4>Data Science</h4>
-    <span class="issuer">Cisco / Cognitive Class</span>
-    <a href="https://drive.google.com/file/d/1EuT95dfMqztDTRtWgs9iLVcx2ptkVWec/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">📋</span>
-    <h4>Data Analysis</h4>
-    <span class="issuer">Microsoft</span>
-    <a href="https://drive.google.com/file/d/1h2yCpM3IIhcDTyC5GYXlYhcNu0ACWfxX/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">💻</span>
-    <h4>Python Developer</h4>
-    <span class="issuer">Certify Core</span>
-    <a href="https://drive.google.com/file/d/16OgZezkUBGgPZgOzJco350bMo3nA5_m2/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
-  </div>
-
-  <div class="cert-card">
-    <span style="font-size: 2rem;">✨</span>
-    <h4>Python for Data Science</h4>
-    <span class="issuer">Cognitive Class</span>
-    <a href="https://drive.google.com/file/d/1ArVELbLyF2drydtvv2oxLZzjSAitvvMg/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  <div class="cert-strip">
+    <div class="cert-icon">🐍</div>
+    <div class="cert-info">
+      <h4>Python Basics</h4>
+      <span>HackerRank</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1bnl5GB-4p7FyC5pvHUFEc6NM9Y_kwhel/view?usp=drive_link" class="cert-link">View</a>
   </div>
 
 </div>
-<div id="contact" align="center">
-  <h3>📬 Let's Connect</h3>
-  <p>Ready to work on data challenges. Feel free to reach out!</p>
 
-  <a href="mailto:dasranojoy9@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://linkedin.com/in/ranojoy">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="https://x.com/i_am_rano_3">
-    <img src="https://img.shields.io/badge/X_(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter">
-  </a>
-  <a href="https://thetshooter.blogspot.com/">
-    <img src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" alt="Blog">
-  </a>
-
-  <br><br>
-
-  <a href="https://leetcode.com/u/iamrano/">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode">
-  </a>
-  <a href="https://www.hackerrank.com/profile/dasranojoy9">
-    <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank">
-  </a>
-  <a href="https://www.kaggle.com/myselfranoranojoy">
-    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle">
-  </a>
-
-  <br><br>
-
-  <a href="https://www.facebook.com/rano.joy.333/">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
-  </a>
-  <a href="https://www.instagram.com/forgotten_humanbeing/">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-  </a>
-
-  <p style="font-size: 0.8em; color: #666; margin-top: 20px;">© 2025 Ranojoy Das. Built with GitHub Pages.</p>
+<div class="footer">
+  <h3>Let's Connect</h3>
+  <div class="footer-links">
+    <a href="mailto:{{ site.email }}">Email</a>
+    <a href="{{ site.linkedin }}">LinkedIn</a>
+    <a href="{{ site.github }}">GitHub</a>
+  </div>
+  <p>© 2025 Ranojoy Das. Data Driven.</p>
 </div>
