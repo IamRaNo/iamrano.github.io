@@ -1,17 +1,32 @@
-/* ================= VARIABLES (YOUR ORIGINAL THEME) ================= */
+/* ================= 1. VARIABLES (YOUR THEME) ================= */
 :root {
-    --bg: #121212;           /* Your Original Almost Black */
-    --surface: #1E1E1E;      /* Your Original Card Grey */
+    --bg: #121212;           /* Original Almost Black */
+    --surface: #1E1E1E;      /* Original Card Grey */
     --surface-hover: #252525;
     --text-main: #E0E0E0;
     --text-muted: #A0A0A0;
-    --accent: #00ADB5;       /* Your Data Science Teal */
+    --accent: #00ADB5;       /* Data Science Teal */
     --accent-glow: rgba(0, 173, 181, 0.4);
-    --secondary: #FF4B4B;    /* Your Red/Pink */
+    --secondary: #FF4B4B;    /* Red/Pink */
     --border: #333333;
     --width-limit: 1100px;   /* MASTER WIDTH CONTROLLER */
 }
-/* ================= NAVBAR (Restored) ================= */
+
+/* ================= 2. RESET & TYPOGRAPHY ================= */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { margin: 0; color: #fff; }
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; padding: 0; }
+
+/* ================= 3. NAVBAR (RESTORED) ================= */
 .navbar {
     background-color: rgba(18, 18, 18, 0.95);
     border-bottom: 1px solid var(--border);
@@ -24,7 +39,7 @@
 }
 
 .nav-container {
-    max-width: var(--width-limit); /* Matches the rest of the site */
+    max-width: var(--width-limit);
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -46,11 +61,9 @@
     font-size: 0.95rem;
 }
 
-.nav-links a:hover { 
-    color: var(--accent); 
-}
+.nav-links a:hover { color: var(--accent); }
 
-/* Fix for the Hire Me button in nav */
+/* Hire Me Button */
 .nav-links .btn-highlight {
     background-color: var(--accent);
     color: #121212 !important;
@@ -58,22 +71,9 @@
     border-radius: 4px;
     font-weight: 700;
 }
-/* ================= RESET & TYPOGRAPHY ================= */
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: var(--bg);
-    color: var(--text-main);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
 
-h1, h2, h3, h4 { margin: 0; color: #fff; }
-a { text-decoration: none; color: inherit; transition: 0.3s; }
-ul { list-style: none; padding: 0; }
-
-/* ================= UTILITIES ================= */
-/* This ensures PERFECT alignment for all sections */
+/* ================= 4. LAYOUT UTILITIES ================= */
+/* Forces all sections to align perfectly */
 .grid-wrapper, .hero-section, .cert-wrapper, .skills-wrapper, .live-wrapper {
     max-width: var(--width-limit);
     margin: 0 auto;
@@ -93,14 +93,14 @@ ul { list-style: none; padding: 0; }
 }
 .section-header p { color: var(--text-muted); font-size: 0.9rem; margin-top: 10px; }
 
-/* ================= HERO SECTION ================= */
+/* ================= 5. HERO SECTION ================= */
 .hero-section {
     min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    padding-top: 60px; /* Space from navbar */
+    padding-top: 40px;
 }
 .hero-content { flex: 1; }
 .hero-content h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 10px; }
@@ -120,7 +120,7 @@ ul { list-style: none; padding: 0; }
 
 .btn-primary {
     background: var(--accent);
-    color: #121212; /* Dark text on Teal button */
+    color: #121212;
     padding: 12px 24px;
     border-radius: 4px;
     font-weight: 700;
@@ -133,17 +133,15 @@ ul { list-style: none; padding: 0; }
 .social-icons a { color: var(--text-muted); }
 .social-icons a:hover { color: var(--accent); transform: translateY(-3px); }
 
-/* ================= GRID SYSTEM ================= */
+/* ================= 6. GRID SYSTEM ================= */
 .grid-wrapper {
     display: grid;
     gap: 25px;
 }
-/* Desktop: 3 Columns */
 .col-3 { grid-template-columns: repeat(3, 1fr); }
-/* Desktop: 2 Columns */
 .col-2 { grid-template-columns: repeat(2, 1fr); }
 
-/* ================= 1. PROJECT FLIP CARDS ================= */
+/* ================= 7. COMPONENT: PROJECT FLIP CARDS ================= */
 .project-flip {
     background: transparent;
     height: 320px;
@@ -170,7 +168,7 @@ ul { list-style: none; padding: 0; }
     justify-content: center;
     align-items: center;
     border: 1px solid var(--border);
-    background: var(--surface); /* Keeps your Dark Grey */
+    background: var(--surface);
     padding: 20px;
     box-sizing: border-box;
 }
@@ -178,7 +176,7 @@ ul { list-style: none; padding: 0; }
 .flip-front .icon-box { font-size: 3rem; margin-bottom: 15px; }
 .flip-back { 
     transform: rotateY(180deg); 
-    background: #151515; /* Slightly darker back */
+    background: #151515;
     border-color: var(--accent);
 }
 .tags span { 
@@ -200,11 +198,11 @@ ul { list-style: none; padding: 0; }
 }
 .btn-small:hover { background: var(--accent); color: #121212; }
 
-/* ================= 2. ML TECH CARDS (Cyber Module) ================= */
+/* ================= 8. COMPONENT: ML TECH CARDS ================= */
 .tech-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-bottom: 4px solid var(--secondary); /* Your RED accent */
+    border-bottom: 4px solid var(--secondary);
     padding: 25px;
     border-radius: 8px;
     transition: 0.3s;
@@ -214,10 +212,10 @@ ul { list-style: none; padding: 0; }
 .tech-header i { color: var(--secondary); font-size: 1.2rem; }
 .tech-body p { margin: 8px 0; font-size: 0.9rem; color: var(--text-muted); }
 
-/* ================= 3. RECOMMENDATION TICKETS (Rounded Pills) ================= */
+/* ================= 9. COMPONENT: TICKETS ================= */
 .ticket-card {
     background: linear-gradient(135deg, var(--surface), #111);
-    border-radius: 60px; /* PILL SHAPE - Non boxy */
+    border-radius: 60px;
     padding: 30px;
     text-align: center;
     border: 1px solid var(--border);
@@ -230,7 +228,7 @@ ul { list-style: none; padding: 0; }
 }
 .ticket-icon { font-size: 2.5rem; margin-bottom: 10px; display: block; }
 
-/* ================= 4. LIVE APPS (Mini Grid) ================= */
+/* ================= 10. COMPONENT: LIVE APPS ================= */
 .live-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -259,132 +257,79 @@ ul { list-style: none; padding: 0; }
 .app-name { font-weight: bold; color: #fff; font-size: 0.9rem; }
 .app-status { font-size: 0.7rem; color: #27C93F; }
 
-/* ================= 5. SKILLS (2-Column + Names) ================= */
+/* ================= 11. COMPONENT: SKILLS (2-Col + Names) ================= */
 .skills-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Force 2 Columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
-
 .skill-node {
     background: var(--surface);
     border-left: 5px solid;
-    width: 100%; /* Fill the grid column */
+    width: 100%;
     padding: 25px;
     border-radius: 0 12px 12px 0;
     transition: 0.3s;
     box-sizing: border-box;
 }
+.skill-node:hover { transform: translateX(10px); background: #252525; }
 
-.skill-node:hover { 
-    transform: translateX(10px); 
-    background: #252525; 
-}
-
-/* Colors for the borders */
+/* Skill Colors */
 .node-teal { border-color: var(--accent); }
 .node-red { border-color: var(--secondary); }
 .node-yellow { border-color: #FFBD2E; }
 .node-green { border-color: #27C93F; }
 
 .node-label { 
-    font-size: 0.85rem; 
-    font-weight: bold; 
-    letter-spacing: 1px; 
-    display: block; 
-    margin-bottom: 15px; 
-    color: var(--text-muted); 
-    text-transform: uppercase;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
+    font-size: 0.85rem; font-weight: bold; letter-spacing: 1px; 
+    display: block; margin-bottom: 15px; color: var(--text-muted); 
+    text-transform: uppercase; border-bottom: 1px solid #333; padding-bottom: 10px;
 }
-
-/* Internal Grid for the skills list */
 .node-group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Auto-arrange skills */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 15px;
 }
-
 .skill-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #e0e0e0;
-    font-size: 0.9rem;
-    font-weight: 500;
+    display: flex; align-items: center; gap: 10px; 
+    color: #e0e0e0; font-size: 0.9rem; font-weight: 500;
 }
+.skill-item img, .skill-item i { width: 24px; height: 24px; object-fit: contain; }
 
-.skill-item img, .skill-item i {
-    width: 24px; /* Consistent icon size */
-    height: 24px;
-    object-fit: contain;
-}
-
-/* Mobile: Stack columns */
-@media (max-width: 768px) {
-    .skills-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-/* ================= 6. CERTIFICATIONS (Glass Strips) ================= */
+/* ================= 12. COMPONENT: CERTIFICATIONS (2-Col) ================= */
 .cert-wrapper {
-    display: grid;  /* Changed from Flex to Grid */
-    grid-template-columns: repeat(2, 1fr); /* 2 Equal Columns */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-
 .cert-strip {
-    display: flex;
-    align-items: center;
+    display: flex; align-items: center;
     background: rgba(30, 30, 30, 0.5); 
     border: 1px solid var(--border);
     padding: 15px 25px;
     border-radius: 50px;
     transition: 0.3s;
-    /* Ensure it fills the grid cell */
-    width: 100%; 
-    box-sizing: border-box; 
+    width: 100%;
+    box-sizing: border-box;
 }
-
 .cert-strip:hover { 
-    background: var(--surface); 
-    border-color: var(--accent);
-    transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background: var(--surface); border-color: var(--accent);
+    transform: scale(1.02); box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
-
 .cert-icon { font-size: 1.8rem; margin-right: 20px; }
-.cert-info { flex: 1; text-align: left; overflow: hidden; } /* Prevents text spill */
+.cert-info { flex: 1; text-align: left; overflow: hidden; }
 .cert-info h4 { 
-    font-size: 1rem; 
-    color: #fff; 
-    margin-bottom: 2px;
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; /* Adds "..." if title is too long */
+    font-size: 1rem; color: #fff; margin-bottom: 2px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .cert-info span { font-size: 0.8rem; color: var(--accent); font-weight: 600; text-transform: uppercase; }
-
 .cert-link { 
-    background: #333; 
-    color: #fff;
-    padding: 8px 20px; 
-    border-radius: 25px; 
-    font-size: 0.75rem; 
-    border: 1px solid transparent;
-    white-space: nowrap; /* Keeps button from breaking lines */
+    background: #333; color: #fff; padding: 8px 20px; 
+    border-radius: 25px; font-size: 0.75rem; border: 1px solid transparent; white-space: nowrap;
 }
 .cert-link:hover { background: var(--accent); color: #121212; }
 
-/* MOBILE FIX: Back to 1 column on phones */
-@media (max-width: 900px) {
-    .cert-wrapper {
-        grid-template-columns: 1fr; /* Stack them on smaller screens */
-    }
-}
-
-/* ================= FOOTER ================= */
+/* ================= 13. FOOTER ================= */
 .footer {
     text-align: center;
     padding: 60px 0;
@@ -396,16 +341,17 @@ ul { list-style: none; padding: 0; }
 .footer-links a { margin: 0 15px; color: var(--text-muted); }
 .footer-links a:hover { color: var(--accent); }
 
-/* ================= ANIMATION ================= */
+/* ================= 14. ANIMATIONS ================= */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
     100% { transform: translateY(0px); }
 }
 
-/* ================= MOBILE ================= */
+/* ================= 15. MOBILE RESPONSIVENESS ================= */
 @media (max-width: 900px) {
     .col-3 { grid-template-columns: repeat(2, 1fr); }
+    .cert-wrapper { grid-template-columns: 1fr; } /* Stack certs */
 }
 
 @media (max-width: 768px) {
@@ -414,10 +360,15 @@ ul { list-style: none; padding: 0; }
     .profile-glow { width: 250px; height: 250px; }
     .hero-actions { display: flex; flex-direction: column; align-items: center; }
     
-    /* Stack everything on mobile */
+    /* Stack Grid */
     .grid-wrapper.col-3, .grid-wrapper.col-2 { grid-template-columns: 1fr; } 
     
+    /* Stack Skills */
+    .skills-wrapper { grid-template-columns: 1fr; }
+    
+    /* Adjust Certs for Mobile */
     .cert-strip { flex-direction: column; text-align: center; gap: 10px; border-radius: 15px; padding: 20px; }
     .cert-info { text-align: center; }
     .cert-icon { margin: 0; }
+    .cert-info h4 { white-space: normal; } /* Allow wrapping on phone */
 }
