@@ -13,7 +13,7 @@ title: Ranojoy Das | Data Analyst
       <a href="#projects" class="btn-primary">View Work <i class="fas fa-arrow-down"></i></a>
       <div class="social-icons">
         <a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>
-        <a href="{{ site.github }}"><i class="fab fa-github"></i></a>
+        <a href="{{ site.github_handle }}"><i class="fab fa-github"></i></a>
         <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
@@ -46,7 +46,7 @@ title: Ranojoy Das | Data Analyst
         <div class="tags">
           <span>Python</span><span>Seaborn</span>
         </div>
-        <a href="{{ site.github }}" class="btn-small">View GitHub</a>
+        <a href="{{ site.github_handle }}" class="btn-small">View GitHub</a>
       </div>
     </div>
   </div>
@@ -65,7 +65,7 @@ title: Ranojoy Das | Data Analyst
         <div class="tags">
           <span>Random Forest</span><span>Scikit</span>
         </div>
-        <a href="{{ site.github }}" class="btn-small">View GitHub</a>
+        <a href="{{ site.github_handle }}" class="btn-small">View GitHub</a>
       </div>
     </div>
   </div>
@@ -84,7 +84,7 @@ title: Ranojoy Das | Data Analyst
         <div class="tags">
           <span>Healthcare Analytics</span>
         </div>
-        <a href="{{ site.github }}" class="btn-small">View GitHub</a>
+        <a href="{{ site.github_handle }}" class="btn-small">View GitHub</a>
       </div>
     </div>
   </div>
@@ -302,7 +302,7 @@ title: Ranojoy Das | Data Analyst
   <div class="footer-links">
     <a href="mailto:{{ site.email }}">Email</a>
     <a href="{{ site.linkedin }}">LinkedIn</a>
-    <a href="{{ site.github }}">GitHub</a>
+    <a href="{{ site.github_handle }}">GitHub</a>
   </div>
   <p>© 2025 Ranojoy Das. Data Driven.</p>
 </div>
