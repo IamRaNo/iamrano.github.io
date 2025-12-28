@@ -285,37 +285,60 @@ ul { list-style: none; padding: 0; }
 
 /* ================= 6. CERTIFICATIONS (Glass Strips) ================= */
 .cert-wrapper {
-    display: flex;
-    flex-direction: column; /* Stacked Vertically */
-    gap: 15px;
+    display: grid;  /* Changed from Flex to Grid */
+    grid-template-columns: repeat(2, 1fr); /* 2 Equal Columns */
+    gap: 20px;
 }
+
 .cert-strip {
     display: flex;
     align-items: center;
-    background: rgba(30, 30, 30, 0.5); /* Semi-transparent */
+    background: rgba(30, 30, 30, 0.5); 
     border: 1px solid var(--border);
-    padding: 15px 30px;
-    border-radius: 50px; /* Smooth rounded ends */
+    padding: 15px 25px;
+    border-radius: 50px;
     transition: 0.3s;
+    /* Ensure it fills the grid cell */
+    width: 100%; 
+    box-sizing: border-box; 
 }
+
 .cert-strip:hover { 
     background: var(--surface); 
     border-color: var(--accent);
-    transform: scale(1.01);
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
-.cert-icon { font-size: 1.8rem; margin-right: 25px; }
-.cert-info { flex: 1; text-align: left; }
-.cert-info h4 { font-size: 1.1rem; color: #fff; margin-bottom: 2px; }
-.cert-info span { font-size: 0.85rem; color: var(--accent); font-weight: 600; text-transform: uppercase; }
+
+.cert-icon { font-size: 1.8rem; margin-right: 20px; }
+.cert-info { flex: 1; text-align: left; overflow: hidden; } /* Prevents text spill */
+.cert-info h4 { 
+    font-size: 1rem; 
+    color: #fff; 
+    margin-bottom: 2px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; /* Adds "..." if title is too long */
+}
+.cert-info span { font-size: 0.8rem; color: var(--accent); font-weight: 600; text-transform: uppercase; }
+
 .cert-link { 
     background: #333; 
     color: #fff;
     padding: 8px 20px; 
     border-radius: 25px; 
-    font-size: 0.8rem; 
+    font-size: 0.75rem; 
     border: 1px solid transparent;
+    white-space: nowrap; /* Keeps button from breaking lines */
 }
 .cert-link:hover { background: var(--accent); color: #121212; }
+
+/* MOBILE FIX: Back to 1 column on phones */
+@media (max-width: 900px) {
+    .cert-wrapper {
+        grid-template-columns: 1fr; /* Stack them on smaller screens */
+    }
+}
 
 /* ================= FOOTER ================= */
 .footer {
