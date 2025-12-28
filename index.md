@@ -260,67 +260,110 @@ title: Ranojoy Das | Data Analyst
 </div>
 
 <div id="certifications" style="text-align: center; margin-bottom: 20px; padding-top: 80px; margin-top: -60px;">
-  <h2>📜 Certifications & Experience</h2>
+  <h2>📜 Certifications & Achievements</h2>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; text-align: left;">
-  <div style="display: flex; flex-direction: column; gap: 20px;">
-    <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
-      <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">💼 Industry Experience</h3>
-      <p style="margin-bottom: 5px;"><strong>🏆 Data Science Job Simulation</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">BCG X</span></p>
-      <a href="https://drive.google.com/file/d/1hGFDw9U9BHqcV1z-EQsWf9dhmo8vLSAb/view?usp=sharing"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-      <p style="margin-bottom: 5px;"><strong>🏆 Data Analytics Job Simulation</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Deloitte</span></p>
-      <a href="https://drive.google.com/file/d/1y2JJW_CqWR0AQRvwhpDZ2eRgHomEFrfO/view?usp=sharing"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-      <p style="margin-bottom: 5px;"><strong>🏆 Virtual Data Analysis Internship</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Elevvo Tech</span></p>
-      <a href="https://drive.google.com/file/d/1JE0xgjJzQPkXuqjK6ze9dDZbWvR7LmMX/view?usp=sharing"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-      <p style="margin-bottom: 5px;"><strong>🏆 Career Forward Program</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">McKinsey & Company</span></p>
-      <a href="https://drive.google.com/file/d/1qKkLvYBkfzKg5vMXXSrwFxKKLpwga5Ts/view?usp=sharing"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-    </div>    
-    <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
-      <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">☁️ Cloud & Specialized</h3>
-      <p style="margin-bottom: 5px;"><strong>🏆 AWS Fundamentals</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Amazon AWS</span></p>
-      <a href="https://drive.google.com/file/d/1lxE7CrcZ3UzadX6PxSNrfnL0Gkfq639x/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-      <p style="margin-bottom: 5px;"><strong>🏆 Power BI Basics</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Microsoft</span></p>
-      <a href="https://drive.google.com/file/d/1xd2rfsQvbLbU3QPEOR4RjvlDIrPHRp-R/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-      <p style="margin-bottom: 5px;"><strong>🏆 Machine Learning</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Besant Technologies</span></p>
-      <a href="https://drive.google.com/file/d/1MRmwalrS-rHfq1C5yVtqO3kUREiIcmU1/view?usp=sharing"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-    </div>
+<div class="cert-grid">
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">💼</span>
+    <h4>Data Science Simulation</h4>
+    <span class="issuer">BCG X</span>
+    <a href="https://drive.google.com/file/d/1hGFDw9U9BHqcV1z-EQsWf9dhmo8vLSAb/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
   </div>
 
-  <div style="display: flex; flex-direction: column; gap: 20px;">
-    <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
-      <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">💻 Core Technical Skills</h3>    
-      <p style="margin-bottom: 5px;"><strong>🏆 Python Basics</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">HackerRank</span></p>
-      <a href="https://drive.google.com/file/d/1bnl5GB-4p7FyC5pvHUFEc6NM9Y_kwhel/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-      <p style="margin-bottom: 5px;"><strong>🏆 Data Structure & Algo</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Simplilearn</span></p>
-      <a href="https://drive.google.com/file/d/1oQioWbyEmlPhSQyew6WBp2ubAm-dr3RL/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-      <p style="margin-bottom: 5px;"><strong>🏆 Data Fundamentals</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">IBM</span></p>
-      <a href="https://drive.google.com/file/d/1ZL00QbqKd1TUw-oLA1B2WMIB34Rdokt4/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-    </div>
-    <div style="background: #1E1E1E; border: 1px solid #333; border-radius: 12px; padding: 20px;">
-      <h3 style="margin-top: 0; color: #00ADB5; font-size: 1.2em; border-bottom: 1px solid #333; padding-bottom: 10px;">📜 Additional Certifications</h3>      
-      <p style="margin-bottom: 5px;"><strong>🏆 Data Science</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Cisco / Cognitive Class</span></p>
-      <a href="https://drive.google.com/file/d/1EuT95dfMqztDTRtWgs9iLVcx2ptkVWec/view?usp=sharing"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-      <p style="margin-bottom: 5px;"><strong>🏆 Data Analysis</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Microsoft</span></p>
-      <a href="https://drive.google.com/file/d/1h2yCpM3IIhcDTyC5GYXlYhcNu0ACWfxX/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-      <p style="margin-bottom: 5px;"><strong>🏆 Python Developer Associate</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Certify Core</span></p>
-      <a href="https://drive.google.com/file/d/16OgZezkUBGgPZgOzJco350bMo3nA5_m2/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-      <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-       <p style="margin-bottom: 5px;"><strong>🏆 Python For Data Science</strong><br><span style="color: #A0A0A0; font-size: 0.9em;">Cognitive Class</span></p>
-      <a href="https://drive.google.com/file/d/1ArVELbLyF2drydtvv2oxLZzjSAitvvMg/view?usp=drive_link"><img src="https://img.shields.io/badge/View_Certificate-4285F4?style=flat-square&logo=google-drive&logoColor=white" alt="View"></a>
-    </div>
+  <div class="cert-card">
+    <span style="font-size: 2rem;">📊</span>
+    <h4>Data Analytics Simulation</h4>
+    <span class="issuer">Deloitte</span>
+    <a href="https://drive.google.com/file/d/1y2JJW_CqWR0AQRvwhpDZ2eRgHomEFrfO/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
   </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">🚀</span>
+    <h4>Data Analysis Internship</h4>
+    <span class="issuer">Elevvo Tech</span>
+    <a href="https://drive.google.com/file/d/1JE0xgjJzQPkXuqjK6ze9dDZbWvR7LmMX/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">📈</span>
+    <h4>Career Forward Program</h4>
+    <span class="issuer">McKinsey & Company</span>
+    <a href="https://drive.google.com/file/d/1qKkLvYBkfzKg5vMXXSrwFxKKLpwga5Ts/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">☁️</span>
+    <h4>AWS Fundamentals</h4>
+    <span class="issuer">Amazon AWS</span>
+    <a href="https://drive.google.com/file/d/1lxE7CrcZ3UzadX6PxSNrfnL0Gkfq639x/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">💡</span>
+    <h4>Power BI Basics</h4>
+    <span class="issuer">Microsoft</span>
+    <a href="https://drive.google.com/file/d/1xd2rfsQvbLbU3QPEOR4RjvlDIrPHRp-R/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">🤖</span>
+    <h4>Machine Learning</h4>
+    <span class="issuer">Besant Technologies</span>
+    <a href="https://drive.google.com/file/d/1MRmwalrS-rHfq1C5yVtqO3kUREiIcmU1/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">🐍</span>
+    <h4>Python Basics</h4>
+    <span class="issuer">HackerRank</span>
+    <a href="https://drive.google.com/file/d/1bnl5GB-4p7FyC5pvHUFEc6NM9Y_kwhel/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">🧬</span>
+    <h4>Data Structure & Algo</h4>
+    <span class="issuer">Simplilearn</span>
+    <a href="https://drive.google.com/file/d/1oQioWbyEmlPhSQyew6WBp2ubAm-dr3RL/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">🔍</span>
+    <h4>Data Fundamentals</h4>
+    <span class="issuer">IBM</span>
+    <a href="https://drive.google.com/file/d/1ZL00QbqKd1TUw-oLA1B2WMIB34Rdokt4/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">🧪</span>
+    <h4>Data Science</h4>
+    <span class="issuer">Cisco / Cognitive Class</span>
+    <a href="https://drive.google.com/file/d/1EuT95dfMqztDTRtWgs9iLVcx2ptkVWec/view?usp=sharing" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">📋</span>
+    <h4>Data Analysis</h4>
+    <span class="issuer">Microsoft</span>
+    <a href="https://drive.google.com/file/d/1h2yCpM3IIhcDTyC5GYXlYhcNu0ACWfxX/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">💻</span>
+    <h4>Python Developer</h4>
+    <span class="issuer">Certify Core</span>
+    <a href="https://drive.google.com/file/d/16OgZezkUBGgPZgOzJco350bMo3nA5_m2/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
+  <div class="cert-card">
+    <span style="font-size: 2rem;">✨</span>
+    <h4>Python for Data Science</h4>
+    <span class="issuer">Cognitive Class</span>
+    <a href="https://drive.google.com/file/d/1ArVELbLyF2drydtvv2oxLZzjSAitvvMg/view?usp=drive_link" class="cert-btn"><i class="fas fa-external-link-alt"></i> View Achievement</a>
+  </div>
+
 </div>
-
 <div id="contact" align="center">
   <h3>📬 Let's Connect</h3>
   <p>Ready to work on data challenges. Feel free to reach out!</p>
