@@ -204,6 +204,14 @@ title: Ranojoy Das | Data Analyst
     </div>
   </a>
 
+  <a href="https://huggingface.co/spaces/thetshooter/movieRecommendation" class="app-card">
+    <img src="https://img.icons8.com/color/48/movie-projector.png" width="30">
+    <div class="app-info">
+      <span class="app-name">Movie Recs</span>
+      <span class="app-status">● Live</span>
+    </div>
+  </a>
+
   <a href="https://lap-price-pred-ranoj.streamlit.app/" class="app-card">
     <img src="https://img.icons8.com/color/48/laptop.png" width="30">
     <div class="app-info">
@@ -221,40 +229,46 @@ title: Ranojoy Das | Data Analyst
 <div class="skills-wrapper">
   
   <div class="skill-node node-teal">
-    <span class="node-label">LANGUAGES</span>
+    <span class="node-label">LANGUAGES & DB</span>
     <div class="node-icons">
-      <i class="fab fa-python fa-2x"></i>
-      <i class="fas fa-database fa-2x"></i>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="35" title="Python">
+      <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-sql-computer-programming-flaticons-flat-flat-icons.png" width="35" title="SQL">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="35" title="MySQL">
     </div>
   </div>
 
   <div class="skill-node node-red">
     <span class="node-label">ANALYSIS</span>
     <div class="node-icons">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="30">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="35" title="Pandas">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="35" title="NumPy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg" width="35" title="Excel">
     </div>
   </div>
 
   <div class="skill-node node-yellow">
     <span class="node-label">VISUALIZATION</span>
     <div class="node-icons">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="30">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" width="30">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="35" title="Power BI">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" width="35" title="Matplotlib">
+      <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" width="35" title="Seaborn">
     </div>
   </div>
 
   <div class="skill-node node-green">
-    <span class="node-label">CLOUD</span>
-    <div class="node-icons">
-      <i class="fab fa-aws fa-2x"></i>
+    <span class="node-label">CLOUD & CORE</span>
+    <div class="node-icons" style="flex-wrap: wrap; gap: 10px;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="45" title="AWS">
+      <span style="font-size: 0.7em; background: #333; padding: 5px 8px; border-radius: 4px; color: #fff;">EDA</span>
+      <span style="font-size: 0.7em; background: #333; padding: 5px 8px; border-radius: 4px; color: #fff;">ML</span>
+      <span style="font-size: 0.7em; background: #333; padding: 5px 8px; border-radius: 4px; color: #fff;">STATS</span>
     </div>
   </div>
 
 </div>
 
 <div class="section-header">
-  <h2>📜 Certifications</h2>
+  <h2>📜 Certifications & Achievements</h2>
 </div>
 
 <div class="cert-wrapper">
@@ -262,7 +276,7 @@ title: Ranojoy Das | Data Analyst
   <div class="cert-strip">
     <div class="cert-icon">🏆</div>
     <div class="cert-info">
-      <h4>Data Science Simulation</h4>
+      <h4>Data Science Job Simulation</h4>
       <span>BCG X</span>
     </div>
     <a href="https://drive.google.com/file/d/1hGFDw9U9BHqcV1z-EQsWf9dhmo8vLSAb/view?usp=sharing" class="cert-link">View</a>
@@ -271,10 +285,28 @@ title: Ranojoy Das | Data Analyst
   <div class="cert-strip">
     <div class="cert-icon">📊</div>
     <div class="cert-info">
-      <h4>Data Analytics Job Sim</h4>
+      <h4>Data Analytics Job Simulation</h4>
       <span>Deloitte</span>
     </div>
     <a href="https://drive.google.com/file/d/1y2JJW_CqWR0AQRvwhpDZ2eRgHomEFrfO/view?usp=sharing" class="cert-link">View</a>
+  </div>
+
+  <div class="cert-strip">
+    <div class="cert-icon">🚀</div>
+    <div class="cert-info">
+      <h4>Virtual Data Analysis Internship</h4>
+      <span>Elevvo Tech</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1JE0xgjJzQPkXuqjK6ze9dDZbWvR7LmMX/view?usp=sharing" class="cert-link">View</a>
+  </div>
+
+  <div class="cert-strip">
+    <div class="cert-icon">📈</div>
+    <div class="cert-info">
+      <h4>Career Forward Program</h4>
+      <span>McKinsey & Company</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1qKkLvYBkfzKg5vMXXSrwFxKKLpwga5Ts/view?usp=sharing" class="cert-link">View</a>
   </div>
 
   <div class="cert-strip">
@@ -287,6 +319,24 @@ title: Ranojoy Das | Data Analyst
   </div>
 
   <div class="cert-strip">
+    <div class="cert-icon">💡</div>
+    <div class="cert-info">
+      <h4>Power BI Basics</h4>
+      <span>Microsoft</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1xd2rfsQvbLbU3QPEOR4RjvlDIrPHRp-R/view?usp=drive_link" class="cert-link">View</a>
+  </div>
+
+  <div class="cert-strip">
+    <div class="cert-icon">🤖</div>
+    <div class="cert-info">
+      <h4>Machine Learning</h4>
+      <span>Besant Technologies</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1MRmwalrS-rHfq1C5yVtqO3kUREiIcmU1/view?usp=sharing" class="cert-link">View</a>
+  </div>
+
+  <div class="cert-strip">
     <div class="cert-icon">🐍</div>
     <div class="cert-info">
       <h4>Python Basics</h4>
@@ -295,14 +345,78 @@ title: Ranojoy Das | Data Analyst
     <a href="https://drive.google.com/file/d/1bnl5GB-4p7FyC5pvHUFEc6NM9Y_kwhel/view?usp=drive_link" class="cert-link">View</a>
   </div>
 
+  <div class="cert-strip">
+    <div class="cert-icon">🧬</div>
+    <div class="cert-info">
+      <h4>Data Structure & Algo</h4>
+      <span>Simplilearn</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1oQioWbyEmlPhSQyew6WBp2ubAm-dr3RL/view?usp=drive_link" class="cert-link">View</a>
+  </div>
+
+  <div class="cert-strip">
+    <div class="cert-icon">🔍</div>
+    <div class="cert-info">
+      <h4>Data Fundamentals</h4>
+      <span>IBM</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1ZL00QbqKd1TUw-oLA1B2WMIB34Rdokt4/view?usp=drive_link" class="cert-link">View</a>
+  </div>
+
+  <div class="cert-strip">
+    <div class="cert-icon">🧪</div>
+    <div class="cert-info">
+      <h4>Data Science</h4>
+      <span>Cisco / Cognitive Class</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1EuT95dfMqztDTRtWgs9iLVcx2ptkVWec/view?usp=sharing" class="cert-link">View</a>
+  </div>
+
+  <div class="cert-strip">
+    <div class="cert-icon">📋</div>
+    <div class="cert-info">
+      <h4>Data Analysis</h4>
+      <span>Microsoft</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1h2yCpM3IIhcDTyC5GYXlYhcNu0ACWfxX/view?usp=drive_link" class="cert-link">View</a>
+  </div>
+
+  <div class="cert-strip">
+    <div class="cert-icon">💻</div>
+    <div class="cert-info">
+      <h4>Python Developer Associate</h4>
+      <span>Certify Core</span>
+    </div>
+    <a href="https://drive.google.com/file/d/16OgZezkUBGgPZgOzJco350bMo3nA5_m2/view?usp=drive_link" class="cert-link">View</a>
+  </div>
+
+  <div class="cert-strip">
+    <div class="cert-icon">✨</div>
+    <div class="cert-info">
+      <h4>Python For Data Science</h4>
+      <span>Cognitive Class</span>
+    </div>
+    <a href="https://drive.google.com/file/d/1ArVELbLyF2drydtvv2oxLZzjSAitvvMg/view?usp=drive_link" class="cert-link">View</a>
+  </div>
+
 </div>
 
 <div class="footer">
   <h3>Let's Connect</h3>
-  <div class="footer-links">
-    <a href="mailto:{{ site.email }}">Email</a>
-    <a href="{{ site.linkedin }}">LinkedIn</a>
-    <a href="{{ site.github_handle }}">GitHub</a>
+  <div class="footer-links" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 800px; margin: 30px auto;">
+    
+    <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
+    <a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="{{ site.github_handle }}"><i class="fab fa-github"></i> GitHub</a>
+    <a href="{{ site.twitter }}"><i class="fab fa-twitter"></i> X (Twitter)</a>
+    <a href="{{ site.facebook }}"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="{{ site.instagram }}"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="{{ site.blogger }}"><i class="fas fa-rss"></i> Blog</a>
+
+    <a href="{{ site.leetcode }}"><i class="fas fa-code"></i> LeetCode</a>
+    <a href="{{ site.hackerrank }}"><i class="fab fa-hackerrank"></i> HackerRank</a>
+    <a href="{{ site.kaggle }}"><i class="fab fa-kaggle"></i> Kaggle</a>
+
   </div>
   <p>© 2025 Ranojoy Das. Data Driven.</p>
 </div>
