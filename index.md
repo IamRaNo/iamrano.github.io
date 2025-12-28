@@ -435,7 +435,7 @@ title: Ranojoy Das | Data Analyst
 
 </div>
 
-<div class="footer">
+<div id ="contact" class="footer">
   <h3>Let's Connect</h3>
   <div class="footer-links" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 800px; margin: 30px auto;">
     <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
