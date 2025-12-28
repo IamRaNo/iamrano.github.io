@@ -259,30 +259,74 @@ ul { list-style: none; padding: 0; }
 .app-name { font-weight: bold; color: #fff; font-size: 0.9rem; }
 .app-status { font-size: 0.7rem; color: #27C93F; }
 
-/* ================= 5. SKILLS (Sliding Nodes) ================= */
+/* ================= 5. SKILLS (2-Column + Names) ================= */
 .skills-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Force 2 Columns */
+    gap: 25px;
 }
+
 .skill-node {
     background: var(--surface);
     border-left: 5px solid;
-    width: 250px;
-    padding: 20px;
-    border-radius: 0 12px 12px 0; /* Unique shape */
+    width: 100%; /* Fill the grid column */
+    padding: 25px;
+    border-radius: 0 12px 12px 0;
     transition: 0.3s;
+    box-sizing: border-box;
 }
-.skill-node:hover { transform: translateX(10px); background: #252525; }
+
+.skill-node:hover { 
+    transform: translateX(10px); 
+    background: #252525; 
+}
+
+/* Colors for the borders */
 .node-teal { border-color: var(--accent); }
 .node-red { border-color: var(--secondary); }
 .node-yellow { border-color: #FFBD2E; }
 .node-green { border-color: #27C93F; }
 
-.node-label { font-size: 0.8rem; font-weight: bold; letter-spacing: 1px; display: block; margin-bottom: 10px; color: var(--text-muted); }
-.node-icons { display: flex; gap: 15px; }
+.node-label { 
+    font-size: 0.85rem; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    display: block; 
+    margin-bottom: 15px; 
+    color: var(--text-muted); 
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
 
+/* Internal Grid for the skills list */
+.node-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Auto-arrange skills */
+    gap: 15px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.skill-item img, .skill-item i {
+    width: 24px; /* Consistent icon size */
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Mobile: Stack columns */
+@media (max-width: 768px) {
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
 /* ================= 6. CERTIFICATIONS (Glass Strips) ================= */
 .cert-wrapper {
     display: grid;  /* Changed from Flex to Grid */
