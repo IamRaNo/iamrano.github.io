@@ -131,25 +131,48 @@ img { max-width: 100%; border-radius: 6px; }
 .cert-grid {
     display: grid !important;
     width: 100% !important;
-    max-width: 1100px !important;  /* Forces all sections to same width */
+    max-width: 1100px !important;
     margin: 30px auto !important;
     gap: 25px !important;
-    padding: 0 20px;               /* Matches container padding */
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
-/* 3-Column Layouts */
+/* FORCE SINGLE LINE LAYOUT (Desktop)
+   We use 'repeat(3, 1fr)' to force exactly 3 equal columns.
+*/
 .featured-grid, 
-.poster-grid, 
+.poster-grid {
+    grid-template-columns: repeat(3, 1fr) !important; /* Force 3 columns */
+}
+
+/* Force 2 columns for Machine Learning (looks balanced for 4 items) */
+.ml-grid {
+    grid-template-columns: repeat(2, 1fr) !important; 
+}
+
+/* Certifications can stay flexible (auto-fit) since there are many */
 .cert-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
 }
 
-/* 2-Column Layout (Machine Learning) - Looks better with 4 items */
-.ml-grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+/* =========================================
+   MOBILE RESPONSIVENESS (Keep this at the bottom of your file)
+   This ensures they stack nicely on phones, but stay in one line on PC.
+   ========================================= */
+@media (max-width: 900px) {
+    /* On tablets/small screens, switch back to 2 columns */
+    .featured-grid, .poster-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
 }
 
+@media (max-width: 600px) {
+    /* On phones, stack in 1 column */
+    .featured-grid, .ml-grid, .poster-grid, .cert-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
 /* =========================================
    6. COMPONENT: FLIP CARDS (Projects)
    ========================================= */
