@@ -217,7 +217,7 @@ title: Ranojoy Das | Data Analyst
 
 </div>
 
-<div class="section-header">
+<div id = "skills" class="section-header">
   <h2>🛠 Technical Arsenal</h2>
 </div>
 
