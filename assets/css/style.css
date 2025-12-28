@@ -419,12 +419,16 @@ div[align="center"] {
     width: 280px !important;
 }
 /* --- CERTIFICATION CARDS: Achievement Style --- */
+/* --- CERTIFICATION CARDS: Achievement Style --- */
 .cert-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .cert-card {
@@ -433,10 +437,14 @@ div[align="center"] {
     border: 1px solid #333;
     border-radius: 15px;
     padding: 20px;
-    width: 320px;
+    width: 300px; /* Fixed width for uniform cards */
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
+    text-align: center; /* Centers the text inside the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Floating Glow Effect */
@@ -448,7 +456,7 @@ div[align="center"] {
 }
 
 .cert-card h4 {
-    margin: 10px 0 5px 0;
+    margin: 15px 0 5px 0;
     color: #fff;
     font-size: 1.1rem;
 }
@@ -458,21 +466,22 @@ div[align="center"] {
     font-size: 0.85rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: block;
 }
 
 /* Styled Certificate Button */
 .cert-btn {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 8px 16px;
     background: #333;
     color: #fff !important;
     border-radius: 20px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     text-decoration: none !important;
     transition: 0.3s;
     border: 1px solid transparent;
+    margin-top: auto; /* Pushes button to bottom if text is short */
 }
 
 .cert-card:hover .cert-btn {
