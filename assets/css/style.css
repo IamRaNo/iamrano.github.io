@@ -11,7 +11,53 @@
     --border: #333333;
     --width-limit: 1100px;   /* MASTER WIDTH CONTROLLER */
 }
+/* ================= NAVBAR (Restored) ================= */
+.navbar {
+    background-color: rgba(18, 18, 18, 0.95);
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
 
+.nav-container {
+    max-width: var(--width-limit); /* Matches the rest of the site */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { 
+    font-weight: 900; 
+    font-size: 1.5rem; 
+    color: #fff; 
+    letter-spacing: -1px; 
+}
+
+.nav-links a { 
+    margin-left: 20px; 
+    font-weight: 500; 
+    color: var(--text-main); 
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover { 
+    color: var(--accent); 
+}
+
+/* Fix for the Hire Me button in nav */
+.nav-links .btn-highlight {
+    background-color: var(--accent);
+    color: #121212 !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+}
 /* ================= RESET & TYPOGRAPHY ================= */
 body {
     margin: 0;
