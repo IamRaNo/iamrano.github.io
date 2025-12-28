@@ -9,7 +9,7 @@ title: Ranojoy Das | Data Analyst
     <h3>I am Into <span class="text-accent">Data Analytics</span></h3>
     <p>Aspiring Data Analyst specializing in ML, Predictive Modeling, and Visualization. Eager to solve real-world problems.</p>    
     <div class="hero-actions">
-      <a href="#projects" class="btn-primary">View Projects <i class="fas fa-arrow-down"></i></a>
+      <a href="https://drive.google.com/file/d/1XY-ErhYd2ve4-bMMQwIJdebSOFWfjD4B/view?usp=drive_link" class="btn-primary" target="_blank">View CV <i class="fas fa-arrow-down"></i></a>
       <div class="social-icons">
         <a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>
         <a href="{{ site.github_handle }}"><i class="fab fa-github"></i></a>
