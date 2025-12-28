@@ -229,39 +229,78 @@ title: Ranojoy Das | Data Analyst
 <div class="skills-wrapper">
   
   <div class="skill-node node-teal">
-    <span class="node-label">LANGUAGES & DB</span>
-    <div class="node-icons">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="35" title="Python">
-      <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-sql-computer-programming-flaticons-flat-flat-icons.png" width="35" title="SQL">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="35" title="MySQL">
+    <span class="node-label">Languages & Databases</span>
+    <div class="node-group">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <span>Python</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-sql-computer-programming-flaticons-flat-flat-icons.png" alt="SQL">
+        <span>SQL</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <span>MySQL</span>
+      </div>
     </div>
   </div>
 
   <div class="skill-node node-red">
-    <span class="node-label">ANALYSIS</span>
-    <div class="node-icons">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="35" title="Pandas">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="35" title="NumPy">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg" width="35" title="Excel">
+    <span class="node-label">Data Analysis</span>
+    <div class="node-group">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+        <span>Pandas</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+        <span>NumPy</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg" alt="Excel">
+        <span>Excel</span>
+      </div>
     </div>
   </div>
 
   <div class="skill-node node-yellow">
-    <span class="node-label">VISUALIZATION</span>
-    <div class="node-icons">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="35" title="Power BI">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" width="35" title="Matplotlib">
-      <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" width="35" title="Seaborn">
+    <span class="node-label">Visualization</span>
+    <div class="node-group">
+      <div class="skill-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI">
+        <span>Power BI</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib">
+        <span>Matplotlib</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn">
+        <span>Seaborn</span>
+      </div>
     </div>
   </div>
 
   <div class="skill-node node-green">
-    <span class="node-label">CLOUD & CORE</span>
-    <div class="node-icons" style="flex-wrap: wrap; gap: 10px;">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="45" title="AWS">
-      <span style="font-size: 0.7em; background: #333; padding: 5px 8px; border-radius: 4px; color: #fff;">EDA</span>
-      <span style="font-size: 0.7em; background: #333; padding: 5px 8px; border-radius: 4px; color: #fff;">ML</span>
-      <span style="font-size: 0.7em; background: #333; padding: 5px 8px; border-radius: 4px; color: #fff;">STATS</span>
+    <span class="node-label">Cloud & Core Concepts</span>
+    <div class="node-group">
+      <div class="skill-item">
+        <i class="fab fa-aws" style="font-size: 24px; color: #FF9900;"></i>
+        <span>AWS</span>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-search" style="font-size: 20px; color: #aaa;"></i>
+        <span>EDA</span>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-brain" style="font-size: 20px; color: #aaa;"></i>
+        <span>ML</span>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-chart-line" style="font-size: 20px; color: #aaa;"></i>
+        <span>Stats</span>
+      </div>
     </div>
   </div>
 
