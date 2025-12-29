@@ -452,3 +452,11 @@ title: Ranojoy Das | Data Analyst
   </div>
   <p>© 2025 Ranojoy Das</p>
 </div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TWX0XV8QSP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TWX0XV8QSP');
+</script>
