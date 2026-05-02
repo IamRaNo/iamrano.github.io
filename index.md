@@ -234,68 +234,44 @@
     animation: fadeSlideUp 0.6s 0.4s ease both;
   }
 
-  .btn-primary {
+.btn-primary {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     background: var(--accent);
     color: #080c14;
-    font-weight: 600;
-    font-size: 0.875rem;
-    padding: 0 22px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.2s;
     letter-spacing: 0.2px;
-    height: 42px;
+    line-height: 1;
+    border: none;
+    white-space: nowrap;
   }
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--accent);
-    color: #080c14;
-    font-weight: 600;
-    font-size: 0.875rem;
-    padding: 0 22px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.2s;
-    letter-spacing: 0.2px;
-    height: 42px;
-  }
+  .btn-primary:hover { background: #7dd3fc; transform: translateY(-2px); box-shadow: 0 8px 25px rgba(56,189,248,0.3); }
 
   .btn-outline {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     border: 1px solid var(--border);
     color: var(--text);
-    font-weight: 500;
-    font-size: 0.875rem;
-    padding: 0 22px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.2s;
     background: var(--surface);
-    height: 42px;
+    line-height: 1;
+    white-space: nowrap;
   }
-  .btn-outline {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid var(--border);
-    color: var(--text);
-    font-weight: 500;
-    font-size: 0.875rem;
-    padding: 0 22px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.2s;
-    background: var(--surface);
-    height: 42px;
-  }
-
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
   .hero-socials {
     display: flex;
     gap: 10px;
