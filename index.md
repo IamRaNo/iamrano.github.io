@@ -242,11 +242,12 @@
     color: #080c14;
     font-weight: 600;
     font-size: 0.875rem;
-    padding: 11px 22px;
+    padding: 0 22px;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.2s;
     letter-spacing: 0.2px;
+    height: 42px;
   }
   .btn-primary {
     display: inline-flex;
@@ -256,7 +257,7 @@
     color: #080c14;
     font-weight: 600;
     font-size: 0.875rem;
-    padding: 11px 22px;
+    padding: 0 22px;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.2s;
@@ -272,11 +273,12 @@
     color: var(--text);
     font-weight: 500;
     font-size: 0.875rem;
-    padding: 11px 22px;
+    padding: 0 22px;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.2s;
     background: var(--surface);
+    height: 42px;
   }
   .btn-outline {
     display: inline-flex;
@@ -286,7 +288,7 @@
     color: var(--text);
     font-weight: 500;
     font-size: 0.875rem;
-    padding: 11px 22px;
+    padding: 0 22px;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.2s;
