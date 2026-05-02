@@ -233,7 +233,15 @@
     margin-bottom: 0;
     animation: fadeSlideUp 0.6s 0.4s ease both;
   }
-
+  .hero-actions a {
+    height: 44px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .btn-primary i, .btn-outline i {
+    font-size: 0.85rem;
+    line-height: 1;
+  }
 .btn-primary {
     display: inline-flex;
     align-items: center;
