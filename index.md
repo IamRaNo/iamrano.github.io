@@ -832,9 +832,6 @@
         <a href="https://drive.google.com/file/d/1XY-ErhYd2ve4-bMMQwIJdebSOFWfjD4B/view?usp=drive_link" target="_blank" class="btn-primary">
           <i class="fas fa-file-arrow-down"></i> View CV
         </a>
-        <a href="https://github.com/IamRaNo" target="_blank" class="btn-outline">
-          <i class="fab fa-github"></i> GitHub
-        </a>
       </div>
       <div class="hero-socials">
         <a href="https://www.linkedin.com/in/ranojoy-das/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
