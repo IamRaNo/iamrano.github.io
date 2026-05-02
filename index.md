@@ -248,7 +248,21 @@
     transition: all 0.2s;
     letter-spacing: 0.2px;
   }
-  .btn-primary:hover { background: #7dd3fc; transform: translateY(-2px); box-shadow: 0 8px 25px rgba(56,189,248,0.3); }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #080c14;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 11px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: 0.2px;
+    height: 42px;
+  }
 
   .btn-outline {
     display: inline-flex;
@@ -264,7 +278,21 @@
     transition: all 0.2s;
     background: var(--surface);
   }
-  .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 11px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+    background: var(--surface);
+    height: 42px;
+  }
 
   .hero-socials {
     display: flex;
@@ -858,9 +886,7 @@
     <div class="section-tag reveal">Featured Work</div>
     <h2 class="section-title reveal">Data Analytics Projects</h2>
     <p class="section-sub reveal">Hover the cards to see details</p>
-
     <div class="projects-grid">
-
       <div class="flip-card reveal">
         <div class="flip-inner">
           <div class="flip-front">
@@ -877,7 +903,6 @@
           </div>
         </div>
       </div>
-
       <div class="flip-card reveal reveal-delay-1">
         <div class="flip-inner">
           <div class="flip-front">
@@ -894,7 +919,6 @@
           </div>
         </div>
       </div>
-
       <div class="flip-card reveal reveal-delay-2">
         <div class="flip-inner">
           <div class="flip-front">
@@ -911,7 +935,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -924,9 +947,7 @@
     <div class="section-tag reveal">Machine Learning</div>
     <h2 class="section-title reveal">Predictive Models</h2>
     <p class="section-sub reveal">Intelligence built from data</p>
-
     <div class="ml-grid">
-
       <div class="ml-card reveal">
         <div class="ml-icon"><i class="fas fa-users"></i></div>
         <div>
@@ -935,7 +956,6 @@
           <span class="ml-tech">K-Means Clustering</span>
         </div>
       </div>
-
       <div class="ml-card reveal reveal-delay-1">
         <div class="ml-icon"><i class="fas fa-laptop-code"></i></div>
         <div>
@@ -944,7 +964,6 @@
           <span class="ml-tech">Regression</span>
         </div>
       </div>
-
       <div class="ml-card reveal reveal-delay-2">
         <div class="ml-icon"><i class="fas fa-heartbeat"></i></div>
         <div>
@@ -953,7 +972,6 @@
           <span class="ml-tech">Random Forest</span>
         </div>
       </div>
-
       <div class="ml-card reveal reveal-delay-3">
         <div class="ml-icon"><i class="fas fa-smile"></i></div>
         <div>
@@ -962,7 +980,6 @@
           <span class="ml-tech">NLP · Bag of Words</span>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -975,7 +992,6 @@
     <div class="section-tag reveal">Recommendation Systems</div>
     <h2 class="section-title reveal">Engines</h2>
     <p class="section-sub reveal">Personalization at scale</p>
-
     <div class="rec-grid">
       <div class="rec-card reveal">
         <div class="rec-icon">🏏</div>
@@ -1004,9 +1020,7 @@
     <div class="section-tag reveal">Deployed</div>
     <h2 class="section-title reveal">Live Applications</h2>
     <p class="section-sub reveal">Production-ready tools, live right now</p>
-
     <div class="live-grid">
-
       <a href="https://huggingface.co/spaces/thetshooter/Wander_Mate" target="_blank" class="app-card reveal">
         <img src="https://img.icons8.com/color/48/airplane-take-off.png" alt="Wander Mate">
         <div>
@@ -1014,7 +1028,6 @@
           <span class="app-status">● Live</span>
         </div>
       </a>
-
       <a href="https://huggingface.co/spaces/thetshooter/nextGenCricketer" target="_blank" class="app-card reveal reveal-delay-1">
         <img src="https://img.icons8.com/color/48/cricket.png" alt="Cricket">
         <div>
@@ -1022,7 +1035,6 @@
           <span class="app-status">● Live</span>
         </div>
       </a>
-
       <a href="https://senti-analysis-ranoj.streamlit.app/" target="_blank" class="app-card reveal reveal-delay-2">
         <img src="https://img.icons8.com/color/48/happy--v1.png" alt="Sentiment">
         <div>
@@ -1030,7 +1042,6 @@
           <span class="app-status">● Live</span>
         </div>
       </a>
-
       <a href="https://huggingface.co/spaces/thetshooter/movieRecommendation" target="_blank" class="app-card reveal reveal-delay-3">
         <img src="https://img.icons8.com/color/48/movie-projector.png" alt="Movies">
         <div>
@@ -1038,7 +1049,6 @@
           <span class="app-status">● Live</span>
         </div>
       </a>
-
       <a href="https://lap-price-pred-ranoj.streamlit.app/" target="_blank" class="app-card reveal">
         <img src="https://img.icons8.com/color/48/laptop.png" alt="Laptop">
         <div>
@@ -1046,7 +1056,6 @@
           <span class="app-status">● Live</span>
         </div>
       </a>
-
     </div>
   </div>
 </section>
@@ -1059,9 +1068,7 @@
     <div class="section-tag reveal">Toolkit</div>
     <h2 class="section-title reveal">Technical Skills</h2>
     <p class="section-sub reveal">Languages, tools, and frameworks I work with</p>
-
     <div class="skills-grid">
-
       <div class="skill-block reveal">
         <div class="skill-block-label">Languages & Databases</div>
         <div class="skill-items">
@@ -1070,7 +1077,6 @@
           <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"> MySQL</div>
         </div>
       </div>
-
       <div class="skill-block reveal reveal-delay-1">
         <div class="skill-block-label">Data Analysis</div>
         <div class="skill-items">
@@ -1079,7 +1085,6 @@
           <div class="skill-pill"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg" alt="Excel"> Excel</div>
         </div>
       </div>
-
       <div class="skill-block reveal reveal-delay-2">
         <div class="skill-block-label">Visualization</div>
         <div class="skill-items">
@@ -1088,7 +1093,6 @@
           <div class="skill-pill"><img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn"> Seaborn</div>
         </div>
       </div>
-
       <div class="skill-block reveal reveal-delay-3">
         <div class="skill-block-label">Cloud & Concepts</div>
         <div class="skill-items">
@@ -1098,7 +1102,6 @@
           <div class="skill-pill"><i class="fas fa-chart-line" style="color:var(--accent3)"></i> Statistics</div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -1111,104 +1114,86 @@
     <div class="section-tag reveal">Credentials</div>
     <h2 class="section-title reveal">Certifications</h2>
     <p class="section-sub reveal">14 verified certifications across data, cloud, and ML</p>
-
     <div class="certs-grid">
-
       <div class="cert-card reveal">
         <div class="cert-icon">🏆</div>
         <div class="cert-info"><h4>Data Science Job Simulation</h4><span>BCG X</span></div>
         <a href="https://drive.google.com/file/d/1hGFDw9U9BHqcV1z-EQsWf9dhmo8vLSAb/view?usp=sharing" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal reveal-delay-1">
         <div class="cert-icon">📊</div>
         <div class="cert-info"><h4>Data Analytics Job Simulation</h4><span>Deloitte</span></div>
         <a href="https://drive.google.com/file/d/1y2JJW_CqWR0AQRvwhpDZ2eRgHomEFrfO/view?usp=sharing" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal">
         <div class="cert-icon">🚀</div>
         <div class="cert-info"><h4>Virtual Data Analysis Internship</h4><span>Elevvo Tech</span></div>
         <a href="https://drive.google.com/file/d/1JE0xgjJzQPkXuqjK6ze9dDZbWvR7LmMX/view?usp=sharing" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal reveal-delay-1">
         <div class="cert-icon">📈</div>
         <div class="cert-info"><h4>Career Forward Program</h4><span>McKinsey & Company</span></div>
         <a href="https://drive.google.com/file/d/1qKkLvYBkfzKg5vMXXSrwFxKKLpwga5Ts/view?usp=sharing" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal">
         <div class="cert-icon">☁️</div>
         <div class="cert-info"><h4>AWS Fundamentals</h4><span>Amazon AWS</span></div>
         <a href="https://drive.google.com/file/d/1lxE7CrcZ3UzadX6PxSNrfnL0Gkfq639x/view?usp=drive_link" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal reveal-delay-1">
         <div class="cert-icon">💡</div>
         <div class="cert-info"><h4>Power BI Basics</h4><span>Microsoft</span></div>
         <a href="https://drive.google.com/file/d/1xd2rfsQvbLbU3QPEOR4RjvlDIrPHRp-R/view?usp=drive_link" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal">
         <div class="cert-icon">🤖</div>
         <div class="cert-info"><h4>Machine Learning</h4><span>Besant Technologies</span></div>
         <a href="https://drive.google.com/file/d/1MRmwalrS-rHfq1C5yVtqO3kUREiIcmU1/view?usp=sharing" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal reveal-delay-1">
         <div class="cert-icon">🐍</div>
         <div class="cert-info"><h4>Python Basics</h4><span>HackerRank</span></div>
         <a href="https://drive.google.com/file/d/1bnl5GB-4p7FyC5pvHUFEc6NM9Y_kwhel/view?usp=drive_link" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal">
         <div class="cert-icon">🧬</div>
         <div class="cert-info"><h4>Data Structure & Algo</h4><span>Simplilearn</span></div>
         <a href="https://drive.google.com/file/d/1oQioWbyEmlPhSQyew6WBp2ubAm-dr3RL/view?usp=drive_link" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal reveal-delay-1">
         <div class="cert-icon">🔍</div>
         <div class="cert-info"><h4>Data Fundamentals</h4><span>IBM</span></div>
         <a href="https://drive.google.com/file/d/1ZL00QbqKd1TUw-oLA1B2WMIB34Rdokt4/view?usp=drive_link" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal">
         <div class="cert-icon">🧪</div>
         <div class="cert-info"><h4>Data Science</h4><span>Cisco / Cognitive Class</span></div>
         <a href="https://drive.google.com/file/d/1EuT95dfMqztDTRtWgs9iLVcx2ptkVWec/view?usp=sharing" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal reveal-delay-1">
         <div class="cert-icon">📋</div>
         <div class="cert-info"><h4>Data Analysis</h4><span>Microsoft</span></div>
         <a href="https://drive.google.com/file/d/1h2yCpM3IIhcDTyC5GYXlYhcNu0ACWfxX/view?usp=drive_link" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal">
         <div class="cert-icon">💻</div>
         <div class="cert-info"><h4>Python Developer Associate</h4><span>Certify Core</span></div>
         <a href="https://drive.google.com/file/d/16OgZezkUBGgPZgOzJco350bMo3nA5_m2/view?usp=drive_link" target="_blank" class="cert-link">View</a>
       </div>
-
       <div class="cert-card reveal reveal-delay-1">
         <div class="cert-icon">✨</div>
         <div class="cert-info"><h4>Python For Data Science</h4><span>Cognitive Class</span></div>
         <a href="https://drive.google.com/file/d/1ArVELbLyF2drydtvv2oxLZzjSAitvvMg/view?usp=drive_link" target="_blank" class="cert-link">View</a>
       </div>
-
     </div>
   </div>
 </section>
-
 <!-- CONTACT -->
 <div class="contact-section" id="contact">
   <div class="contact-inner">
     <div class="contact-box reveal">
       <h2 class="contact-title">Let's <span>Connect</span></h2>
       <p class="contact-sub">Open to data analyst roles, collaborations, and interesting projects.</p>
-
       <div class="contact-links">
         <a href="mailto:dasranojoy9@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
         <a href="https://www.linkedin.com/in/ranojoy-das/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -1221,7 +1206,6 @@
         <a href="https://www.hackerrank.com/profile/dasranojoy9" target="_blank" class="contact-link"><i class="fab fa-hackerrank"></i> HackerRank</a>
         <a href="https://www.kaggle.com/myselfranoranojoy" target="_blank" class="contact-link"><i class="fab fa-kaggle"></i> Kaggle</a>
       </div>
-
       <div class="footer-copy">© 2025 Ranojoy Das — Built with purpose, not templates.</div>
     </div>
   </div>
