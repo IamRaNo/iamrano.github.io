@@ -118,7 +118,7 @@ img { max-width: 100%; }
 .hero {
   min-height: 100vh;
   padding: 120px 24px 80px;
-  position: relative; overflow: hidden;
+  position: relative; overflow: visible;
   background:
     radial-gradient(ellipse at 80% 20%, rgba(0,245,255,0.06) 0%, transparent 50%),
     radial-gradient(ellipse at 20% 80%, rgba(255,45,120,0.06) 0%, transparent 50%),
@@ -282,7 +282,10 @@ img { max-width: 100%; }
 }
 
 /* photo frame */
-.hero-right { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.hero-right {
+  display: flex; flex-direction: column; align-items: center; gap: 24px;
+  overflow: visible;
+}
 
 .photo-frame {
   position: relative;
