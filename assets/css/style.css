@@ -171,7 +171,7 @@ img { max-width: 100%; }
   line-height: 0.95; letter-spacing: 2px;
   margin-bottom: 18px;
 }
-.title-line1 { display: block; font-size: clamp(4rem, 9vw, 7rem); color: var(--text); }
+.title-line1 { display: block; font-size: clamp(5rem, 11vw, 9rem); color: var(--text); }
 .title-line2 {
   display: block; font-size: clamp(4rem, 9vw, 7rem);
   color: var(--yellow);
@@ -265,12 +265,18 @@ img { max-width: 100%; }
   transform: rotate(2deg);
   background: var(--surface);
   transition: transform 0.3s;
+   overflow: visible;
+  padding-bottom: 20px;
+  width: 220px;
 }
-.photo-frame:hover { transform: rotate(0deg) scale(1.02); }
+.photo-frame:hover { transform: rotate(0deg) scale(1.02);}
 
 .hero-photo {
-  display: block; width: 280px; height: 320px;
+  display: block; width: 240px; height: 280px;
   object-fit: cover; object-position: top;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
 }
 
 .frame-tag {
