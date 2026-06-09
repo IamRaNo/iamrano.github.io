@@ -290,27 +290,26 @@ img { max-width: 100%; }
 .photo-frame {
   position: relative;
   display: inline-block;
-  border: 4px solid var(--border);
+  background: var(--surface);
+  border: 4px solid var(--yellow);
   box-shadow: var(--shadow-lg);
   transform: rotate(2deg);
-  background: var(--surface);
   transition: transform 0.3s;
   overflow: visible;
-  width: 220px;
-  height: 260px;
-  padding-bottom: 40px;
+  padding: 16px;
+  width: fit-content;
 }
-.photo-frame:hover { transform: rotate(0deg) scale(1.02);}
+.photo-frame:hover { transform: rotate(0deg) scale(1.02); }
 
 .hero-photo {
-  position: absolute;
-  top: -40px;
-  left: -30px;
-  width: 280px;
-  height: 320px;
+  display: block;
+  width: 260px;
+  height: 260px;
   object-fit: cover;
   object-position: top;
-  z-index: 2;
+  border-radius: 50%;
+  border: 4px solid var(--cyan);
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 8px var(--pink);
 }
 
 .frame-tag {
