@@ -5,190 +5,183 @@
 (function () {
   'use strict';
 
-  const $ = (sel, ctx = document) => ctx.querySelector(sel);
-  const $$ = (sel, ctx = document) => ctx.querySelectorAll(sel);
+  const $  = (s, c = document) => c.querySelector(s);
+  const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // ══════════════════════════════════════════════════════════
-  // 1. PRELOADER + HERO ENTRANCE
-  // ══════════════════════════════════════════════════════════
-  const preloader = $('#preloader');
-  const hero = $('#home');
-
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      if (preloader) preloader.classList.add('loaded');
-      if (hero) hero.classList.add('animate');
-      setTimeout(() => { if (hero) hero.classList.remove('animate'); }, 1400);
-    }, 400);
+  /* ── 1. HERO HEADLINE MASK REVEAL ─────────────────────── */
+  const lines = $$('.reveal-line');
+  window.requestAnimationFrame(() => {
+    lines.forEach((line, i) => {
+      setTimeout(() => line.classList.add('in'), reduceMotion ? 0 : 120 + i * 110);
+    });
   });
 
-  // ══════════════════════════════════════════════════════════
-  // 2. SCROLL HANDLER (progress bar, navbar, back-to-top)
-  // ══════════════════════════════════════════════════════════
-  const scrollProgress = $('#scroll-progress');
-  const navbar = $('#navbar');
-  const backToTop = $('#back-to-top');
+  /* ── 2. SCROLL: progress, navbar, back-to-top ──────────── */
+  const progress   = $('#scroll-progress');
+  const navbar     = $('#navbar');
+  const backToTop  = $('#back-to-top');
+  let ticking = false;
 
   function onScroll() {
-    const scrollY = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-
-    if (scrollProgress && docHeight > 0) {
-      scrollProgress.style.width = (scrollY / docHeight) * 100 + '%';
-    }
-    if (navbar) navbar.classList.toggle('scrolled', scrollY > 60);
-    if (backToTop) backToTop.classList.toggle('visible', scrollY > 500);
+    const y = window.scrollY;
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    if (progress && h > 0) progress.style.width = (y / h) * 100 + '%';
+    if (navbar) navbar.classList.toggle('scrolled', y > 40);
+    if (backToTop) backToTop.classList.toggle('visible', y > 600);
+    ticking = false;
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(onScroll); }
+  }, { passive: true });
   onScroll();
 
   if (backToTop) {
-    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    backToTop.addEventListener('click', () =>
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' })
+    );
   }
 
-  // ══════════════════════════════════════════════════════════
-  // 3. HAMBURGER MENU
-  // ══════════════════════════════════════════════════════════
-  const hamburger = $('#hamburger');
-  const mobileMenu = $('#mobileMenu');
+  /* ── 3. MOBILE MENU ───────────────────────────────────── */
+  const burger = $('#hamburger');
+  const menu   = $('#mobileMenu');
 
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('open');
-      hamburger.classList.toggle('active');
-      hamburger.setAttribute('aria-expanded', isOpen);
+  function closeMenu() {
+    if (!burger || !menu) return;
+    burger.classList.remove('active');
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  }
+  if (burger && menu) {
+    burger.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      burger.classList.toggle('active', open);
+      burger.setAttribute('aria-expanded', String(open));
     });
-    $$('a', mobileMenu).forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        hamburger.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      });
-    });
+    $$('a', menu).forEach(a => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
   }
 
-  // ══════════════════════════════════════════════════════════
-  // 4. SCROLL REVEAL (with stagger)
-  // ══════════════════════════════════════════════════════════
-  $$('.projects-grid, .certs-grid, .skills-grid, .timeline').forEach(grid => {
-    $$('.reveal', grid).forEach((el, i) => {
-      el.style.transitionDelay = (i * 0.08) + 's';
-    });
-  });
-
-  const reveals = $$('.reveal');
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
+  /* ── 4. STAGGERED SCROLL REVEAL ───────────────────────── */
+  const revealables = $$('.reveal');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
         entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  reveals.forEach(el => revealObserver.observe(el));
-
-  // ══════════════════════════════════════════════════════════
-  // 5. TYPEWRITER
-  // ══════════════════════════════════════════════════════════
-  const phrases = [
-    'MySQL · Python · Power BI',
-    'EDA · Statistical Analysis',
-    'Turning data into decisions',
-    'Open to data analyst roles'
-  ];
-  let phraseIdx = 0, charIdx = 0, deleting = false;
-  const typedEl = $('#typed-text');
-
-  function type() {
-    if (!typedEl) return;
-    const current = phrases[phraseIdx];
-    if (!deleting) {
-      typedEl.textContent = current.slice(0, charIdx + 1);
-      charIdx++;
-      if (charIdx === current.length) {
-        deleting = true;
-        setTimeout(type, 1800);
-        return;
-      }
-    } else {
-      typedEl.textContent = current.slice(0, charIdx - 1);
-      charIdx--;
-      if (charIdx === 0) {
-        deleting = false;
-        phraseIdx = (phraseIdx + 1) % phrases.length;
-      }
-    }
-    setTimeout(type, deleting ? 40 : 75);
+        obs.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    revealables.forEach(el => io.observe(el));
+  } else {
+    revealables.forEach(el => el.classList.add('visible'));
   }
-  type();
 
-  // ══════════════════════════════════════════════════════════
-  // 6. STAT COUNTER
-  // ══════════════════════════════════════════════════════════
-  function animateCount(el, target) {
-    const duration = 1200;
+  /* ── 5. STAT COUNT-UP ─────────────────────────────────── */
+  const nums = $$('.stat-num');
+  function countUp(el) {
+    const target = parseInt(el.dataset.target, 10) || 0;
+    if (reduceMotion) { el.textContent = target; return; }
+    const dur = 1400;
     const start = performance.now();
-    function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
-    function step(now) {
-      const progress = Math.min((now - start) / duration, 1);
-      el.textContent = Math.round(easeOut(progress) * target);
-      if (progress < 1) requestAnimationFrame(step);
-      else el.textContent = target;
-    }
-    requestAnimationFrame(step);
+    (function step(now) {
+      const p = Math.min((now - start) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased);
+      if (p < 1) requestAnimationFrame(step);
+    })(start);
+  }
+  if ('IntersectionObserver' in window) {
+    const numObs = new IntersectionObserver((entries, obs) => {
+      entries.forEach(e => { if (e.isIntersecting) { countUp(e.target); obs.unobserve(e.target); } });
+    }, { threshold: 0.6 });
+    nums.forEach(n => numObs.observe(n));
+  } else {
+    nums.forEach(countUp);
   }
 
-  const statNums = $$('.stat-num');
-  const statObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.dataset.target || el.textContent);
-        animateCount(el, target);
-        statObserver.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-  statNums.forEach(el => statObserver.observe(el));
+  /* ── 6. TYPED ROLE LINE ───────────────────────────────── */
+  const typed = $('#typed-text');
+  const phrases = [
+    'Python · SQL · Power BI',
+    'Turning raw data into real decisions',
+    'Statistics over gut feeling'
+  ];
+  if (typed) {
+    if (reduceMotion) {
+      typed.textContent = phrases[0];
+    } else {
+      let pi = 0, ci = 0, deleting = false;
+      const caret = document.createElement('span');
+      caret.className = 'caret';
+      caret.textContent = '_';
+      const text = document.createElement('span');
+      typed.append(text, caret);
 
-  // ══════════════════════════════════════════════════════════
-  // 7. SMOOTH SCROLL WITH NAVBAR OFFSET
-  // ══════════════════════════════════════════════════════════
-  $$('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-      if (href === '#') {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        return;
-      }
-      const target = $(href);
-      if (target) {
-        e.preventDefault();
-        const navHeight = navbar ? navbar.offsetHeight : 0;
-        const top = target.getBoundingClientRect().top + window.scrollY - navHeight - 20;
-        window.scrollTo({ top: top, behavior: 'smooth' });
-      }
-    });
-  });
+      (function tick() {
+        const phrase = phrases[pi];
+        ci += deleting ? -1 : 1;
+        text.textContent = phrase.slice(0, ci);
+        let delay = deleting ? 32 : 62;
+        if (!deleting && ci === phrase.length) { deleting = true; delay = 2000; }
+        else if (deleting && ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; delay = 400; }
+        setTimeout(tick, delay);
+      })();
+    }
+  }
 
-  // ══════════════════════════════════════════════════════════
-  // 8. ACTIVE NAV LINK HIGHLIGHT
-  // ══════════════════════════════════════════════════════════
-  const navSections = $$('section[id]');
-  const navLinks = $$('.nav-links a:not(.nav-cta)');
+  /* ── 7. ACTIVE NAV LINK ───────────────────────────────── */
+  const sections = $$('section[id], header[id]');
+  const navAnchors = $$('.nav-links a');
+  if ('IntersectionObserver' in window && sections.length) {
+    const secObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const id = '#' + e.target.id;
+        navAnchors.forEach(a => a.classList.toggle('active', a.getAttribute('href') === id));
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(s => secObs.observe(s));
+  }
 
-  const navObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        navLinks.forEach(link => {
-          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+  /* ── 8. PORTRAIT PARALLAX ─────────────────────────────── */
+  const parallax = $$('[data-parallax]');
+  if (parallax.length && !reduceMotion && window.matchMedia('(min-width: 1000px)').matches) {
+    let pTick = false;
+    window.addEventListener('scroll', () => {
+      if (pTick) return;
+      pTick = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        parallax.forEach(el => { el.style.transform = 'translateY(' + (-y * 0.06).toFixed(2) + 'px)'; });
+        pTick = false;
+      });
+    }, { passive: true });
+  }
+
+  /* ── 9. CERTIFICATIONS TOGGLE ─────────────────────────── */
+  const certsToggle = $('#certsToggle');
+  if (certsToggle) {
+    certsToggle.addEventListener('click', () => {
+      const hidden = $$('.cert.is-hidden');
+      if (hidden.length) {
+        hidden.forEach((c, i) => {
+          c.classList.remove('is-hidden');
+          c.classList.add('reveal');
+          c.style.setProperty('--d', (i * 45) + 'ms');
+          requestAnimationFrame(() => c.classList.add('visible'));
         });
+        certsToggle.innerHTML = 'Show less <i class="fas fa-arrow-up"></i>';
+        certsToggle.setAttribute('aria-expanded', 'true');
+      } else {
+        $$('.cert').slice(6).forEach(c => {
+          c.classList.add('is-hidden');
+          c.classList.remove('visible');
+        });
+        certsToggle.innerHTML = 'Show all 14 <i class="fas fa-arrow-down"></i>';
+        certsToggle.setAttribute('aria-expanded', 'false');
+        $('#certs').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
       }
     });
-  }, { threshold: 0.2, rootMargin: '-80px 0px -50% 0px' });
-
-  navSections.forEach(section => navObserver.observe(section));
-
+  }
 })();
