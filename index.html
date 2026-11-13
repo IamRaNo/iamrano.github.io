@@ -24,6 +24,13 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Keeps anchored sections clear of the sticky nav (--nav-h is set from the real nav height in main.js) */
+    section[id],
+    header[id] {
+      scroll-margin-top: calc(var(--nav-h, 72px) + 8px);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,6 +38,12 @@
     "name": "Ranojoy Das",
     "jobTitle": "Data Analyst",
     "email": "mailto:dasranojoy9@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Howrah",
+      "addressRegion": "West Bengal",
+      "addressCountry": "IN"
+    },
     "knowsAbout": ["Data Analysis", "Python", "SQL", "Power BI", "Excel", "Statistics"],
     "sameAs": [
       "https://github.com/IamRaNo",
@@ -48,14 +61,6 @@
       .reveal {
         opacity: 1 !important;
         transform: none !important;
-      }
-
-      .cert.is-hidden {
-        display: grid !important;
-      }
-
-      .certs-more {
-        display: none !important;
       }
     </style>
   </noscript>
@@ -108,7 +113,7 @@
       <div class="hero-main">
         <div class="hero-eyebrow">
           <span class="dot"></span>
-          <span class="mono">Available for opportunities · Kolkata, IN</span>
+          <span class="mono">Available for opportunities · Howrah, IN</span>
         </div>
 
         <h1 class="hero-title">
@@ -141,7 +146,8 @@
 
         <div class="stat-row">
           <div class="stat">
-            <span class="stat-num" data-target="7">0</span>
+            <!-- 9 = 4 core + 5 side projects -->
+            <span class="stat-num" data-target="9">0</span>
             <span class="stat-label">Projects</span>
           </div>
           <div class="stat">
@@ -149,8 +155,9 @@
             <span class="stat-label">Certificates</span>
           </div>
           <div class="stat">
-            <span class="stat-num" data-target="6">0</span>
-            <span class="stat-label">Mos. experience</span>
+            <!-- Calculated in main.js from Feb 2026 to today -->
+            <span class="stat-num" id="exp-num" data-target="9">0</span>
+            <span class="stat-label" id="exp-label">Mos. experience</span>
           </div>
         </div>
       </div>
@@ -160,12 +167,16 @@
   <!-- ═══════════════ MARQUEE ═══════════════ -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <div class="marquee-content">Python<em>◆</em>SQL<em>◆</em>MySQL<em>◆</em>Power
-        BI<em>◆</em>Pandas<em>◆</em>NumPy<em>◆</em>Matplotlib<em>◆</em>Seaborn<em>◆</em>Excel<em>◆</em>EDA<em>◆</em>Statistical
-        Analysis<em>◆</em>Regression<em>◆</em></div>
-      <div class="marquee-content">Python<em>◆</em>SQL<em>◆</em>MySQL<em>◆</em>Power
-        BI<em>◆</em>Pandas<em>◆</em>NumPy<em>◆</em>Matplotlib<em>◆</em>Seaborn<em>◆</em>Excel<em>◆</em>EDA<em>◆</em>Statistical
-        Analysis<em>◆</em>Regression<em>◆</em></div>
+      <div class="marquee-content">Python<em>◆</em>MySQL<em>◆</em>SQL Joins<em>◆</em>CTEs<em>◆</em>Window
+        Functions<em>◆</em>Pandas<em>◆</em>NumPy<em>◆</em>Excel<em>◆</em>EDA<em>◆</em>Data
+        Cleaning<em>◆</em>Cohort Analysis<em>◆</em>Hypothesis Testing<em>◆</em>Matplotlib<em>◆</em>Seaborn<em>◆</em>Power
+        BI<em>◆</em>Regression (OLS)<em>◆</em>Classification<em>◆</em>KMeans Clustering<em>◆</em>Time Series
+        Forecasting<em>◆</em></div>
+      <div class="marquee-content">Python<em>◆</em>MySQL<em>◆</em>SQL Joins<em>◆</em>CTEs<em>◆</em>Window
+        Functions<em>◆</em>Pandas<em>◆</em>NumPy<em>◆</em>Excel<em>◆</em>EDA<em>◆</em>Data
+        Cleaning<em>◆</em>Cohort Analysis<em>◆</em>Hypothesis Testing<em>◆</em>Matplotlib<em>◆</em>Seaborn<em>◆</em>Power
+        BI<em>◆</em>Regression (OLS)<em>◆</em>Classification<em>◆</em>KMeans Clustering<em>◆</em>Time Series
+        Forecasting<em>◆</em></div>
     </div>
   </div>
 
@@ -174,25 +185,22 @@
     <div class="wrap about-grid">
       <div class="index mono reveal">01 — About</div>
       <div class="about-body">
+        <!-- ABOUT VERSION A (casual). Version B is in the chat reply. -->
         <p class="reveal" style="--d:60ms">
-          I'm an aspiring data analyst based in Kolkata. I take messy, real-world data and turn it into
-          clear answers — cleaning it, running the right tests, and being honest about what the
-          numbers can and <strong>cannot</strong> tell you.
+          I'm based in Howrah, West Bengal. I finished my B.Tech in Computer Science, then taught myself
+          analytics because I enjoy finding answers in data. I've built projects on real Indian data,
+          like IPOs, supply chains, retail demand and public health.
         </p>
         <p class="reveal" style="--d:140ms">
-          I've worked on seven end-to-end projects — covering IPO listings, IPL auction prices, election
-          results, national health data, and 100k+ e-commerce orders. Each one ends with a clear
-          takeaway, not just a chart.
-        </p>
-        <p class="reveal" style="--d:220ms">
-          Alongside analytics I've spent six months writing technical and academic content professionally —
-          which is why I care as much about explaining a finding clearly as about producing it.
+          Right now I write technical content on Python, SQL and statistics. It taught me to explain things
+          simply, and I try to do that in every project. I'm looking for my first data analyst role,
+          and I want to grow into data science.
         </p>
 
-        <dl class="about-facts reveal" style="--d:300ms">
+        <dl class="about-facts reveal" style="--d:220ms">
           <div class="about-fact">
             <dt>Based in</dt>
-            <dd>Kolkata, India</dd>
+            <dd>Howrah, West Bengal</dd>
           </div>
           <div class="about-fact">
             <dt>Focus</dt>
@@ -211,11 +219,11 @@
   <section class="section section-alt" id="projects">
     <div class="wrap">
       <div class="section-head">
-        <div class="index mono reveal">02 — Selected work</div>
+        <div class="index mono reveal">02 — Work</div>
         <div>
-          <h2 class="section-title reveal" style="--d:60ms">Seven projects. <em>One favourite.</em></h2>
+          <h2 class="section-title reveal" style="--d:60ms">Four core projects. <em>One favourite.</em></h2>
           <p class="section-sub reveal" style="--d:120ms">
-            End-to-end analytics across finance, sport, politics, public health and e-commerce.
+            Four core projects across logistics, finance, retail and public health, plus a few side projects.
           </p>
         </div>
       </div>
@@ -224,78 +232,101 @@
       <article class="feature reveal">
         <div class="feature-left">
           <span class="pill">Featured project</span>
-          <h3>Avoiding The<br />Hype Trap</h3>
+          <h3>Distribution Hub<br />Optimizer</h3>
           <p class="feature-lead">
-            Can investors trust Day 1 IPO listing gains as a signal for long-term returns?
+            In which Indian states should a company open its next distribution hubs for higher growth?
           </p>
-          <div class="tags"><span>Python</span><span>MySQL</span><span>Regression</span><span>Kruskal-Wallis</span>
+          <div class="tags"><span>Python</span><span>MySQL</span><span>Time Series Forecasting</span><span>KMeans</span>
           </div>
-          <a href="https://github.com/IamRaNo/DataPortfolio/tree/main/Avoiding%20The%20Hype%20Trap" target="_blank"
-            rel="noopener" class="link-arrow">
+          <!-- TODO: replace href="#" with the Distribution Hub Optimizer GitHub link -->
+          <a href="#" target="_blank" rel="noopener" class="link-arrow">
             View on GitHub <i class="fas fa-arrow-right"></i>
           </a>
         </div>
         <div class="feature-right">
           <dl class="datum">
             <dt>Key finding</dt>
-            <dd>Big Day 1 gains <strong>often</strong> lead to better returns later — but not reliably enough to count
-              on.</dd>
+            <dd><strong>Chhattisgarh</strong> and <strong>Andhra Pradesh</strong> are the best hub picks, with forecast
+              amount growth of <strong>18.9%</strong> / <strong>16.5%</strong>, low volatility, and per capita goods
+              gains beating GSDP growth (95% vs 47% for Chhattisgarh).</dd>
           </dl>
           <dl class="datum">
             <dt>Method</dt>
-            <dd>Engineered a <strong>379-company</strong> dataset, then tested the relationship with correlation
-              analysis and the Kruskal-Wallis test.</dd>
+            <dd>Time series forecasting, classification and KMeans clustering on <strong>33 states</strong>, using
+              7 years of E-Way Bill data.</dd>
           </dl>
           <dl class="datum">
             <dt>Why it matters</dt>
-            <dd>It replaces a popular market heuristic with a measured, statistically honest answer.</dd>
+            <dd>It points a company to the states where hub growth looks both strong and steady.</dd>
           </dl>
         </div>
       </article>
 
-      <!-- SECONDARY -->
+      <!-- CORE CARDS -->
       <div class="proj-grid">
         <article class="proj-card reveal" style="--d:80ms">
-          <h3>Men's IPL 2026 Auction</h3>
-          <div class="tags"><span>Python</span><span>Matplotlib</span><span>Seaborn</span></div>
+          <span class="pill">Finance</span>
+          <h3>The IPO Reality Check</h3>
+          <div class="tags"><span>Python</span><span>MySQL</span></div>
           <dl class="datum">
             <dt>Question</dt>
-            <dd>Did IPL 2026 auction prices actually match player performance?</dd>
+            <dd>Invested on the same day, which earns more in 1 year: a newly listed stock or Nifty50 stocks?</dd>
+          </dl>
+          <dl class="datum">
+            <dt>Method</dt>
+            <dd>Cohort analysis, Spearman correlation and OLS regression on 294 IPOs from 2019-2025.</dd>
           </dl>
           <dl class="datum">
             <dt>Finding</dt>
-            <dd>Priyansh Arya outperformed his price tag; Kartik Sharma was a clear overpay.</dd>
+            <dd>Nifty50 earned more: median 1-year returns were -5.4% (high listing-day jump IPOs) and 0.4% (low jump
+              IPOs), against about 8% for Nifty50.</dd>
           </dl>
-          <a href="https://github.com/IamRaNo/DataPortfolio/tree/main/Men%E2%80%99s%20IPL%202026" target="_blank"
+          <!-- Existing GitHub URL kept unchanged as requested (its folder name still uses the old project name) -->
+          <a href="https://github.com/IamRaNo/DataPortfolio/tree/main/Avoiding%20The%20Hype%20Trap" target="_blank"
             rel="noopener" class="link-arrow">GitHub <i class="fas fa-arrow-right"></i></a>
         </article>
 
         <article class="proj-card reveal" style="--d:160ms">
-          <h3>The Electoral Advantage</h3>
-          <div class="tags"><span>Excel</span><span>Statistics</span></div>
+          <span class="pill">Retail</span>
+          <h3>Festival Restocking Problem</h3>
+          <div class="tags"><span>Python</span><span>MySQL</span></div>
           <dl class="datum">
             <dt>Question</dt>
-            <dd>What drives election outcomes more: candidate profile or political history?</dd>
+            <dd>Before major festivals, which states should a retailer restock, and how many weeks early?</dd>
+          </dl>
+          <dl class="datum">
+            <dt>Method</dt>
+            <dd>Lead-lag analysis, KMeans clustering and backtesting on weekly search-interest data across 15 states.
+            </dd>
           </dl>
           <dl class="datum">
             <dt>Finding</dt>
-            <dd>Candidate profile influences the winner more than political history.</dd>
+            <dd>Demand starts building anywhere from 0-1 to 10+ weeks before a festival, and the 15 states form 4
+              regional groups with different timing for the same festival.</dd>
           </dl>
-          <a href="https://github.com/IamRaNo/DataPortfolio/tree/main/The%20Electoral%20Advantage" target="_blank"
-            rel="noopener" class="link-arrow">GitHub <i class="fas fa-arrow-right"></i></a>
+          <!-- TODO: replace href="#" with the Festival Restocking Problem GitHub link -->
+          <a href="#" target="_blank" rel="noopener" class="link-arrow">GitHub <i class="fas fa-arrow-right"></i></a>
         </article>
 
         <article class="proj-card reveal" style="--d:240ms">
-          <h3>Suicide Risk Patterns in India</h3>
+          <span class="pill">Public Health</span>
+          <h3>Suicide Patterns in India</h3>
           <div class="tags"><span>Power BI</span></div>
           <dl class="datum">
             <dt>Question</dt>
-            <dd>Are suicides in India random, or do clear patterns exist by group and region?</dd>
+            <dd>Do clear suicide patterns exist among specific groups and regions in India?</dd>
+          </dl>
+          <dl class="datum">
+            <dt>Method</dt>
+            <dd>4-page Power BI dashboard on 5 years (2018-2022) of data across state, cause, job, education and
+              income.</dd>
           </dl>
           <dl class="datum">
             <dt>Finding</dt>
-            <dd>Unmarried students with 10th-grade education are the highest-risk group.</dd>
+            <dd>Top groups were daily wage earners, Class 10 educated, and under 1 lakh income. Top cause: family
+              problems (32%).</dd>
           </dl>
+          <!-- Existing GitHub URL kept unchanged as requested (its folder name still uses the old project name) -->
           <a href="https://github.com/IamRaNo/DataPortfolio/tree/main/Suicide%20Risk%20Patterns%20in%20India"
             target="_blank" rel="noopener" class="link-arrow">GitHub <i class="fas fa-arrow-right"></i></a>
         </article>
@@ -308,29 +339,59 @@
       </div>
       <div class="proj-list">
         <a class="proj-row reveal"
-          href="https://github.com/IamRaNo/data-analytics-projects/tree/main/inside_olist_review_analysis"
+          href="https://github.com/IamRaNo/DataPortfolio/tree/main/Men%E2%80%99s%20IPL%202026"
           target="_blank" rel="noopener">
-          <span class="num">05</span>
-          <h4>Inside Olist</h4>
-          <span class="row-desc">Analyzed 100k+ orders in MySQL and Python to identify poor-rating drivers and
-            patterns.</span>
+          <span class="num">01</span>
+          <h4>Men's IPL 2026 Auction</h4>
+          <span class="row-desc">Did IPL 2026 auction prices actually match player performance? Priyansh Arya
+            outperformed his price tag; Kartik Sharma was a clear overpay.
+            <span class="tags"><span>Python</span><span>Matplotlib</span><span>Seaborn</span></span>
+          </span>
           <span class="row-link"><i class="fas fa-arrow-right"></i></span>
         </a>
         <a class="proj-row reveal" style="--d:80ms"
-          href="https://github.com/IamRaNo/data-analytics-projects/tree/main/beyond_oulad_student_dropout"
+          href="https://github.com/IamRaNo/DataPortfolio/tree/main/The%20Electoral%20Advantage"
           target="_blank" rel="noopener">
-          <span class="num">06</span>
-          <h4>Beyond OULAD</h4>
-          <span class="row-desc">Analyzed 30k+ student interactions to identify the key causes of course dropout.</span>
+          <span class="num">02</span>
+          <h4>The Electoral Advantage</h4>
+          <span class="row-desc">What drives election outcomes more: candidate profile or political history?
+            Candidate profile influences the winner more than political history.
+            <span class="tags"><span>Excel</span><span>Statistics</span></span>
+          </span>
           <span class="row-link"><i class="fas fa-arrow-right"></i></span>
         </a>
         <a class="proj-row reveal" style="--d:160ms"
+          href="https://github.com/IamRaNo/data-analytics-projects/tree/main/inside_olist_review_analysis"
+          target="_blank" rel="noopener">
+          <span class="num">03</span>
+          <h4>Inside Olist</h4>
+          <span class="row-desc">Analyzed 100k+ orders in MySQL and Python to identify poor-rating drivers and
+            patterns.
+            <!-- verify: chips inferred from the description only -->
+            <span class="tags"><span>MySQL</span><span>Python</span></span>
+          </span>
+          <span class="row-link"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a class="proj-row reveal" style="--d:240ms"
+          href="https://github.com/IamRaNo/data-analytics-projects/tree/main/beyond_oulad_student_dropout"
+          target="_blank" rel="noopener">
+          <span class="num">04</span>
+          <h4>Beyond OULAD</h4>
+          <span class="row-desc">Analyzed 30k+ student interactions to identify the key causes of course dropout.
+            <!-- TODO: add tech chips. The description names no tools, so none were guessed. -->
+          </span>
+          <span class="row-link"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a class="proj-row reveal" style="--d:320ms"
           href="https://github.com/IamRaNo/data-analytics-projects/tree/main/about_synthea_patient_readmission"
           target="_blank" rel="noopener">
-          <span class="num">07</span>
+          <span class="num">05</span>
           <h4>About Synthea</h4>
           <span class="row-desc">Combined 60k+ patient records across tables to find hospital readmission
-            patterns.</span>
+            patterns.
+            <!-- verify: "SQL" inferred from "across tables" in the description -->
+            <span class="tags"><span>SQL</span></span>
+          </span>
           <span class="row-link"><i class="fas fa-arrow-right"></i></span>
         </a>
       </div>
@@ -341,7 +402,7 @@
   <section class="section" id="experience">
     <div class="wrap">
       <div class="section-head">
-        <div class="index mono reveal">03 — Career</div>
+        <div class="index mono reveal">03 — Experience</div>
         <div>
           <h2 class="section-title reveal" style="--d:60ms">Experience</h2>
           <p class="section-sub reveal" style="--d:120ms">Professional roles and freelance work.</p>
@@ -349,15 +410,16 @@
       </div>
       <div class="timeline">
         <div class="tl-item reveal">
-          <div class="tl-date">Apr 2026 — Present<small>5 months</small></div>
+          <!-- Duration is filled in by main.js from data-duration-start; the text inside is only a fallback -->
+          <div class="tl-date">Apr 2026 — Present<small data-duration-start="2026-04">7 mos</small></div>
           <div class="tl-body">
-            <h3>Junior Academic Content Writer</h3>
+            <h3>Trainee Technical Content Writer</h3>
             <p>Tech Assignment Grade · Full-time</p>
           </div>
           <div class="tl-loc">Kolkata · On-site</div>
         </div>
         <div class="tl-item reveal" style="--d:100ms">
-          <div class="tl-date">Feb 2026 — Apr 2026<small>3 months</small></div>
+          <div class="tl-date">Feb 2026 — Apr 2026<small>2 mos</small></div>
           <div class="tl-body">
             <h3>Freelance Map Data Analyst</h3>
             <p>TELUS Digital · Part-time</p>
@@ -372,7 +434,7 @@
   <section class="section section-alt" id="skills">
     <div class="wrap">
       <div class="section-head">
-        <div class="index mono reveal">04 — Toolkit</div>
+        <div class="index mono reveal">04 — Skills</div>
         <div>
           <h2 class="section-title reveal" style="--d:60ms">Technical skills</h2>
           <p class="section-sub reveal" style="--d:120ms">Languages, tools and methods I work with day to day.</p>
@@ -380,26 +442,23 @@
       </div>
       <div class="skills">
         <div class="skill-row reveal">
-          <h3>Programming <span>01</span></h3>
-          <div class="pills"><span>Python</span></div>
+          <h3>Programming &amp; Database <span>05</span></h3>
+          <div class="pills"><span>Python</span><span>MySQL</span><span>SQL Joins</span><span>CTEs</span><span>Window
+              Functions</span></div>
         </div>
         <div class="skill-row reveal" style="--d:70ms">
-          <h3>Database management <span>04</span></h3>
-          <div class="pills"><span>MySQL</span><span>SQL Joins</span><span>CTEs</span><span>Window Functions</span>
-          </div>
+          <h3>Data Analysis <span>07</span></h3>
+          <div class="pills"><span>Pandas</span><span>NumPy</span><span>Excel</span><span>EDA</span><span>Data
+              Cleaning</span><span>Cohort Analysis</span><span>Hypothesis Testing</span></div>
         </div>
         <div class="skill-row reveal" style="--d:140ms">
-          <h3>Data analysis <span>06</span></h3>
-          <div class="pills"><span>Pandas</span><span>NumPy</span><span>Excel</span><span>EDA</span><span>Data
-              Cleaning</span><span>Statistical Analysis</span></div>
-        </div>
-        <div class="skill-row reveal" style="--d:210ms">
           <h3>Visualization &amp; BI <span>03</span></h3>
           <div class="pills"><span>Matplotlib</span><span>Seaborn</span><span>Power BI</span></div>
         </div>
-        <div class="skill-row reveal" style="--d:280ms">
-          <h3>Machine learning <span>01</span></h3>
-          <div class="pills"><span>Regression</span></div>
+        <div class="skill-row reveal" style="--d:210ms">
+          <h3>Modeling &amp; ML <span>04</span></h3>
+          <div class="pills"><span>Regression (OLS)</span><span>Classification</span><span>KMeans
+              Clustering</span><span>Time Series Forecasting</span></div>
         </div>
       </div>
     </div>
@@ -454,60 +513,54 @@
           </div><a href="https://drive.google.com/file/d/1xd2rfsQvbLbU3QPEOR4RjvlDIrPHRp-R/view" target="_blank"
             rel="noopener" class="cert-link">View</a>
         </div>
-        <div class="cert is-hidden">
+        <div class="cert reveal">
           <div class="cert-info">
             <h4>Machine Learning</h4><span>Besant Technologies</span>
           </div><a href="https://drive.google.com/file/d/1MRmwalrS-rHfq1C5yVtqO3kUREiIcmU1/view" target="_blank"
             rel="noopener" class="cert-link">View</a>
         </div>
-        <div class="cert is-hidden">
+        <div class="cert reveal" style="--d:50ms">
           <div class="cert-info">
             <h4>Python Basics</h4><span>HackerRank</span>
           </div><a href="https://drive.google.com/file/d/1bnl5GB-4p7FyC5pvHUFEc6NM9Y_kwhel/view" target="_blank"
             rel="noopener" class="cert-link">View</a>
         </div>
-        <div class="cert is-hidden">
+        <div class="cert reveal" style="--d:100ms">
           <div class="cert-info">
             <h4>Data Structures &amp; Algorithms</h4><span>Simplilearn</span>
           </div><a href="https://drive.google.com/file/d/1oQioWbyEmlPhSQyew6WBp2ubAm-dr3RL/view" target="_blank"
             rel="noopener" class="cert-link">View</a>
         </div>
-        <div class="cert is-hidden">
+        <div class="cert reveal" style="--d:150ms">
           <div class="cert-info">
             <h4>Data Fundamentals</h4><span>IBM</span>
           </div><a href="https://drive.google.com/file/d/1ZL00QbqKd1TUw-oLA1B2WMIB34Rdokt4/view" target="_blank"
             rel="noopener" class="cert-link">View</a>
         </div>
-        <div class="cert is-hidden">
+        <div class="cert reveal" style="--d:200ms">
           <div class="cert-info">
             <h4>Data Science</h4><span>Cisco / Cognitive Class</span>
           </div><a href="https://drive.google.com/file/d/1EuT95dfMqztDTRtWgs9iLVcx2ptkVWec/view" target="_blank"
             rel="noopener" class="cert-link">View</a>
         </div>
-        <div class="cert is-hidden">
+        <div class="cert reveal" style="--d:250ms">
           <div class="cert-info">
             <h4>Data Analysis</h4><span>Microsoft</span>
           </div><a href="https://drive.google.com/file/d/1h2yCpM3IIhcDTyC5GYXlYhcNu0ACWfxX/view" target="_blank"
             rel="noopener" class="cert-link">View</a>
         </div>
-        <div class="cert is-hidden">
+        <div class="cert reveal">
           <div class="cert-info">
             <h4>Python Developer Associate</h4><span>Certify Core</span>
           </div><a href="https://drive.google.com/file/d/16OgZezkUBGgPZgOzJco350bMo3nA5_m2/view" target="_blank"
             rel="noopener" class="cert-link">View</a>
         </div>
-        <div class="cert is-hidden">
+        <div class="cert reveal" style="--d:50ms">
           <div class="cert-info">
             <h4>Python for Data Science</h4><span>Cognitive Class</span>
           </div><a href="https://drive.google.com/file/d/1ArVELbLyF2drydtvv2oxLZzjSAitvvMg/view" target="_blank"
             rel="noopener" class="cert-link">View</a>
         </div>
-      </div>
-
-      <div class="certs-more">
-        <button class="btn btn-ghost" id="certsToggle" aria-expanded="false" aria-controls="certsGrid">
-          Show all 14 <i class="fas fa-arrow-down"></i>
-        </button>
       </div>
     </div>
   </section>
@@ -515,7 +568,7 @@
   <!-- ═══════════════ CONTACT ═══════════════ -->
   <section class="contact" id="contact">
     <div class="wrap">
-      <div class="index mono reveal" style="text-align:center">06 — Get in touch</div>
+      <div class="index mono reveal" style="text-align:center">06 — Contact</div>
       <h2 class="contact-title reveal" style="--d:60ms">
         <a href="mailto:dasranojoy9@gmail.com">Let's connect</a>
       </h2>
