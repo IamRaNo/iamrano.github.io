@@ -9,6 +9,45 @@
   const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ── 0. AUTO DURATIONS (experience stat + timeline) ───── */
+  // Earliest start date (Feb 2026). Month is 0-based, so 1 = February.
+  const CAREER_START = new Date(2026, 1, 1);
+
+  function monthsBetween(from, to) {
+    let m = (to.getFullYear() - from.getFullYear()) * 12 + (to.getMonth() - from.getMonth());
+    if (to.getDate() < from.getDate()) m--;
+    return Math.max(m, 0);
+  }
+  function formatDuration(m) {
+    if (m < 12) return m + ' mos';
+    const y = Math.floor(m / 12);
+    const r = m % 12;
+    return y + (y > 1 ? ' yrs' : ' yr') + (r ? ' ' + r + ' mos' : '');
+  }
+
+  const now = new Date();
+
+  // Hero stat: "X mos. experience", switches to years + months after 12 months
+  const expNum   = $('#exp-num');
+  const expLabel = $('#exp-label');
+  if (expNum) {
+    const total = monthsBetween(CAREER_START, now);
+    if (total < 12) {
+      expNum.dataset.target = String(total);
+      if (expLabel) expLabel.textContent = 'Mos. experience';
+    } else {
+      expNum.dataset.text = formatDuration(total);
+      if (expLabel) expLabel.textContent = 'Experience';
+    }
+  }
+
+  // Timeline: any element with data-duration-start="YYYY-MM" is open-ended (Present)
+  $$('[data-duration-start]').forEach(el => {
+    const parts = el.dataset.durationStart.split('-');
+    const start = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, 1);
+    el.textContent = formatDuration(monthsBetween(start, now));
+  });
+
   /* ── 1. HERO HEADLINE MASK REVEAL ─────────────────────── */
   const lines = $$('.reveal-line');
   window.requestAnimationFrame(() => {
@@ -22,6 +61,13 @@
   const navbar     = $('#navbar');
   const backToTop  = $('#back-to-top');
   let ticking = false;
+
+  // Keep anchored sections clear of the sticky nav (used by scroll-margin-top in the page <style>)
+  function setNavOffset() {
+    if (navbar) document.documentElement.style.setProperty('--nav-h', navbar.offsetHeight + 'px');
+  }
+  setNavOffset();
+  window.addEventListener('resize', setNavOffset);
 
   function onScroll() {
     const y = window.scrollY;
@@ -80,6 +126,8 @@
   /* ── 5. STAT COUNT-UP ─────────────────────────────────── */
   const nums = $$('.stat-num');
   function countUp(el) {
+    // Text stat (e.g. "1 yr 2 mos") has nothing to count, just show it
+    if (el.dataset.text) { el.textContent = el.dataset.text; return; }
     const target = parseInt(el.dataset.target, 10) || 0;
     if (reduceMotion) { el.textContent = target; return; }
     const dur = 1400;
@@ -159,29 +207,5 @@
     }, { passive: true });
   }
 
-  /* ── 9. CERTIFICATIONS TOGGLE ─────────────────────────── */
-  const certsToggle = $('#certsToggle');
-  if (certsToggle) {
-    certsToggle.addEventListener('click', () => {
-      const hidden = $$('.cert.is-hidden');
-      if (hidden.length) {
-        hidden.forEach((c, i) => {
-          c.classList.remove('is-hidden');
-          c.classList.add('reveal');
-          c.style.setProperty('--d', (i * 45) + 'ms');
-          requestAnimationFrame(() => c.classList.add('visible'));
-        });
-        certsToggle.innerHTML = 'Show less <i class="fas fa-arrow-up"></i>';
-        certsToggle.setAttribute('aria-expanded', 'true');
-      } else {
-        $$('.cert').slice(6).forEach(c => {
-          c.classList.add('is-hidden');
-          c.classList.remove('visible');
-        });
-        certsToggle.innerHTML = 'Show all 14 <i class="fas fa-arrow-down"></i>';
-        certsToggle.setAttribute('aria-expanded', 'false');
-        $('#certs').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
-      }
-    });
-  }
+  /* Certifications toggle removed: all 14 certificates are shown by default. */
 })();
